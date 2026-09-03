@@ -122,3 +122,8 @@ Data: Not included. Available from [WRDS](https://wrds-www.wharton.upenn.edu/) w
   note={Submitted}
 }
 ```
+
+
+## Related project
+
+[fraud-detection-leakage-audit](https://github.com/jihwanw/fraud-detection-leakage-audit) asks the complementary *prediction* question on the same class of data: how much out-of-sample fraud-detection signal do interlock features carry under strict leakage control? The two designs (behavioral channel here; leakage-controlled prediction there) are distinct and the findings are complementary.
