@@ -10,7 +10,7 @@ one run (addresses Reviewer 1's cross-exhibit inconsistencies).
 import os, configparser, builtins, getpass, time
 import pandas as pd
 
-INI = "/Users/jihwanw/PhD/code/api_info/api_keys.ini"
+INI = os.environ.get("WRDS_INI", "api_keys.ini")   # ini file with a [wrds] section (username, password); never committed
 OUTPUT = os.path.join(os.path.dirname(__file__), "..", "data")
 OUTPUT = os.path.abspath(OUTPUT)
 os.makedirs(OUTPUT, exist_ok=True)
