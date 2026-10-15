@@ -319,9 +319,11 @@ for r in inwin.itertuples(index=False):
 base = pd.DataFrame(recs, columns=["pid", "src", "dst", "director", "birth", "death", "by", "exposed", "exposed5y",
                                    "out_file", "out_onset", "pre_file", "pre_onset", "out_file_3y", "out_onset_3y", "src_is_origin",
                                    "pre_file_3y", "pre_onset_3y", "out_severe_3y", "pre_severe_3y", "dst_prior_any", "exposed_severe", "exposed_served", "exposed_present_expost", "src_feed_age", "dst_feed_age", "exposed_present_at_filing", "dst_ac"])
+# data/auditor_company.csv = audit.feed07_current_auditor (WRDS label AUDITOR KEY): ONE row per registrant, the auditor current as of the extract date (2026-06);
+# it is not an auditor history, so the indicator below means "same current auditor", not "same auditor at the appointment" (verified 2026-10-15, FIELD_DEFINITIONS_2026-10-15.md).
 aud = pd.read_csv("data/auditor_company.csv", usecols=["company_fkey", "auditor_key"]); aud["c"] = norm_cik(aud["company_fkey"])
 aud_sets = aud.dropna().groupby("c")["auditor_key"].agg(set).to_dict()
-base["same_auditor_ever"] = [int(len(aud_sets.get(a, set()) & aud_sets.get(b, set())) > 0) for a, b in zip(base["src"], base["dst"])]
+base["same_current_auditor"] = [int(len(aud_sets.get(a, set()) & aud_sets.get(b, set())) > 0) for a, b in zip(base["src"], base["dst"])]
 _cw = pd.read_csv("data/cik_gvkey_crosswalk.csv", dtype=str); _linked = set(norm_cik(_cw["company_fkey"]))
 base["both_linked"] = (base["src"].isin(_linked) & base["dst"].isin(_linked)).astype(int)
 base.to_csv(f"data/pair_base_k{SUFFIX}.csv", index=False)
@@ -396,8 +398,8 @@ for ex_, tag in (("exposed5y", "recent"), ("exposed_served", "present"), ("expos
     K1["equal_window_3y"][f"did_onset_cohortFE_{tag}"] = did_fe(eq, "pre_onset_3y", "out_onset_3y", exp=ex_)
     K1["equal_window_3y"][f"did_file_cohortFE_{tag}"] = did_fe(eq, "pre_file_3y", "out_file_3y", exp=ex_)
 K1["equal_window_3y"]["did_onset_cohortFE"] = did_fe(eq, "pre_onset_3y", "out_onset_3y")
-K1["equal_window_3y"]["did_file_cohortFE_sameauditor"] = did_fe(eq, "pre_file_3y", "out_file_3y", ("same_auditor_ever",))
-K1["equal_window_3y"]["share_same_auditor_ever"] = round(float(eq["same_auditor_ever"].mean()), 4)
+K1["equal_window_3y"]["did_file_cohortFE_sameauditor"] = did_fe(eq, "pre_file_3y", "out_file_3y", ("same_current_auditor",))
+K1["equal_window_3y"]["share_same_current_auditor"] = round(float(eq["same_current_auditor"].mean()), 4)
 K1["equal_window_3y"]["director_clustered"] = {"pre_file": gap_dircl(eq, "pre_file_3y"), "post_file": gap_dircl(eq, "out_file_3y"), "did_file": did_dircl(eq, "pre_file_3y", "out_file_3y"),
                                                "pre_onset": gap_dircl(eq, "pre_onset_3y"), "post_onset": gap_dircl(eq, "out_onset_3y"), "did_onset": did_dircl(eq, "pre_onset_3y", "out_onset_3y"),
                                                "n_directors": int(eq["director"].nunique()), "max_pairs_per_director": int(eq.groupby("director").size().max())}
@@ -914,12 +916,14 @@ specs = {"contemporaneous_file_no_turnover (old timing, old controls)": ("restat
          "lag1_file": ("restate_file", "nexp_lag1", ["nnew_lag1"] + ctrl),
          "lag1_file_plus_prior": ("restate_file", "nexp_lag1", ["nnew_lag1"] + ctrl + ["had_prior_restate"]),
          "lag1_onset": ("restate_onset", "nexp_lag1", ["nnew_lag1"] + ctrl),
+         "lag1_onset_plus_prior": ("restate_onset", "nexp_lag1", ["nnew_lag1"] + ctrl + ["had_prior_restate"]),   # 2026-10-15 r12: Table 8 row 1 with own history held fixed
          "boy_stock_file": ("restate_file", "nexp_boy", ["nalive_boy"] + ctrl),
          "boy_stock_onset": ("restate_onset", "nexp_boy", ["nalive_boy"] + ctrl),
          "lag1_file_exposed5y": ("restate_file", "nexp5_lag1", ["nnew_lag1"] + ctrl),
          "lag1_file_exposed5y_plus_prior": ("restate_file", "nexp5_lag1", ["nnew_lag1"] + ctrl + ["had_prior_restate"]),
          "lag1_onset_exposed5y_plus_prior": ("restate_onset", "nexp5_lag1", ["nnew_lag1"] + ctrl + ["had_prior_restate"]),
          "boy_stock_onset_exposed5y": ("restate_onset", "nexp5_boy", ["nalive_boy"] + ctrl),
+         "boy_stock_onset_exposed5y_plus_prior": ("restate_onset", "nexp5_boy", ["nalive_boy"] + ctrl + ["had_prior_restate"]),   # 2026-10-15 r12: Table 8 stock row with own history held fixed
          "lag1_onset_inbound_recent5y_plus_prior": ("restate_onset", "nexp5_in_lag1", ["nnew_in_lag1", "nnew_out_lag1", "nexp5_out_lag1"] + ctrl + ["had_prior_restate"]),
          "lag1_onset_exposed5y_no_prior_control": ("restate_onset", "nexp5_lag1", ["nnew_lag1"] + ctrl),
          "lag1_file_inbound_recent5y_plus_prior": ("restate_file", "nexp5_in_lag1", ["nnew_in_lag1", "nnew_out_lag1", "nexp5_out_lag1"] + ctrl + ["had_prior_restate"]),

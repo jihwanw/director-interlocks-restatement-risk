@@ -1,0 +1,641 @@
+{
+ "generated": "2026-10-15",
+ "source_of_labels": "WRDS PostgreSQL column comments (pg_catalog.col_description), read 2026-10-15",
+ "rows": [
+  {
+   "file": "directors_officers_full.csv",
+   "wrds_table": "audit.feed17_director_and_officer_chan",
+   "column_in_file": "company_fkey",
+   "source_column": "company_fkey",
+   "wrds_type": "character varying",
+   "wrds_label": "COMPANY FKEY",
+   "observed_distribution": "100.0% non-missing; min 20 max 2122505",
+   "used_in": [
+    "rebuild_k_timing.py:77",
+    "rebuild_k_timing.py:81",
+    "rebuild_k_timing.py:85",
+    "rebuild_k_timing.py:87",
+    "rebuild_k_timing.py:258"
+   ]
+  },
+  {
+   "file": "directors_officers_full.csv",
+   "wrds_table": "audit.feed17_director_and_officer_chan",
+   "column_in_file": "first_name",
+   "source_column": "first_name",
+   "wrds_type": "character varying",
+   "wrds_label": "FIRST NAME",
+   "observed_distribution": "text; 100.0% non-missing; 21,134 distinct",
+   "used_in": [
+    "rebuild_k_timing.py:77",
+    "rebuild_k_timing.py:80",
+    "rebuild_k_timing.py:85",
+    "rebuild_k_timing.py:87",
+    "rebuild_l_identification.py:84"
+   ]
+  },
+  {
+   "file": "directors_officers_full.csv",
+   "wrds_table": "audit.feed17_director_and_officer_chan",
+   "column_in_file": "last_name",
+   "source_column": "last_name",
+   "wrds_type": "character varying",
+   "wrds_label": "LAST NAME",
+   "observed_distribution": "text; 100.0% non-missing; 80,247 distinct",
+   "used_in": [
+    "rebuild_k_timing.py:77",
+    "rebuild_k_timing.py:80",
+    "rebuild_k_timing.py:85",
+    "rebuild_k_timing.py:87",
+    "rebuild_l_identification.py:84"
+   ]
+  },
+  {
+   "file": "directors_officers_full.csv",
+   "wrds_table": "audit.feed17_director_and_officer_chan",
+   "column_in_file": "eff_date",
+   "source_column": "eff_date",
+   "wrds_type": "date",
+   "wrds_label": "EFFECTIVE DATE",
+   "observed_distribution": "text; 100.0% non-missing; 8,936 distinct",
+   "used_in": [
+    "rebuild_k_timing.py:77",
+    "rebuild_k_timing.py:78",
+    "rebuild_k_timing.py:79",
+    "rebuild_k_timing.py:85",
+    "rebuild_k_timing.py:86"
+   ]
+  },
+  {
+   "file": "directors_officers_full.csv",
+   "wrds_table": "audit.feed17_director_and_officer_chan",
+   "column_in_file": "action",
+   "source_column": "action",
+   "wrds_type": "character varying",
+   "wrds_label": "ACTION",
+   "observed_distribution": "Appointed: 311,421; Resigned: 175,356; Retired: 26,843; Employment Ceased: 13,408; Re-elected: 12,384; Dismissed: 11,949; Declined Re-election: 9,521; Nominated: 3,698; Deceased: 1,811; Personal Leave: 621",
+   "used_in": [
+    "rebuild_k_timing.py:77",
+    "rebuild_k_timing.py:85",
+    "rebuild_k_timing.py:87",
+    "rebuild_k_timing.py:89",
+    "rebuild_k_timing.py:97"
+   ]
+  },
+  {
+   "file": "directors_officers_full.csv",
+   "wrds_table": "audit.feed17_director_and_officer_chan",
+   "column_in_file": "is_bdmem_pers",
+   "source_column": "is_bdmem_pers",
+   "wrds_type": "double precision",
+   "wrds_label": "IS BOARDMEMBER PERSON",
+   "observed_distribution": "1.0: 288,978; 0.0: 279,354",
+   "used_in": [
+    "rebuild_k_timing.py:77",
+    "rebuild_k_timing.py:96",
+    "rebuild_l_identification.py:84",
+    "rebuild_l_identification.py:87"
+   ]
+  },
+  {
+   "file": "directors_officers_wrds_2026-10-13.csv.gz",
+   "wrds_table": "audit.feed17_director_and_officer_chan",
+   "column_in_file": "company_fkey",
+   "source_column": "company_fkey",
+   "wrds_type": "character varying",
+   "wrds_label": "COMPANY FKEY",
+   "observed_distribution": "100.0% non-missing; min 20 max 2147219",
+   "used_in": [
+    "rebuild_k_timing.py:77",
+    "rebuild_k_timing.py:81",
+    "rebuild_k_timing.py:85",
+    "rebuild_k_timing.py:87",
+    "rebuild_k_timing.py:258"
+   ]
+  },
+  {
+   "file": "directors_officers_wrds_2026-10-13.csv.gz",
+   "wrds_table": "audit.feed17_director_and_officer_chan",
+   "column_in_file": "first_name",
+   "source_column": "first_name",
+   "wrds_type": "character varying",
+   "wrds_label": "FIRST NAME",
+   "observed_distribution": "text; 100.0% non-missing; 21,469 distinct",
+   "used_in": [
+    "rebuild_k_timing.py:77",
+    "rebuild_k_timing.py:80",
+    "rebuild_k_timing.py:85",
+    "rebuild_k_timing.py:87",
+    "rebuild_l_identification.py:84"
+   ]
+  },
+  {
+   "file": "directors_officers_wrds_2026-10-13.csv.gz",
+   "wrds_table": "audit.feed17_director_and_officer_chan",
+   "column_in_file": "middle_name",
+   "source_column": "middle_name",
+   "wrds_type": "character varying",
+   "wrds_label": "MIDDLE NAME",
+   "observed_distribution": "text; 49.5% non-missing; 8,729 distinct",
+   "used_in": [
+    "rebuild_k_timing.py:85",
+    "rebuild_k_timing.py:90"
+   ]
+  },
+  {
+   "file": "directors_officers_wrds_2026-10-13.csv.gz",
+   "wrds_table": "audit.feed17_director_and_officer_chan",
+   "column_in_file": "last_name",
+   "source_column": "last_name",
+   "wrds_type": "character varying",
+   "wrds_label": "LAST NAME",
+   "observed_distribution": "text; 100.0% non-missing; 81,167 distinct",
+   "used_in": [
+    "rebuild_k_timing.py:77",
+    "rebuild_k_timing.py:80",
+    "rebuild_k_timing.py:85",
+    "rebuild_k_timing.py:87",
+    "rebuild_l_identification.py:84"
+   ]
+  },
+  {
+   "file": "directors_officers_wrds_2026-10-13.csv.gz",
+   "wrds_table": "audit.feed17_director_and_officer_chan",
+   "column_in_file": "suffix",
+   "source_column": "suffix",
+   "wrds_type": "character varying",
+   "wrds_label": "SUFFIX",
+   "observed_distribution": "text; 8.6% non-missing; 374 distinct",
+   "used_in": [
+    "rebuild_k_timing.py:64",
+    "rebuild_k_timing.py:85",
+    "rebuild_l_identification.py:27",
+    "rebuild_m_icfr.py:18",
+    "rebuild_m_icfr.py:71"
+   ]
+  },
+  {
+   "file": "directors_officers_wrds_2026-10-13.csv.gz",
+   "wrds_table": "audit.feed17_director_and_officer_chan",
+   "column_in_file": "eff_date",
+   "source_column": "eff_date",
+   "wrds_type": "date",
+   "wrds_label": "EFFECTIVE DATE",
+   "observed_distribution": "text; 100.0% non-missing; 9,075 distinct",
+   "used_in": [
+    "rebuild_k_timing.py:77",
+    "rebuild_k_timing.py:78",
+    "rebuild_k_timing.py:79",
+    "rebuild_k_timing.py:85",
+    "rebuild_k_timing.py:86"
+   ]
+  },
+  {
+   "file": "directors_officers_wrds_2026-10-13.csv.gz",
+   "wrds_table": "audit.feed17_director_and_officer_chan",
+   "column_in_file": "is_effective_date_estimate",
+   "source_column": "is_effective_date_estimate",
+   "wrds_type": "double precision",
+   "wrds_label": "IS EFFECTIVE DATE ESTIMATE",
+   "observed_distribution": "0.0: 539,660; 1.0: 40,185",
+   "used_in": [
+    "rebuild_k_timing.py:85",
+    "rebuild_k_timing.py:91"
+   ]
+  },
+  {
+   "file": "directors_officers_wrds_2026-10-13.csv.gz",
+   "wrds_table": "audit.feed17_director_and_officer_chan",
+   "column_in_file": "action",
+   "source_column": "action",
+   "wrds_type": "character varying",
+   "wrds_label": "ACTION",
+   "observed_distribution": "Appointed: 316,958; Resigned: 179,068; Retired: 27,324; Employment Ceased: 13,511; Re-elected: 13,474; Dismissed: 12,220; Declined Re-election: 9,677; Nominated: 3,804; Deceased: 1,830; Personal Leave: 637",
+   "used_in": [
+    "rebuild_k_timing.py:77",
+    "rebuild_k_timing.py:85",
+    "rebuild_k_timing.py:87",
+    "rebuild_k_timing.py:89",
+    "rebuild_k_timing.py:97"
+   ]
+  },
+  {
+   "file": "directors_officers_wrds_2026-10-13.csv.gz",
+   "wrds_table": "audit.feed17_director_and_officer_chan",
+   "column_in_file": "is_bdmem_pers",
+   "source_column": "is_bdmem_pers",
+   "wrds_type": "double precision",
+   "wrds_label": "IS BOARDMEMBER PERSON",
+   "observed_distribution": "1.0: 294,674; 0.0: 285,171",
+   "used_in": [
+    "rebuild_k_timing.py:77",
+    "rebuild_k_timing.py:96",
+    "rebuild_l_identification.py:84",
+    "rebuild_l_identification.py:87"
+   ]
+  },
+  {
+   "file": "directors_officers_wrds_2026-10-13.csv.gz",
+   "wrds_table": "audit.feed17_director_and_officer_chan",
+   "column_in_file": "comm_report",
+   "source_column": "comm_report",
+   "wrds_type": "character varying",
+   "wrds_label": "COMMITTEES AS REPORTED",
+   "observed_distribution": "text; 13.3% non-missing; 12,379 distinct",
+   "used_in": [
+    "rebuild_k_timing.py:82",
+    "rebuild_k_timing.py:85",
+    "rebuild_k_timing.py:92",
+    "rebuild_k_timing.py:93",
+    "rebuild_k_timing.py:122"
+   ]
+  },
+  {
+   "file": "directors_officers_wrds_2026-10-13.csv.gz",
+   "wrds_table": "audit.feed17_director_and_officer_chan",
+   "column_in_file": "file_date",
+   "source_column": "file_date",
+   "wrds_type": "date",
+   "wrds_label": "FILE DATE",
+   "observed_distribution": "text; 100.0% non-missing; 6,433 distinct",
+   "used_in": [
+    "rebuild_k_timing.py:258",
+    "rebuild_k_timing.py:260",
+    "rebuild_k_timing.py:262",
+    "rebuild_k_timing.py:267",
+    "rebuild_k_timing.py:270"
+   ]
+  },
+  {
+   "file": "restatements_with_dates.csv",
+   "wrds_table": "audit.feed39_financial_restatements",
+   "column_in_file": "company_fkey",
+   "source_column": "company_fkey",
+   "wrds_type": "character varying",
+   "wrds_label": "COMPANY FKEY",
+   "observed_distribution": "100.0% non-missing; min 1750 max 2071288",
+   "used_in": [
+    "rebuild_k_timing.py:77",
+    "rebuild_k_timing.py:81",
+    "rebuild_k_timing.py:85",
+    "rebuild_k_timing.py:87",
+    "rebuild_k_timing.py:258"
+   ]
+  },
+  {
+   "file": "restatements_with_dates.csv",
+   "wrds_table": "audit.feed39_financial_restatements",
+   "column_in_file": "file_date",
+   "source_column": "file_date",
+   "wrds_type": "date",
+   "wrds_label": "FILE DATE",
+   "observed_distribution": "text; 100.0% non-missing; 5,931 distinct",
+   "used_in": [
+    "rebuild_k_timing.py:258",
+    "rebuild_k_timing.py:260",
+    "rebuild_k_timing.py:262",
+    "rebuild_k_timing.py:267",
+    "rebuild_k_timing.py:270"
+   ]
+  },
+  {
+   "file": "restatements_with_dates.csv",
+   "wrds_table": "audit.feed39_financial_restatements",
+   "column_in_file": "res_begin_date",
+   "source_column": "res_begin_date",
+   "wrds_type": "date",
+   "wrds_label": "RES BEGIN DATE",
+   "observed_distribution": "text; 91.7% non-missing; 999 distinct",
+   "used_in": [
+    "rebuild_k_timing.py:258",
+    "rebuild_k_timing.py:262",
+    "rebuild_k_timing.py:266",
+    "rebuild_k_timing.py:267",
+    "rebuild_k_timing.py:270"
+   ]
+  },
+  {
+   "file": "restatements_with_dates.csv",
+   "wrds_table": "audit.feed39_financial_restatements",
+   "column_in_file": "res_end_date",
+   "source_column": "res_end_date",
+   "wrds_type": "date",
+   "wrds_label": "RES END DATE",
+   "observed_distribution": "text; 100.0% non-missing; 1,196 distinct",
+   "used_in": [
+    "rebuild_k_timing.py:258",
+    "rebuild_k_timing.py:270",
+    "rebuild_l_identification.py:71",
+    "rebuild_l_identification.py:75",
+    "rebuild_l_identification.py:379"
+   ]
+  },
+  {
+   "file": "restatements_with_dates.csv",
+   "wrds_table": "audit.feed39_financial_restatements",
+   "column_in_file": "res_fraud",
+   "source_column": "res_fraud",
+   "wrds_type": "double precision",
+   "wrds_label": "RES FRAUD",
+   "observed_distribution": "0.0: 28,654; 1.0: 380",
+   "used_in": [
+    "rebuild_k_timing.py:258",
+    "rebuild_k_timing.py:262",
+    "rebuild_l_identification.py:73"
+   ]
+  },
+  {
+   "file": "restatements_with_dates.csv",
+   "wrds_table": "audit.feed39_financial_restatements",
+   "column_in_file": "res_sec_investigation",
+   "source_column": "res_sec_investigation",
+   "wrds_type": "double precision",
+   "wrds_label": "RES SEC INVESTIGATION",
+   "observed_distribution": "0.0: 27,772; 1.0: 1,262",
+   "used_in": [
+    "rebuild_k_timing.py:258",
+    "rebuild_k_timing.py:262",
+    "rebuild_l_identification.py:73"
+   ]
+  },
+  {
+   "file": "auditor_company.csv",
+   "wrds_table": "audit.feed07_current_auditor",
+   "column_in_file": "company_fkey",
+   "source_column": "company_fkey",
+   "wrds_type": "character varying",
+   "wrds_label": "COMPANY FKEY",
+   "observed_distribution": "100.0% non-missing; min 20 max 2131260",
+   "used_in": [
+    "rebuild_k_timing.py:77",
+    "rebuild_k_timing.py:81",
+    "rebuild_k_timing.py:85",
+    "rebuild_k_timing.py:87",
+    "rebuild_k_timing.py:258"
+   ]
+  },
+  {
+   "file": "auditor_company.csv",
+   "wrds_table": "audit.feed07_current_auditor",
+   "column_in_file": "auditor_key",
+   "source_column": "auditor_key",
+   "wrds_type": "double precision",
+   "wrds_label": "AUDITOR KEY",
+   "observed_distribution": "100.0% non-missing; min 1.0 max 35941.0",
+   "used_in": [
+    "rebuild_k_timing.py:322",
+    "rebuild_k_timing.py:323"
+   ]
+  },
+  {
+   "file": "sox404_icfr_wrds_2026-10-13.csv.gz",
+   "wrds_table": "audit.feed11_sox_404_internal_controls",
+   "column_in_file": "company_fkey",
+   "source_column": "company_fkey",
+   "wrds_type": "character varying",
+   "wrds_label": "COMPANY FKEY",
+   "observed_distribution": "100.0% non-missing; min 20 max 2143673",
+   "used_in": [
+    "rebuild_k_timing.py:77",
+    "rebuild_k_timing.py:81",
+    "rebuild_k_timing.py:85",
+    "rebuild_k_timing.py:87",
+    "rebuild_k_timing.py:258"
+   ]
+  },
+  {
+   "file": "sox404_icfr_wrds_2026-10-13.csv.gz",
+   "wrds_table": "audit.feed11_sox_404_internal_controls",
+   "column_in_file": "fy_ic_op",
+   "source_column": "fy_ic_op",
+   "wrds_type": "double precision",
+   "wrds_label": "FISCAL YEAR IC OPINION",
+   "observed_distribution": "2008.0: 14,349; 2009.0: 13,905; 2010.0: 13,252; 2007.0: 12,900; 2011.0: 12,855; 2012.0: 12,395; 2013.0: 12,100; 2014.0: 11,934; 2015.0: 11,634; 2016.0: 11,195",
+   "used_in": [
+    "rebuild_m_icfr.py:51"
+   ]
+  },
+  {
+   "file": "sox404_icfr_wrds_2026-10-13.csv.gz",
+   "wrds_table": "audit.feed11_sox_404_internal_controls",
+   "column_in_file": "fye_ic_op",
+   "source_column": "fye_ic_op",
+   "wrds_type": "date",
+   "wrds_label": "FISCAL YEAR ENDED IC OPINION",
+   "observed_distribution": "text; 100.0% non-missing; 1,581 distinct",
+   "used_in": [
+    "rebuild_m_icfr.py:49",
+    "rebuild_m_icfr.py:50",
+    "rebuild_m_icfr.py:51",
+    "rebuild_m_icfr.py:54"
+   ]
+  },
+  {
+   "file": "sox404_icfr_wrds_2026-10-13.csv.gz",
+   "wrds_table": "audit.feed11_sox_404_internal_controls",
+   "column_in_file": "ic_is_effective",
+   "source_column": "ic_is_effective",
+   "wrds_type": "character varying",
+   "wrds_label": "IC IS EFFECTIVE",
+   "observed_distribution": "Y: 203,862; N: 40,343; ND: 743",
+   "used_in": [
+    "rebuild_m_icfr.py:50",
+    "rebuild_m_icfr.py:51"
+   ]
+  },
+  {
+   "file": "sox404_icfr_wrds_2026-10-13.csv.gz",
+   "wrds_table": "audit.feed11_sox_404_internal_controls",
+   "column_in_file": "file_date",
+   "source_column": "file_date",
+   "wrds_type": "date",
+   "wrds_label": "FILE DATE",
+   "observed_distribution": "text; 100.0% non-missing; 5,351 distinct",
+   "used_in": [
+    "rebuild_k_timing.py:258",
+    "rebuild_k_timing.py:260",
+    "rebuild_k_timing.py:262",
+    "rebuild_k_timing.py:267",
+    "rebuild_k_timing.py:270"
+   ]
+  },
+  {
+   "file": "compustat_financials.csv",
+   "wrds_table": "comp.funda",
+   "column_in_file": "gvkey",
+   "source_column": "gvkey",
+   "wrds_type": "character varying",
+   "wrds_label": "Global Company Key",
+   "observed_distribution": "100.0% non-missing; min 1004 max 370994",
+   "used_in": [
+    "rebuild_k_timing.py:574",
+    "rebuild_k_timing.py:575",
+    "rebuild_k_timing.py:576",
+    "rebuild_k_timing.py:598",
+    "rebuild_k_timing.py:599"
+   ]
+  },
+  {
+   "file": "compustat_financials.csv",
+   "wrds_table": "comp.funda",
+   "column_in_file": "year",
+   "source_column": "fyear",
+   "wrds_type": "integer",
+   "wrds_label": "Data Year - Fiscal",
+   "observed_distribution": "2004: 9,772; 2005: 9,641; 2006: 9,425; 2013: 9,250; 2012: 9,179; 2007: 9,095; 2014: 8,976; 2008: 8,817; 2009: 8,674; 2015: 8,644",
+   "used_in": [
+    "rebuild_k_timing.py:171",
+    "rebuild_k_timing.py:576",
+    "rebuild_k_timing.py:577",
+    "rebuild_k_timing.py:583",
+    "rebuild_k_timing.py:600"
+   ]
+  },
+  {
+   "file": "compustat_financials.csv",
+   "wrds_table": "comp.funda",
+   "column_in_file": "assets",
+   "source_column": "at",
+   "wrds_type": "numeric",
+   "wrds_label": "Assets - Total",
+   "observed_distribution": "100.0% non-missing; min 0.001 max 4325437.0",
+   "used_in": [
+    "rebuild_k_timing.py:575",
+    "rebuild_k_timing.py:576",
+    "rebuild_k_timing.py:599",
+    "rebuild_k_timing.py:600",
+    "rebuild_k_timing.py:873"
+   ]
+  },
+  {
+   "file": "compustat_financials.csv",
+   "wrds_table": "comp.funda",
+   "column_in_file": "liabilities",
+   "source_column": "lt",
+   "wrds_type": "numeric",
+   "wrds_label": "Liabilities - Total",
+   "observed_distribution": "99.8% non-missing; min -0.103 max 4247755.0",
+   "used_in": [
+    "rebuild_k_timing.py:873"
+   ]
+  },
+  {
+   "file": "compustat_financials.csv",
+   "wrds_table": "comp.funda",
+   "column_in_file": "net_income",
+   "source_column": "ni",
+   "wrds_type": "numeric",
+   "wrds_label": "Net Income (Loss)",
+   "observed_distribution": "99.5% non-missing; min -99289.0 max 104821.0",
+   "used_in": [
+    "rebuild_k_timing.py:873"
+   ]
+  },
+  {
+   "file": "comp_funda_sich_2004_2024.csv",
+   "wrds_table": "comp.funda",
+   "column_in_file": "gvkey",
+   "source_column": "gvkey",
+   "wrds_type": "character varying",
+   "wrds_label": "Global Company Key",
+   "observed_distribution": "100.0% non-missing; min 1004 max 370994",
+   "used_in": [
+    "rebuild_k_timing.py:574",
+    "rebuild_k_timing.py:575",
+    "rebuild_k_timing.py:576",
+    "rebuild_k_timing.py:598",
+    "rebuild_k_timing.py:599"
+   ]
+  },
+  {
+   "file": "comp_funda_sich_2004_2024.csv",
+   "wrds_table": "comp.funda",
+   "column_in_file": "fyear",
+   "source_column": "fyear",
+   "wrds_type": "integer",
+   "wrds_label": "Data Year - Fiscal",
+   "observed_distribution": "2004: 9,410; 2005: 9,244; 2006: 8,997; 2007: 8,725; 2013: 8,689; 2012: 8,660; 2008: 8,454; 2014: 8,438; 2011: 8,394; 2009: 8,370",
+   "used_in": [
+    "rebuild_k_timing.py:664",
+    "rebuild_k_timing.py:666"
+   ]
+  },
+  {
+   "file": "comp_funda_sich_2004_2024.csv",
+   "wrds_table": "comp.funda",
+   "column_in_file": "sich",
+   "source_column": "sich",
+   "wrds_type": "integer",
+   "wrds_label": "Standard Industrial Classification - Historical",
+   "observed_distribution": "83.7% non-missing; min 100.0 max 9998.0",
+   "used_in": [
+    "rebuild_k_timing.py:664",
+    "rebuild_k_timing.py:666"
+   ]
+  },
+  {
+   "file": "comp_funda_sich_2004_2024.csv",
+   "wrds_table": "comp.funda",
+   "column_in_file": "cik",
+   "source_column": "cik",
+   "wrds_type": "character varying",
+   "wrds_label": "CIK Number",
+   "observed_distribution": "99.9% non-missing; min 20.0 max 2136387.0",
+   "used_in": [
+    "rebuild_k_timing.py:181",
+    "rebuild_k_timing.py:184",
+    "rebuild_k_timing.py:186",
+    "rebuild_k_timing.py:195",
+    "rebuild_k_timing.py:216"
+   ]
+  },
+  {
+   "file": "cik_gvkey_crosswalk.csv",
+   "wrds_table": "comp.company",
+   "column_in_file": "company_fkey",
+   "source_column": "company_fkey",
+   "wrds_type": null,
+   "wrds_label": "[NOT FOUND in WRDS column labels \u2014 VERIFY]",
+   "observed_distribution": "100.0% non-missing; min 20 max 2129284",
+   "used_in": [
+    "rebuild_k_timing.py:77",
+    "rebuild_k_timing.py:81",
+    "rebuild_k_timing.py:85",
+    "rebuild_k_timing.py:87",
+    "rebuild_k_timing.py:258"
+   ]
+  },
+  {
+   "file": "cik_gvkey_crosswalk.csv",
+   "wrds_table": "comp.company",
+   "column_in_file": "gvkey",
+   "source_column": "gvkey",
+   "wrds_type": "character varying",
+   "wrds_label": "Global Company Key - Company",
+   "observed_distribution": "100.0% non-missing; min 1002 max 370994",
+   "used_in": [
+    "rebuild_k_timing.py:574",
+    "rebuild_k_timing.py:575",
+    "rebuild_k_timing.py:576",
+    "rebuild_k_timing.py:598",
+    "rebuild_k_timing.py:599"
+   ]
+  },
+  {
+   "file": "cik_gvkey_crosswalk.csv",
+   "wrds_table": "comp.company",
+   "column_in_file": "cik",
+   "source_column": "cik",
+   "wrds_type": "character varying",
+   "wrds_label": "CIK Number",
+   "observed_distribution": "100.0% non-missing; min 20 max 2129284",
+   "used_in": [
+    "rebuild_k_timing.py:181",
+    "rebuild_k_timing.py:184",
+    "rebuild_k_timing.py:186",
+    "rebuild_k_timing.py:195",
+    "rebuild_k_timing.py:216"
+   ]
+  }
+ ]
+}

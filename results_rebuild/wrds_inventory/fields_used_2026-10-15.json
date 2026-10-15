@@ -1,0 +1,184 @@
+{
+ "directors_officers_full.csv": {
+  "table": "audit.feed17_director_and_officer_chan (June 2026 extract)",
+  "all_columns": [
+   "company_fkey",
+   "first_name",
+   "last_name",
+   "eff_date",
+   "action",
+   "is_ceo",
+   "is_cfo",
+   "is_bdmem_pers",
+   "is_chair",
+   "is_c_level",
+   "is_fin_pers",
+   "is_op_pers",
+   "is_legal",
+   "is_exec_vp",
+   "is_president",
+   "is_coo",
+   "is_secretary",
+   "is_cont"
+  ],
+  "used_columns": [
+   "company_fkey",
+   "first_name",
+   "last_name",
+   "eff_date",
+   "action",
+   "is_bdmem_pers"
+  ]
+ },
+ "directors_officers_wrds_2026-10-13.csv.gz": {
+  "table": "audit.feed17_director_and_officer_chan (2026-10-13)",
+  "all_columns": [
+   "do_off_pers_key",
+   "do_change_key",
+   "company_fkey",
+   "first_name",
+   "middle_name",
+   "last_name",
+   "suffix",
+   "eff_date",
+   "is_effective_date_estimate",
+   "eff_date_unspec",
+   "action",
+   "reasons",
+   "is_bdmem_pers",
+   "is_ceo",
+   "is_cfo",
+   "is_chair",
+   "title_standard",
+   "comm_report",
+   "comm_standard",
+   "interim",
+   "do_off_remains",
+   "file_date",
+   "form_fkey"
+  ],
+  "used_columns": [
+   "company_fkey",
+   "first_name",
+   "middle_name",
+   "last_name",
+   "suffix",
+   "eff_date",
+   "is_effective_date_estimate",
+   "action",
+   "is_bdmem_pers",
+   "comm_report",
+   "file_date"
+  ]
+ },
+ "restatements_with_dates.csv": {
+  "table": "audit.feed39_financial_restatements",
+  "all_columns": [
+   "company_fkey",
+   "file_date",
+   "res_begin_date",
+   "res_end_date",
+   "res_accounting",
+   "res_adverse",
+   "res_fraud",
+   "res_sec_investigation",
+   "matchqu_balsh_assets",
+   "matchqu_incmst_netinc_ttm",
+   "matchqu_incmst_rev_ttm"
+  ],
+  "used_columns": [
+   "company_fkey",
+   "file_date",
+   "res_begin_date",
+   "res_end_date",
+   "res_fraud",
+   "res_sec_investigation"
+  ]
+ },
+ "auditor_company.csv": {
+  "table": "audit.feed01_audit_opinions",
+  "all_columns": [
+   "company_fkey",
+   "auditor_key",
+   "auditor_name",
+   "event_type"
+  ],
+  "used_columns": [
+   "company_fkey",
+   "auditor_key"
+  ]
+ },
+ "sox404_icfr_wrds_2026-10-13.csv.gz": {
+  "table": "audit.feed11_sox_404_internal_controls",
+  "all_columns": [
+   "company_fkey",
+   "fy_ic_op",
+   "fye_ic_op",
+   "ic_is_effective",
+   "count_weak",
+   "ic_op_type",
+   "auditor_agrees",
+   "noteff_fin_fraud",
+   "notefferrors",
+   "file_date"
+  ],
+  "used_columns": [
+   "company_fkey",
+   "fy_ic_op",
+   "fye_ic_op",
+   "ic_is_effective",
+   "file_date"
+  ]
+ },
+ "compustat_financials.csv": {
+  "table": "comp.funda",
+  "all_columns": [
+   "gvkey",
+   "year",
+   "assets",
+   "liabilities",
+   "equity",
+   "revenue",
+   "net_income",
+   "oancf",
+   "mktcap",
+   "shares",
+   "price"
+  ],
+  "used_columns": [
+   "gvkey",
+   "year",
+   "assets",
+   "liabilities",
+   "net_income"
+  ]
+ },
+ "comp_funda_sich_2004_2024.csv": {
+  "table": "comp.funda (sich)",
+  "all_columns": [
+   "gvkey",
+   "fyear",
+   "sich",
+   "cik"
+  ],
+  "used_columns": [
+   "gvkey",
+   "fyear",
+   "sich",
+   "cik"
+  ]
+ },
+ "cik_gvkey_crosswalk.csv": {
+  "table": "comp.company",
+  "all_columns": [
+   "company_fkey",
+   "gvkey",
+   "cik"
+  ],
+  "used_columns": [
+   "company_fkey",
+   "gvkey",
+   "cik"
+  ]
+ }
+}

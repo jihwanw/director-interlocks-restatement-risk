@@ -6,7 +6,7 @@ All inputs come from WRDS (institutional subscription required) and from the SEC
 |---|---|---|
 | `directors_officers_full.csv` | Audit Analytics `audit.feed17_director_and_officer_chan` (board-member and officer events; June 2026 extract) | `code/00_download_wrds_data.py` |
 | `restatements_with_dates.csv` | Audit Analytics `audit.feed39_financial_restatements` | `code/00_download_wrds_data.py` |
-| `auditor_company.csv` | Audit Analytics `audit.feed01_audit_opinions` (auditor identity) | `code/00_download_wrds_data.py` |
+| `auditor_company.csv` | Audit Analytics `audit.feed07_current_auditor` (one current auditor per registrant as of the extract) | `code/00b_download_noninteractive.py` |
 | `compustat_financials.csv`, `cik_gvkey_crosswalk.csv` | Compustat `comp.funda`, `comp.company` | `code/00_download_wrds_data.py` |
 | `directors_officers_wrds_2026-10-13.csv.gz` | `audit.feed17_director_and_officer_chan` (middle names, suffixes, estimated-date flag, committee text) | `code/fetch_wrds_extracts_2026-10-13.py` |
 | `comp_funda_sich_2004_2024.csv` | `comp.funda` historical SIC | `code/fetch_wrds_extracts_2026-10-13.py` |

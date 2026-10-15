@@ -172,7 +172,7 @@ A_["n_latent_buffer_6m"] = int(eq.latent_buffer.sum()); A_["n_latent_buffer_12m"
 latL = eq[eq.latent == 1]
 A_["latent_diagnostics"] = {"n": int(len(latL)), "share_blank_check_pair": round(float(latL.bc_pair.mean()), 4), "share_destination_also_latent": round(float(latL.dst_latent_at_tie.mean()), 4), "share_destination_also_latent_excl_blank_check": round(float(latL.loc[latL.bc_pair == 0, "dst_latent_at_tie"].mean()), 4), "destination_latent_share_among_clean_excl_blank_check": round(float(eq.loc[(eq.clean_L == 1) & (eq.bc_pair == 0), "dst_latent_at_tie"].mean()), 4),
                             "share_destination_files_within_quarter_of_origin": round(float(latL.cofile_quarter.mean()), 4), "share_same_sic2": round(float((latL.src.map(SIC2) == latL.dst.map(SIC2)).mean()), 4),
-                            "share_same_auditor_ever": round(float(latL.same_auditor_ever.mean()), 4), "share_formed_2020_2022": round(float((latL.by >= 2020).mean()), 4),
+                            "share_same_current_auditor": round(float(latL.same_current_auditor.mean()), 4), "share_formed_2020_2022": round(float((latL.by >= 2020).mean()), 4),
                             "origin_filing_months_after_tie_quartiles": [round(float(x), 1) for x in ((latL.latent_file - latL.birth).dt.days / 30.44).quantile([0.25, 0.5, 0.75]).values],
                             "destination_latent_share_among_clean": round(float(eq.loc[eq.clean_L == 1, "dst_latent_at_tie"].mean()), 4)}
 def _rates(df_): return {"n": int(len(df_)), "pre_onset_rate": round(float(df_.pre_onset_3y.mean()), 4), "post_onset_rate": round(float(df_.out_onset_3y.mean()), 4), "pre_file_rate": round(float(df_.pre_file_3y.mean()), 4), "post_file_rate": round(float(df_.out_file_3y.mean()), 4)}
@@ -533,14 +533,23 @@ D_["cinelli_hazlett"] = {}
 for name, dep, key, controls in (("row13_recent_onset_plus_prior", "restate_onset", "nexp5_lag1", ["nnew_lag1"] + ctrl + ["had_prior_restate"]),
                                  ("row16_inbound_recent_onset_plus_prior", "restate_onset", "nexp5_in_lag1", ["nnew_in_lag1", "nnew_out_lag1", "nexp5_out_lag1"] + ctrl + ["had_prior_restate"])):
     r = fe(dep, [key] + controls); t_ = float(r.tstats[key]); dof = float(r.df_resid)
-    r2_yz = float(r.tstats["had_prior_restate"]) ** 2 / (float(r.tstats["had_prior_restate"]) ** 2 + dof)     # partial R2 of own history for Y given D, X
-    rd = fe(key, controls); r2_dz = float(rd.tstats["had_prior_restate"]) ** 2 / (float(rd.tstats["had_prior_restate"]) ** 2 + float(rd.df_resid))   # partial R2 of own history for D given X
+    r2_yz_t = float(r.tstats["had_prior_restate"]) ** 2 / (float(r.tstats["had_prior_restate"]) ** 2 + dof)     # t-based approximation (cluster-robust t; kept for comparison)
+    rd = fe(key, controls); r2_dz_t = float(rd.tstats["had_prior_restate"]) ** 2 / (float(rd.tstats["had_prior_restate"]) ** 2 + float(rd.df_resid))
+    # exact partial R2 by Frisch-Waugh-Lovell: squared correlation of residuals after partialling out the other regressors and both fixed effects (2026-10-15, r12 referee B)
+    def _pr2(y, z, others):
+        ey = fe(y, others).resids; ez = fe(z, others).resids; j = ey.index.intersection(ez.index)
+        return float(np.corrcoef(np.asarray(ey.loc[j]).ravel(), np.asarray(ez.loc[j]).ravel())[0, 1] ** 2)
+    c_noz = [c for c in controls if c != "had_prior_restate"]
+    r2_yz = _pr2(dep, "had_prior_restate", [key] + c_noz)      # partial R2 of own history for Y given D, X, FE
+    r2_dz = _pr2(key, "had_prior_restate", c_noz)              # partial R2 of own history for D given X, FE
+    r2_dy = _pr2(dep, key, controls)                           # partial R2 of exposure for Y given X (incl. own history), FE
     sd_ratio = float(r.std_errors[key]) * np.sqrt(dof)
     bias_1x = sd_ratio * np.sqrt(r2_yz * r2_dz / (1 - r2_dz))
     D_["cinelli_hazlett"][name] = {"coef_pp": round(100 * float(r.params[key]), 3), "t": round(t_, 2), "df": int(dof), "RV_q1": round(rv(t_, dof), 4), "RV_q1_alpha05": round(rv(t_, dof, alpha=0.05), 4),
                                    "partial_R2_Y_ownhistory": round(r2_yz, 4), "partial_R2_D_ownhistory": round(r2_dz, 5), "bias_from_confounder_as_strong_as_own_history_pp": round(100 * bias_1x, 3),
                                    "bias_from_confounder_3x_own_history_pp": round(100 * sd_ratio * np.sqrt(min(9 * r2_yz, 0.999) * min(9 * r2_dz, 0.999) / (1 - min(9 * r2_dz, 0.999))), 3),
-                                   "partial_R2_of_exposure": round(t_ ** 2 / (t_ ** 2 + dof), 5)}
+                                   "partial_R2_of_exposure": round(r2_dy, 5), "partial_R2_of_exposure_tbased": round(t_ ** 2 / (t_ ** 2 + dof), 5),
+                                   "partial_R2_Y_ownhistory_tbased": round(r2_yz_t, 4), "partial_R2_D_ownhistory_tbased": round(r2_dz_t, 5), "partial_R2_method": "FWL residual correlation (t-based values kept for comparison)"}
 log(f"D2 CH: {D_['cinelli_hazlett']['row13_recent_onset_plus_prior']}")
 # D3 monotone-selection bound for recent exposure (onset): ATT <= post-level gap; under stationary selection ATT <= change
 pg_u = gap(eq, "out_onset_3y", "exposed5y"); pg = gap_yfe(eq, "out_onset_3y", "exposed5y")

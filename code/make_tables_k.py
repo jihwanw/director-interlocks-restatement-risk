@@ -200,7 +200,7 @@ w("tab_prepost_robust.tex", rf"""\begin{{table}}[htbp]\centering\renewcommand{{\
  & 3 years before & 3 years after & Difference (after $-$ before) \\
 Specification & gap, pp (SE) & gap, pp & pp (SE) \\\midrule
 \multicolumn{{4}}{{@{{}}p{{15.8cm}}@{{}}}}{{\emph{{Panel A. Additional controls in the stacked regression ($N={EW['n_rows']:,}$ unless stated)}}}} \\
-{fe_row("Filed, formation-year and year $\\times$ post fixed effects", EW["did_file_cohortFE"])}{fe_row("Misstated period begins, same fixed effects", EW["did_onset_cohortFE"])}{fe_row("Filed, formation-year effects $+$ shared-auditor indicator and its interaction with post", EW["did_file_cohortFE_sameauditor"])}Misstated period begins, interlocks formed by 2019 ($N={o19['n_rows']:,}$) & {g(o19['pre_onset'])} & {g(o19['post_onset'])} & {dd(o19['did_onset'])} \\
+{fe_row("Filed, formation-year and year $\\times$ post fixed effects", EW["did_file_cohortFE"])}{fe_row("Misstated period begins, formation-year and year $\\times$ post fixed effects", EW["did_onset_cohortFE"])}{fe_row("Filed, formation-year effects $+$ shared-auditor indicator and its interaction with post", EW["did_file_cohortFE_sameauditor"])}Misstated period begins, interlocks formed by 2019 ($N={o19['n_rows']:,}$) & {g(o19['pre_onset'])} & {g(o19['post_onset'])} & {dd(o19['did_onset'])} \\
 {fe_row("Filed, formation-year effects $+$ both firms' years in the feed (and their interactions with post)", EW["did_file_cohortFE_feedage"])}{fe_row("Misstated period begins, same controls", EW["did_onset_cohortFE_feedage"])}{fe_row("Filed, same $+$ destination log assets (destinations with Compustat assets in the formation year, $N=" + f"{EW['did_file_cohortFE_feedage_dstsize']['n_rows']:,}" + "$)", EW["did_file_cohortFE_feedage_dstsize"])}{fe_row("Misstated period begins, same controls", EW["did_onset_cohortFE_feedage_dstsize"])}{cs_rows}{fe_row("Filed, formation-year effects $+$ destination's earlier exposed and earlier inbound ties (logs, and interactions with post)", PX["did_file_cohortFE_priorstock"])}{fe_row("Misstated period begins, same controls", PX["did_onset_cohortFE_priorstock"])}\midrule
 \multicolumn{{4}}{{@{{}}p{{15.8cm}}@{{}}}}{{\emph{{Panel A$'$. The narrower exposure definitions with formation-year and year $\times$ post effects}}}} \\
 {fe_row("Recent exposure (origin restated within 5 years): filed", EW["did_file_cohortFE_recent"])}{fe_row("Recent exposure: misstated period begins", EW["did_onset_cohortFE_recent"])}{fe_row("Recent exposure: misstated period begins, formation-year $\\times$ destination-size-decile cells", EW["did_onset_cellFE_recent"])}{fe_row("Recent exposure: misstated period begins, $+$ feed ages and destination log assets (Compustat destinations)", EW["did_onset_cohortFE_recent_dstsize"])}{fe_row("Director present during the origin's misstatement: misstated period begins", EW["did_onset_cohortFE_present"])}{fe_row("Director present when the restatement was filed: misstated period begins", EW["did_onset_cohortFE_present_at_filing"])}{fe_row("Any exposure: misstated period begins, formation-year $\\times$ destination-size-decile cells", EW["did_onset_cellFE_any"])}\midrule
@@ -208,7 +208,7 @@ Severe exposure (origin filing flagged for fraud or SEC investigation): filed, u
 \bottomrule\end{{tabular}}}}\par\vspace{{3pt}}
 \begin{{minipage}}{{\textwidth}}\scriptsize \emph{{Notes.}} Formation-year effects are dummies for each formation year interacted with the post indicator. Because the median restatement is filed
 {R['median_years_file_minus_begin']:.1f} years after the misstated period begins, onsets late in the post-formation window of the most recent cohorts may not yet have been filed; the row restricted to
-interlocks formed by 2019 removes this truncation. {pc(EW['share_same_auditor_ever'])}\% of pairs share an auditor at some point. Exposed destinations have been in the feed longer than clean ones
+interlocks formed by 2019 removes this truncation. {pc(EW['share_same_current_auditor'])}\% of pairs share the auditor recorded as current for both registrants in the Audit Analytics auditor table (one auditor per registrant as of the extract, not an auditor history). Exposed destinations have been in the feed longer than clean ones
 ({OB['mean_dst_feed_age_exposed']:.1f} against {OB['mean_dst_feed_age_clean']:.1f} years at formation) and are larger (mean log assets {EW['mean_dst_size_exposed_clean'][0]:.2f} against {EW['mean_dst_size_exposed_clean'][1]:.2f} among Compustat-linked
 destinations); the rows with feed-age and size controls add these variables and their interactions with post, and the subsample of Table~\ref{{tab:prepost_robust2}} that requires both firms in the feed for three years removes pairs whose pre-formation window
 precedes either firm's entry into the feed. Standard errors in parentheses; stars as in Table~\ref{{tab:prepost}}.\end{{minipage}}\end{{table}}""")
@@ -308,6 +308,14 @@ Formation cohort & Exposed share & Gap before, pp & Gap after, pp & pp (SE) & $N
 exposed with formation year, two-way clustered): ${tr['pp_per_year']:+.3f}$ pp per year (SE {tr['se_pp']:.3f}). The 2004--2007 cohort is affected by the left-censoring of tenure spells described in
 Table~\ref{{tab:network}}; Panel A of Table~\ref{{tab:prepost_robust2}} repeats the pooled estimates without it. Onsets in the 2018--2022 cohort are affected by the filing lag (Table~\ref{{tab:prepost_robust}}, note). Other notes as in Table~\ref{{tab:prepost}}.\end{{minipage}}\end{{table}}""")
 
+# ── Figure A.1 (prepost by cohort) with a generated caption (2026-10-15, r12: pooled vs cohort-weighted change) ─────────
+_wsum = sum(v["n_rows"] for v in bc.values()); _wmean = sum(v["did"]["diff_in_gaps_pp"] * v["n_rows"] for v in bc.values()) / _wsum
+_first = next(iter(bc)); _firstd = bc[_first]["did"]["diff_in_gaps_pp"]
+w("fig_prepost.tex", rf"""\begin{{figure}}[htbp]\centering
+\includegraphics[width=0.85\textwidth]{{figures_k/figK1_prepost.pdf}}
+\caption{{The exposed--clean gap in destination restatement filings in the three years before and after interlock formation, by formation cohort and pooled (primary sample, appointment direction; unadjusted). $\Delta$ is the post-minus-pre difference from the stacked regression (pooled: Table~\ref{{tab:prepost}}, Panel A; by cohort: Table~\ref{{tab:cohort}}), with its standard error in parentheses. The pooled $\Delta$ of ${EW['did_file']['diff_in_gaps_pp']:+.1f}$ is not the pair-weighted mean of the cohort $\Delta$s (${_wmean:+.1f}$), because exposure shares and base rates differ across cohorts; Panel D of Table~\ref{{tab:prepost}} holds cohorts fixed. The {_first} bar ($\Delta={_firstd:+.1f}$) is affected by the left-censoring of tenure spells at the start of the feed (Table~\ref{{tab:network}}); Panel A of Table~\ref{{tab:prepost_robust2}} repeats the pooled estimates without that cohort.}}
+\label{{fig:prepost}}\end{{figure}}""")
+
 # ── T7 panel (rows = specifications) ───────────────────────────────────────────────────
 M = K2["models"]; S = K2["estimation_sample"]; SC = K2["between_firm_screening"]; SO = K2["between_firm_screening_out_of_sample"]
 specs = [("contemporaneous_file_no_turnover (old timing, old controls)", "(1$'$) Filed in $t$", "formed in $t$", "no"),
@@ -335,7 +343,7 @@ def tc(m, has):
     if has == "no" or m["turnover_coef"] is None: return "---"
     c = m["turnover_coef"]; return f"${100*c['coef']:+.3f}${star(c['t'])} ({c['t']:.2f})"
 rows = "".join(f"{lab} & {exp} & {has} & {cc(M[k])} & {tc(M[k], has)} & ${100*M[k]['oster']['beta_uncontrolled']:+.3f}$ & {M[k]['r2_within']:.5f} \\\\\n" for k, lab, exp, has in specs)
-xbc = (f" Rows (17)--(18) drop the {S.get('blank_check_firms_in_panel', 0):,} firms flagged as blank-check companies ($N={S.get('firm_years_excl_blank_check', 0):,}$ firm-years)." if "lag1_file_excl_blank_check" in M else "")
+xbc = (f" Rows (17)--(18) drop the {S.get('blank_check_firms_in_panel', 0):,} firms flagged as blank-check companies ($N={S.get('firm_years_excl_blank_check', 0):,}$ firm-years)." if S.get("blank_check_firms_in_panel", 0) > 0 and "lag1_file_excl_blank_check" in M else "")
 w("tab_panel.tex", rf"""\begin{{table}}[htbp]\centering\small\renewcommand{{\arraystretch}}{{0.95}}
 \caption{{Firm-year panel: exposure that precedes the outcome year. Two-way (firm and year) fixed effects, firm-clustered standard errors.}}
 \label{{tab:panel}}
@@ -599,7 +607,7 @@ Origin seat ended, with covariates & {hrr(b5['cox_origin_seat_ended_covariates']
 \quad origin firm continues to record board events / leaves the feed & {b5['cox_origin_seat_ended_firm_continues']['hr']:.2f} / {b5['cox_origin_seat_ended_firm_exit']['hr']:.2f} & {b5['cox_origin_seat_ended_firm_continues']['events']:,} / {b5['cox_origin_seat_ended_firm_exit']['events']:,} \\
 \bottomrule\end{{tabular}}\par\vspace{{3pt}}
 \begin{{minipage}}{{\textwidth}}\footnotesize \emph{{Notes.}} Interlocks formed 2004--2023 with an identifiable origin ($N={K5['n_edges']:,}$; {pc(K5['share_prior_5y'])}\% exposed, against {pc(K1['exposure_recent_5y']['share_exposed5y'])}\% in the 2004--2022 equal-window sample of Table~\ref{{tab:prepost}}; {pc(K5['share_ongoing'])}\% open at the horizon). The clock starts at formation; both seats are
-active at entry. Kaplan--Meier median duration {b5['km_prior']['median']} years for exposed against {b5['km_clean']['median']} for clean interlocks (the 4.5-year median of Table~\ref{{tab:sample}} is the observed duration including censored lifecycles). Covariates: the director's concurrent seats and tenure at the origin, a destination restatement before the tie,
+active at entry. Kaplan--Meier median duration {b5['km_prior']['median']} years for exposed against {b5['km_clean']['median']} for clean interlocks (the {K0['duration_years_median']:.1f}-year median of Table~\ref{{tab:sample}} is the observed duration including censored lifecycles). Covariates: the director's concurrent seats and tenure at the origin, a destination restatement before the tie,
 and both firms' years in the feed. Cause-specific hazards treat the other seat's ending as censoring ({K5['terminated_by']['both']:,} interlocks ending on the same day at both seats count as dissolutions but as neither cause); seat endings include resignations, retirements, dismissals, failed re-elections, deaths, and
 firm disappearance, so they describe where and when interlocks end, not decisions by appointing boards. Full results, the any-exposure definition and the proportional-hazards tests are in Appendix Tables~\ref{{tab:survival}} and \ref{{tab:survival2}}.\end{{minipage}}\end{{table}}""")
 
@@ -654,6 +662,14 @@ if AC:
         ac_rows += acrow("\\quad audit committee named", "audit_committee_named", ex) + acrow("\\quad other committees named", "committees_named_not_audit", ex) + acrow("\\quad no committee recorded", "no_committee_recorded", ex)
         if f"triple_{ex}_onset_vs_committees_not_audit" in AC: ac_rows += trow("\\quad difference, audit vs other committees$^{\\dagger}$", f"triple_{ex}_onset_vs_committees_not_audit")
         if f"triple_{ex}_onset_vs_all_other" in AC: ac_rows += trow("\\quad difference, audit vs all other appointments$^{\\dagger}$", f"triple_{ex}_onset_vs_all_other")
+    AC6 = KC["K1_pairs"].get("audit_committee_split") if KC else None
+    if AC6:
+        def trow6(lbl, key):
+            v = AC6[key]; return f"{lbl} & {v['n_rows']:,} & & & ${v['change_base_pp']:+.2f}$ ({v['se_base_pp']:.2f}) & ${v['triple_pp']:+.2f}$ ({v['se_triple_pp']:.2f}){star(v['t_triple'])} & \\\\\n"
+        ac_rows += "\\multicolumn{7}{@{}p{15.8cm}@{}}{\\emph{Alternative definition (six-board cap, first-and-last-name key, no registrant exclusions), for comparison}} \\\\\n"
+        for ex, exl in (("exposed", "any prior restatement"), ("exposed5y", "restatement within 5 years"), ("exposed_served", "director present")):
+            if f"triple_{ex}_onset_vs_committees_not_audit" in AC6: ac_rows += trow6(f"\\quad {exl}: audit vs other committees$^{{\\dagger}}$", f"triple_{ex}_onset_vs_committees_not_audit")
+            if f"triple_{ex}_onset_vs_all_other" in AC6: ac_rows += trow6(f"\\quad {exl}: audit vs all other appointments$^{{\\dagger}}$", f"triple_{ex}_onset_vs_all_other")
     w("tab_auditcomm.tex", rf"""\begin{{table}}[htbp]\centering\footnotesize\setlength{{\tabcolsep}}{{3pt}}
 \caption{{Audit-committee assignment of the appointee: the exposed--clean gap in destination misstated-period onsets before and after formation, by what the appointing event's committee text records.}}
 \label{{tab:auditcomm}}

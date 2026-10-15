@@ -432,10 +432,10 @@
         "t": -3.8,
         "controls": [
           "formation-year FE + formation-year x post FE",
-          "same_auditor_ever (+ x post)"
+          "same_current_auditor (+ x post)"
         ]
       },
-      "share_same_auditor_ever": 0.2,
+      "share_same_current_auditor": 0.2,
       "director_clustered": {
         "pre_file": {
           "diff_pp": 4.393,
@@ -6832,6 +6832,47 @@
           }
         }
       },
+      "lag1_onset_plus_prior": {
+        "dep": "restate_onset",
+        "exposure": "nexp_lag1",
+        "controls": [
+          "nnew_lag1",
+          "degree_lag",
+          "betweenness_lag",
+          "size",
+          "leverage",
+          "roa",
+          "had_prior_restate"
+        ],
+        "exposure_coef": {
+          "coef": 0.00324,
+          "se": 0.002507,
+          "t": 1.29,
+          "p": 0.19618
+        },
+        "turnover_coef": {
+          "coef": 0.000245,
+          "se": 0.001864,
+          "t": 0.13,
+          "p": 0.89555
+        },
+        "r2_within": 0.01221,
+        "n": 133231,
+        "oster": {
+          "beta_uncontrolled": 0.002227,
+          "R2_uncontrolled": 5e-05,
+          "beta_controlled": 0.00324,
+          "R2_controlled": 0.01221,
+          "Rmax_1.3x": {
+            "beta_star_delta1": 0.003546,
+            "delta_for_beta0": -10.615
+          },
+          "Rmax_2.0x": {
+            "beta_star_delta1": 0.004258,
+            "delta_for_beta0": -3.185
+          }
+        }
+      },
       "boy_stock_file": {
         "dep": "restate_file",
         "exposure": "nexp_boy",
@@ -7071,6 +7112,47 @@
           "Rmax_2.0x": {
             "beta_star_delta1": 0.007886,
             "delta_for_beta0": -1.063
+          }
+        }
+      },
+      "boy_stock_onset_exposed5y_plus_prior": {
+        "dep": "restate_onset",
+        "exposure": "nexp5_boy",
+        "controls": [
+          "nalive_boy",
+          "degree_lag",
+          "betweenness_lag",
+          "size",
+          "leverage",
+          "roa",
+          "had_prior_restate"
+        ],
+        "exposure_coef": {
+          "coef": 0.004971,
+          "se": 0.001541,
+          "t": 3.23,
+          "p": 0.00126
+        },
+        "turnover_coef": {
+          "coef": -0.001445,
+          "se": 0.001197,
+          "t": -1.21,
+          "p": 0.22725
+        },
+        "r2_within": 0.01224,
+        "n": 133231,
+        "oster": {
+          "beta_uncontrolled": 0.000241,
+          "R2_uncontrolled": 0.0,
+          "beta_controlled": 0.004971,
+          "R2_controlled": 0.01224,
+          "Rmax_1.3x": {
+            "beta_star_delta1": 0.00639,
+            "delta_for_beta0": -3.503
+          },
+          "Rmax_2.0x": {
+            "beta_star_delta1": 0.009701,
+            "delta_for_beta0": -1.051
           }
         }
       },

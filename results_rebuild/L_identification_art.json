@@ -49,7 +49,7 @@
    "destination_latent_share_among_clean_excl_blank_check": 0.1627,
    "share_destination_files_within_quarter_of_origin": 0.1019,
    "share_same_sic2": 0.2328,
-   "share_same_auditor_ever": 0.1642,
+   "share_same_current_auditor": 0.1642,
    "share_formed_2020_2022": 0.158,
    "origin_filing_months_after_tie_quartiles": [
     1.8,
@@ -3323,11 +3323,15 @@
     "df": 119201,
     "RV_q1": 0.0068,
     "RV_q1_alpha05": 0.0011,
-    "partial_R2_Y_ownhistory": 0.0058,
-    "partial_R2_D_ownhistory": 0.0005,
-    "bias_from_confounder_as_strong_as_own_history_pp": 0.144,
-    "bias_from_confounder_3x_own_history_pp": 1.3,
-    "partial_R2_of_exposure": 5e-05
+    "partial_R2_Y_ownhistory": 0.0105,
+    "partial_R2_D_ownhistory": 0.00054,
+    "bias_from_confounder_as_strong_as_own_history_pp": 0.199,
+    "bias_from_confounder_3x_own_history_pp": 1.797,
+    "partial_R2_of_exposure": 7e-05,
+    "partial_R2_of_exposure_tbased": 5e-05,
+    "partial_R2_Y_ownhistory_tbased": 0.0058,
+    "partial_R2_D_ownhistory_tbased": 0.0005,
+    "partial_R2_method": "FWL residual correlation (t-based values kept for comparison)"
    },
    "row16_inbound_recent_onset_plus_prior": {
     "coef_pp": 0.665,
@@ -3335,11 +3339,15 @@
     "df": 119199,
     "RV_q1": 0.0056,
     "RV_q1_alpha05": 0.0,
-    "partial_R2_Y_ownhistory": 0.0058,
-    "partial_R2_D_ownhistory": 0.00013,
-    "bias_from_confounder_as_strong_as_own_history_pp": 0.104,
-    "bias_from_confounder_3x_own_history_pp": 0.938,
-    "partial_R2_of_exposure": 3e-05
+    "partial_R2_Y_ownhistory": 0.0105,
+    "partial_R2_D_ownhistory": 0.00014,
+    "bias_from_confounder_as_strong_as_own_history_pp": 0.146,
+    "bias_from_confounder_3x_own_history_pp": 1.315,
+    "partial_R2_of_exposure": 5e-05,
+    "partial_R2_of_exposure_tbased": 3e-05,
+    "partial_R2_Y_ownhistory_tbased": 0.0058,
+    "partial_R2_D_ownhistory_tbased": 0.00013,
+    "partial_R2_method": "FWL residual correlation (t-based values kept for comparison)"
    }
   },
   "monotone_selection_bound_recent_onset": {
