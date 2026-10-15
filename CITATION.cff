@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the manuscript and the archived release."
+title: "Director Interlocks and Restatement Risk: Appointment, Disclosure, and Departure"
+type: software
+authors:
+  - family-names: Kim
+    given-names: Nari
+    orcid: "https://orcid.org/0009-0008-9667-622X"
+    affiliation: "Korea Institute of Procurement, Seoul, Republic of Korea"
+  - family-names: Woo
+    given-names: Jihwan
+    orcid: "https://orcid.org/0000-0002-0424-0242"
+    affiliation: "Amazon Web Services, Seoul, Republic of Korea"
+license: MIT
+repository-code: "https://github.com/jihwanw/director-interlocks-restatement-risk"
+doi: 10.5281/zenodo.18872816

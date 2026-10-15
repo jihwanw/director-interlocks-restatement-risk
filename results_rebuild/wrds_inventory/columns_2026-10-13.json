@@ -1,0 +1,2912 @@
+{
+ "audit.feed17_director_and_officer_chan": [
+  {
+   "name": "do_off_pers_key",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "title_report",
+   "type": "VARCHAR(1095)"
+  },
+  {
+   "name": "is_c_level",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "is_bdmem_pers",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "is_legal",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "is_scitech_pers",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "is_admin_pers",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "is_fin_pers",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "is_op_pers",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "is_cont",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "is_chair",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "is_chair_other",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "is_secretary",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "is_coo",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "is_president",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "is_ceo",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "is_cfo",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "is_exec_vp",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "title_standard",
+   "type": "VARCHAR(200)"
+  },
+  {
+   "name": "comm_report",
+   "type": "VARCHAR(100)"
+  },
+  {
+   "name": "comm_standard",
+   "type": "VARCHAR(100)"
+  },
+  {
+   "name": "interim",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "do_off_remains",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "retain_other_pos",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "eff_date_unspec",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "eff_date_next_meet",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "action",
+   "type": "VARCHAR(250)"
+  },
+  {
+   "name": "reasons",
+   "type": "VARCHAR(250)"
+  },
+  {
+   "name": "eff_date",
+   "type": "DATE"
+  },
+  {
+   "name": "employ_edu_text",
+   "type": "VARCHAR(1)"
+  },
+  {
+   "name": "first_name",
+   "type": "VARCHAR(50)"
+  },
+  {
+   "name": "middle_name",
+   "type": "VARCHAR(50)"
+  },
+  {
+   "name": "last_name",
+   "type": "VARCHAR(50)"
+  },
+  {
+   "name": "suffix",
+   "type": "VARCHAR(50)"
+  },
+  {
+   "name": "name_suffix",
+   "type": "VARCHAR(50)"
+  },
+  {
+   "name": "degrees_suffix",
+   "type": "VARCHAR(50)"
+  },
+  {
+   "name": "do_change_key",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "subsid_name",
+   "type": "VARCHAR(500)"
+  },
+  {
+   "name": "do_change_text",
+   "type": "VARCHAR(32760)"
+  },
+  {
+   "name": "ftp_file_fkey",
+   "type": "VARCHAR(80)"
+  },
+  {
+   "name": "form_fkey",
+   "type": "VARCHAR(20)"
+  },
+  {
+   "name": "file_date",
+   "type": "DATE"
+  },
+  {
+   "name": "file_accepted",
+   "type": "VARCHAR(20)"
+  },
+  {
+   "name": "file_size",
+   "type": "VARCHAR(10)"
+  },
+  {
+   "name": "http_name_html",
+   "type": "VARCHAR(100)"
+  },
+  {
+   "name": "http_name_text",
+   "type": "VARCHAR(100)"
+  },
+  {
+   "name": "company_fkey",
+   "type": "VARCHAR(10)"
+  },
+  {
+   "name": "matchqu_price_date",
+   "type": "DATE"
+  },
+  {
+   "name": "matchqu_price_close",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_tso_date",
+   "type": "DATE"
+  },
+  {
+   "name": "matchqu_tso",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_tso_markcap",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_date_qtr",
+   "type": "DATE"
+  },
+  {
+   "name": "matchqu_date_ttm",
+   "type": "DATE"
+  },
+  {
+   "name": "matchqu_filing_code_qtr",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "matchqu_filing_code_ttm",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "matchqu_annual_quindic",
+   "type": "VARCHAR(1)"
+  },
+  {
+   "name": "matchqu_balsh_book_val",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_balsh_assets",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_balsh_cash_equivs",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_rev_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_rev_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_netinc_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_netinc_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_extraitm_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_extraitm_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_ebitda_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_ebitda_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_eff_accchange_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_eff_accchange_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_op_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_op_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_inv_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_inv_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_fin_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_fin_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_change_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_change_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_price_date",
+   "type": "DATE"
+  },
+  {
+   "name": "priorqu_price_close",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_tso_date",
+   "type": "DATE"
+  },
+  {
+   "name": "priorqu_tso",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_tso_markcap",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_date_qtr",
+   "type": "DATE"
+  },
+  {
+   "name": "priorqu_date_ttm",
+   "type": "DATE"
+  },
+  {
+   "name": "priorqu_filing_code_qtr",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "priorqu_filing_code_ttm",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "priorqu_annual_quindic",
+   "type": "VARCHAR(1)"
+  },
+  {
+   "name": "priorqu_balsh_book_val",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_balsh_assets",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_balsh_cash_equivs",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_rev_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_rev_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_netinc_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_netinc_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_extraitm_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_extraitm_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_ebitda_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_ebitda_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_eff_accchange_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_eff_accchange_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_op_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_op_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_inv_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_inv_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_fin_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_fin_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_change_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_change_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_price_date",
+   "type": "DATE"
+  },
+  {
+   "name": "matchfy_price_close",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_tso_date",
+   "type": "DATE"
+  },
+  {
+   "name": "matchfy_tso",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_tso_markcap",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_date_qtr",
+   "type": "DATE"
+  },
+  {
+   "name": "matchfy_date_ttm",
+   "type": "DATE"
+  },
+  {
+   "name": "matchfy_filing_code_qtr",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "matchfy_filing_code_ttm",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "matchfy_annual_quindic",
+   "type": "VARCHAR(1)"
+  },
+  {
+   "name": "matchfy_balsh_book_val",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_balsh_assets",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_balsh_cash_equivs",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_rev_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_rev_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_netinc_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_netinc_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_extraitm_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_extraitm_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_ebitda_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_ebitda_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_eff_accchange_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_eff_accchange_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_op_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_op_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_inv_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_inv_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_fin_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_fin_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_change_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_change_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_price_date",
+   "type": "DATE"
+  },
+  {
+   "name": "priorfy_price_close",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_tso_date",
+   "type": "DATE"
+  },
+  {
+   "name": "priorfy_tso",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_tso_markcap",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_date_qtr",
+   "type": "DATE"
+  },
+  {
+   "name": "priorfy_date_ttm",
+   "type": "DATE"
+  },
+  {
+   "name": "priorfy_filing_code_qtr",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "priorfy_filing_code_ttm",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "priorfy_annual_quindic",
+   "type": "VARCHAR(1)"
+  },
+  {
+   "name": "priorfy_balsh_book_val",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_balsh_assets",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_balsh_cash_equivs",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_rev_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_rev_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_netinc_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_netinc_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_extraitm_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_extraitm_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_ebitda_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_ebitda_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_eff_accchange_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_eff_accchange_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_op_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_op_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_inv_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_inv_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_fin_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_fin_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_change_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_change_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_sumfees_fy_end",
+   "type": "DATE"
+  },
+  {
+   "name": "matchfy_sumfees_fy",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_sum_audfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_sum_nonaud",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_sum_benfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_sum_itfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_sum_taxfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_sum_audrel_fees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_sum_other",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_sum_total",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_sumfees_fy_end",
+   "type": "DATE"
+  },
+  {
+   "name": "priorfy_sumfees_fy",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_sum_audfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_sum_nonaud",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_sum_benfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_sum_itfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_sum_taxfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_sum_audrel_fees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_sum_other",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_sum_total",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestfy_feesfye",
+   "type": "DATE"
+  },
+  {
+   "name": "closestfy_sumevent_key",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestfy_sumfees_fy",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestfy_sum_audfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestfy_sum_audrel_fees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestfy_sum_benfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestfy_sum_comp_key",
+   "type": "VARCHAR(10)"
+  },
+  {
+   "name": "closestfy_sum_itfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestfy_sum_nonaud",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestfy_sum_other",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestfy_sum_taxfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestfy_sum_total",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_annual_quindic",
+   "type": "VARCHAR(1)"
+  },
+  {
+   "name": "closestqu_balsh_assets",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_balsh_book_val",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_balsh_cash_equivs",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_change_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_change_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_fin_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_fin_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_inv_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_inv_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_op_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_op_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_date_qtr",
+   "type": "DATE"
+  },
+  {
+   "name": "closestqu_date_ttm",
+   "type": "DATE"
+  },
+  {
+   "name": "closestqu_eff_accchange_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_eff_accchange_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_filing_code_qtr",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "closestqu_filing_code_ttm",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "closestqu_incmst_ebitda_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_incmst_ebitda_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_incmst_extraitm_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_incmst_extraitm_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_incmst_netinc_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_incmst_netinc_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_incmst_rev_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_incmst_rev_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_price_close",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_price_date",
+   "type": "DATE"
+  },
+  {
+   "name": "closestqu_tso",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_tso_date",
+   "type": "DATE"
+  },
+  {
+   "name": "closestqu_tso_markcap",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "eventdate_aud_fkey",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "eventdate_aud_name",
+   "type": "VARCHAR(100)"
+  },
+  {
+   "name": "is_effective_date_estimate",
+   "type": "DOUBLE PRECISION"
+  }
+ ],
+ "audit.feed11_sox_404_internal_controls": [
+  {
+   "name": "is_nth_restate",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "ic_op_fkey",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "ic_op_type",
+   "type": "VARCHAR(1)"
+  },
+  {
+   "name": "auditor_fkey",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "auditor_agrees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "combined_ic_op",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "ic_is_effective",
+   "type": "VARCHAR(2)"
+  },
+  {
+   "name": "fye_ic_op",
+   "type": "DATE"
+  },
+  {
+   "name": "sig_date_ic_op",
+   "type": "DATE"
+  },
+  {
+   "name": "aud_city",
+   "type": "VARCHAR(50)"
+  },
+  {
+   "name": "aud_state",
+   "type": "VARCHAR(2)"
+  },
+  {
+   "name": "aud_state_name",
+   "type": "VARCHAR(150)"
+  },
+  {
+   "name": "aud_state_reg",
+   "type": "VARCHAR(100)"
+  },
+  {
+   "name": "count_weak",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "op_aud_name",
+   "type": "VARCHAR(100)"
+  },
+  {
+   "name": "op_aud_pcoab",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "audit_fees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "non_audit_fees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "benefits_fees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "it_fees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "tax_fees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "audit_related_fees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "other_fees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "total_fees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "currency_code_fkey",
+   "type": "VARCHAR(3)"
+  },
+  {
+   "name": "restatement",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "noteff_acc_rule",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "noteff_acc_reas_keys",
+   "type": "VARCHAR(50)"
+  },
+  {
+   "name": "noteff_acc_reas_phr",
+   "type": "VARCHAR(980)"
+  },
+  {
+   "name": "exemption",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "exe_reas_keys",
+   "type": "VARCHAR(50)"
+  },
+  {
+   "name": "exe_reas_phr",
+   "type": "VARCHAR(186)"
+  },
+  {
+   "name": "noteff_fin_fraud",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "noteff_finfraud_keys",
+   "type": "VARCHAR(50)"
+  },
+  {
+   "name": "noteff_finfraud_phr",
+   "type": "VARCHAR(500)"
+  },
+  {
+   "name": "notefferrors",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "noteff_reas_keys",
+   "type": "VARCHAR(50)"
+  },
+  {
+   "name": "noteff_reas_phr",
+   "type": "VARCHAR(120)"
+  },
+  {
+   "name": "noteff_other",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "noteff_other_reas_keys",
+   "type": "VARCHAR(50)"
+  },
+  {
+   "name": "noteff_other_reas_phr",
+   "type": "VARCHAR(815)"
+  },
+  {
+   "name": "fy_ic_op",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "ftp_file_fkey",
+   "type": "VARCHAR(80)"
+  },
+  {
+   "name": "form_fkey",
+   "type": "VARCHAR(20)"
+  },
+  {
+   "name": "file_date",
+   "type": "DATE"
+  },
+  {
+   "name": "file_accepted",
+   "type": "VARCHAR(20)"
+  },
+  {
+   "name": "file_size",
+   "type": "VARCHAR(10)"
+  },
+  {
+   "name": "http_name_html",
+   "type": "VARCHAR(100)"
+  },
+  {
+   "name": "http_name_text",
+   "type": "VARCHAR(100)"
+  },
+  {
+   "name": "company_fkey",
+   "type": "VARCHAR(10)"
+  },
+  {
+   "name": "matchqu_price_date",
+   "type": "DATE"
+  },
+  {
+   "name": "matchqu_price_close",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_tso_date",
+   "type": "DATE"
+  },
+  {
+   "name": "matchqu_tso",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_tso_markcap",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_date_qtr",
+   "type": "DATE"
+  },
+  {
+   "name": "matchqu_date_ttm",
+   "type": "DATE"
+  },
+  {
+   "name": "matchqu_filing_code_qtr",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "matchqu_filing_code_ttm",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "matchqu_annual_quindic",
+   "type": "VARCHAR(1)"
+  },
+  {
+   "name": "matchqu_balsh_book_val",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_balsh_assets",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_balsh_cash_equivs",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_rev_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_rev_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_netinc_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_netinc_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_extraitm_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_extraitm_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_ebitda_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_ebitda_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_eff_accchange_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_eff_accchange_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_op_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_op_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_inv_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_inv_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_fin_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_fin_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_change_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_change_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_price_date",
+   "type": "DATE"
+  },
+  {
+   "name": "priorqu_price_close",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_tso_date",
+   "type": "DATE"
+  },
+  {
+   "name": "priorqu_tso",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_tso_markcap",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_date_qtr",
+   "type": "DATE"
+  },
+  {
+   "name": "priorqu_date_ttm",
+   "type": "DATE"
+  },
+  {
+   "name": "priorqu_filing_code_qtr",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "priorqu_filing_code_ttm",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "priorqu_annual_quindic",
+   "type": "VARCHAR(1)"
+  },
+  {
+   "name": "priorqu_balsh_book_val",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_balsh_assets",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_balsh_cash_equivs",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_rev_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_rev_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_netinc_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_netinc_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_extraitm_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_extraitm_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_ebitda_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_ebitda_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_eff_accchange_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_eff_accchange_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_op_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_op_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_inv_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_inv_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_fin_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_fin_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_change_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_change_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_price_date",
+   "type": "DATE"
+  },
+  {
+   "name": "matchfy_price_close",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_tso_date",
+   "type": "DATE"
+  },
+  {
+   "name": "matchfy_tso",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_tso_markcap",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_date_qtr",
+   "type": "DATE"
+  },
+  {
+   "name": "matchfy_date_ttm",
+   "type": "DATE"
+  },
+  {
+   "name": "matchfy_filing_code_qtr",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "matchfy_filing_code_ttm",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "matchfy_annual_quindic",
+   "type": "VARCHAR(1)"
+  },
+  {
+   "name": "matchfy_balsh_book_val",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_balsh_assets",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_balsh_cash_equivs",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_rev_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_rev_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_netinc_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_netinc_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_extraitm_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_extraitm_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_ebitda_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_ebitda_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_eff_accchange_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_eff_accchange_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_op_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_op_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_inv_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_inv_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_fin_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_fin_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_change_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_change_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_price_date",
+   "type": "DATE"
+  },
+  {
+   "name": "priorfy_price_close",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_tso_date",
+   "type": "DATE"
+  },
+  {
+   "name": "priorfy_tso",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_tso_markcap",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_date_qtr",
+   "type": "DATE"
+  },
+  {
+   "name": "priorfy_date_ttm",
+   "type": "DATE"
+  },
+  {
+   "name": "priorfy_filing_code_qtr",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "priorfy_filing_code_ttm",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "priorfy_annual_quindic",
+   "type": "VARCHAR(1)"
+  },
+  {
+   "name": "priorfy_balsh_book_val",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_balsh_assets",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_balsh_cash_equivs",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_rev_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_rev_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_netinc_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_netinc_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_extraitm_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_extraitm_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_ebitda_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_ebitda_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_eff_accchange_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_eff_accchange_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_op_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_op_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_inv_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_inv_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_fin_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_fin_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_change_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_change_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_sumfees_fy_end",
+   "type": "DATE"
+  },
+  {
+   "name": "matchfy_sumfees_fy",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_sum_audfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_sum_nonaud",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_sum_benfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_sum_itfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_sum_taxfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_sum_audrel_fees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_sum_other",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_sum_total",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_sumfees_fy_end",
+   "type": "DATE"
+  },
+  {
+   "name": "priorfy_sumfees_fy",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_sum_audfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_sum_nonaud",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_sum_benfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_sum_itfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_sum_taxfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_sum_audrel_fees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_sum_other",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_sum_total",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "ic_text",
+   "type": "VARCHAR(32760)"
+  },
+  {
+   "name": "closestfy_feesfye",
+   "type": "DATE"
+  },
+  {
+   "name": "closestfy_sumevent_key",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestfy_sumfees_fy",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestfy_sum_audfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestfy_sum_audrel_fees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestfy_sum_benfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestfy_sum_comp_key",
+   "type": "VARCHAR(10)"
+  },
+  {
+   "name": "closestfy_sum_itfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestfy_sum_nonaud",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestfy_sum_other",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestfy_sum_taxfees",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestfy_sum_total",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_annual_quindic",
+   "type": "VARCHAR(1)"
+  },
+  {
+   "name": "closestqu_balsh_assets",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_balsh_book_val",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_balsh_cash_equivs",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_change_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_change_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_fin_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_fin_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_inv_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_inv_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_op_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_op_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_date_qtr",
+   "type": "DATE"
+  },
+  {
+   "name": "closestqu_date_ttm",
+   "type": "DATE"
+  },
+  {
+   "name": "closestqu_eff_accchange_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_eff_accchange_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_filing_code_qtr",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "closestqu_filing_code_ttm",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "closestqu_incmst_ebitda_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_incmst_ebitda_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_incmst_extraitm_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_incmst_extraitm_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_incmst_netinc_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_incmst_netinc_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_incmst_rev_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_incmst_rev_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_price_close",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_price_date",
+   "type": "DATE"
+  },
+  {
+   "name": "closestqu_tso",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_tso_date",
+   "type": "DATE"
+  },
+  {
+   "name": "closestqu_tso_markcap",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "eventdate_aud_fkey",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "eventdate_aud_name",
+   "type": "VARCHAR(100)"
+  }
+ ],
+ "audit.feed39_financial_restatements": [
+  {
+   "name": "restatement_notification_key",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "restatement_type_fkey",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "restatement_type",
+   "type": "VARCHAR(61)"
+  },
+  {
+   "name": "currency_code_fkey",
+   "type": "VARCHAR(3)"
+  },
+  {
+   "name": "res_accounting",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "res_accounting_res_cat_fke_lis",
+   "type": "VARCHAR(255)"
+  },
+  {
+   "name": "res_accounting_res_cat_tit_lis",
+   "type": "VARCHAR(1067)"
+  },
+  {
+   "name": "res_fraud",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "res_fraud_res_cat_fke_lis",
+   "type": "VARCHAR(255)"
+  },
+  {
+   "name": "res_fraud_res_cat_tit_lis",
+   "type": "VARCHAR(748)"
+  },
+  {
+   "name": "res_clerical_errors",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "res_clerical_err_res_cat_fke_lis",
+   "type": "VARCHAR(255)"
+  },
+  {
+   "name": "res_clerical_err_res_cat_tit_lis",
+   "type": "VARCHAR(518)"
+  },
+  {
+   "name": "res_adverse",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "res_improves",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "quarterly_restated_only",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "res_begin_date",
+   "type": "DATE"
+  },
+  {
+   "name": "res_begin_date_num",
+   "type": "DATE"
+  },
+  {
+   "name": "res_begin_auditor_fkey",
+   "type": "VARCHAR(30)"
+  },
+  {
+   "name": "res_begin_auditor_name",
+   "type": "VARCHAR(200)"
+  },
+  {
+   "name": "res_begin_aud_pcoab_reg_num",
+   "type": "VARCHAR(10)"
+  },
+  {
+   "name": "res_begin_aud_aff_fkey",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "res_begin_aud_aff_name",
+   "type": "VARCHAR(100)"
+  },
+  {
+   "name": "res_begin_aud_aff_pcaob_reg_num",
+   "type": "VARCHAR(10)"
+  },
+  {
+   "name": "res_begin_aud_aff_state_code",
+   "type": "VARCHAR(2)"
+  },
+  {
+   "name": "res_begin_aud_aff_state_name",
+   "type": "VARCHAR(150)"
+  },
+  {
+   "name": "res_begin_aud_aff_region",
+   "type": "VARCHAR(100)"
+  },
+  {
+   "name": "res_end_date",
+   "type": "DATE"
+  },
+  {
+   "name": "res_end_date_num",
+   "type": "DATE"
+  },
+  {
+   "name": "res_end_auditor_fkey",
+   "type": "VARCHAR(30)"
+  },
+  {
+   "name": "res_end_auditor_name",
+   "type": "VARCHAR(200)"
+  },
+  {
+   "name": "res_end_aud_pcaob_reg_num",
+   "type": "VARCHAR(10)"
+  },
+  {
+   "name": "res_end_aud_aff_fkey",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "res_end_aud_aff_name",
+   "type": "VARCHAR(100)"
+  },
+  {
+   "name": "res_end_aud_aff_pcaob_reg_num",
+   "type": "VARCHAR(10)"
+  },
+  {
+   "name": "res_end_aud_aff_state_code",
+   "type": "VARCHAR(2)"
+  },
+  {
+   "name": "res_end_aud_aff_state_name",
+   "type": "VARCHAR(150)"
+  },
+  {
+   "name": "res_end_aud_aff_region",
+   "type": "VARCHAR(100)"
+  },
+  {
+   "name": "restatement_period_aud_fke",
+   "type": "VARCHAR(100)"
+  },
+  {
+   "name": "restatement_period_aud_nam",
+   "type": "VARCHAR(329)"
+  },
+  {
+   "name": "res_period_aud_pcaob_reg_nums",
+   "type": "VARCHAR(255)"
+  },
+  {
+   "name": "res_period_opi_sig_aud_fke_lis",
+   "type": "VARCHAR(255)"
+  },
+  {
+   "name": "res_period_opi_sig_aud_nam_lis",
+   "type": "VARCHAR(255)"
+  },
+  {
+   "name": "res_p_o_sig_a_pcaob_reg_num_lis",
+   "type": "VARCHAR(255)"
+  },
+  {
+   "name": "res_period_opi_fye_aud_fke_lis",
+   "type": "VARCHAR(255)"
+  },
+  {
+   "name": "res_period_opi_fye_aud_nam_lis",
+   "type": "VARCHAR(255)"
+  },
+  {
+   "name": "res_p_o_fye_a_pcaob_reg_num_lis",
+   "type": "VARCHAR(255)"
+  },
+  {
+   "name": "res_auditor_letter",
+   "type": "VARCHAR(2)"
+  },
+  {
+   "name": "res_other",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "res_other_res_cat_fke_lis",
+   "type": "VARCHAR(255)"
+  },
+  {
+   "name": "res_other_res_cat_tit_lis",
+   "type": "VARCHAR(227)"
+  },
+  {
+   "name": "res_sec_investigation",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "res_board_approval",
+   "type": "VARCHAR(2)"
+  },
+  {
+   "name": "res_regulatory_investigation",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "disclosure_text",
+   "type": "VARCHAR(32760)"
+  },
+  {
+   "name": "general_type",
+   "type": "VARCHAR(1)"
+  },
+  {
+   "name": "initial_cum_net_income",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "initial_cum_net_income_usd",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "restated_cum_net_income",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "restated_cum_net_income_usd",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "change_cum_net_income",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "change_cum_net_income_usd",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "initial_cum_tot_sto_equ",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "initial_cum_tot_sto_equ_usd",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "restated_cum_tot_sto_equ",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "restated_cum_tot_sto_equ_usd",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "change_cum_tot_sto_equ",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "change_cum_tot_sto_equ_usd",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "file_date_num",
+   "type": "DATE"
+  },
+  {
+   "name": "file_date_auditor_fkey",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "file_date_auditor_name",
+   "type": "VARCHAR(100)"
+  },
+  {
+   "name": "file_date_aud_pcaob_reg_num",
+   "type": "VARCHAR(10)"
+  },
+  {
+   "name": "file_date_aud_aff_fkey",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "file_date_aud_aff_name",
+   "type": "VARCHAR(100)"
+  },
+  {
+   "name": "file_date_aud_aff_pcaob_reg_num",
+   "type": "VARCHAR(10)"
+  },
+  {
+   "name": "file_date_aud_aff_state_code",
+   "type": "VARCHAR(2)"
+  },
+  {
+   "name": "file_date_aud_aff_state_name",
+   "type": "VARCHAR(150)"
+  },
+  {
+   "name": "file_date_aud_aff_region",
+   "type": "VARCHAR(100)"
+  },
+  {
+   "name": "ftp_file_name_fkey_of_8k_402",
+   "type": "VARCHAR(80)"
+  },
+  {
+   "name": "http_file_name_html_of_8k_402",
+   "type": "VARCHAR(100)"
+  },
+  {
+   "name": "form_fkey_of_8k_402",
+   "type": "VARCHAR(20)"
+  },
+  {
+   "name": "date_of_8k_402",
+   "type": "DATE"
+  },
+  {
+   "name": "current_date_num",
+   "type": "DATE"
+  },
+  {
+   "name": "current_auditor_fkey",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "current_auditor_pcaob_reg_num",
+   "type": "VARCHAR(10)"
+  },
+  {
+   "name": "ftp_file_name_fkey",
+   "type": "VARCHAR(80)"
+  },
+  {
+   "name": "form_fkey",
+   "type": "VARCHAR(20)"
+  },
+  {
+   "name": "file_date",
+   "type": "DATE"
+  },
+  {
+   "name": "file_accepted",
+   "type": "VARCHAR(20)"
+  },
+  {
+   "name": "file_size",
+   "type": "VARCHAR(10)"
+  },
+  {
+   "name": "http_file_name_html",
+   "type": "VARCHAR(100)"
+  },
+  {
+   "name": "http_file_name_text",
+   "type": "VARCHAR(100)"
+  },
+  {
+   "name": "company_fkey",
+   "type": "VARCHAR(10)"
+  },
+  {
+   "name": "event_date",
+   "type": "DATE"
+  },
+  {
+   "name": "matchqu_price_date",
+   "type": "DATE"
+  },
+  {
+   "name": "matchqu_price_close",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_price_datevol",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_tso_date",
+   "type": "DATE"
+  },
+  {
+   "name": "matchqu_tso",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_tso_markcap",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_date_qtr",
+   "type": "DATE"
+  },
+  {
+   "name": "matchqu_date_ttm",
+   "type": "DATE"
+  },
+  {
+   "name": "matchqu_filing_code_qtr",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "matchqu_filing_code_ttm",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "matchqu_annual_quindic",
+   "type": "VARCHAR(1)"
+  },
+  {
+   "name": "matchqu_balsh_book_val",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_balsh_assets",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_balsh_cash_equivs",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_rev_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_rev_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_netinc_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_netinc_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_extraitm_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_extraitm_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_ebitda_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_incmst_ebitda_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_eff_accchange_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_eff_accchange_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_op_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_op_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_inv_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_inv_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_fin_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_fin_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_change_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchqu_cshflst_change_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_price_date",
+   "type": "DATE"
+  },
+  {
+   "name": "priorqu_price_close",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_tso_date",
+   "type": "DATE"
+  },
+  {
+   "name": "priorqu_tso",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_tso_markcap",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_date_qtr",
+   "type": "DATE"
+  },
+  {
+   "name": "priorqu_date_ttm",
+   "type": "DATE"
+  },
+  {
+   "name": "priorqu_filing_code_qtr",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "priorqu_filing_code_ttm",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "priorqu_annual_quindic",
+   "type": "VARCHAR(1)"
+  },
+  {
+   "name": "priorqu_balsh_book_val",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_balsh_assets",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_balsh_cash_equivs",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_rev_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_rev_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_netinc_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_netinc_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_extraitm_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_extraitm_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_ebitda_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_incmst_ebitda_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_eff_accchange_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_eff_accchange_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_op_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_op_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_inv_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_inv_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_fin_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_fin_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_change_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorqu_cshflst_change_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_price_date",
+   "type": "DATE"
+  },
+  {
+   "name": "matchfy_tso_date",
+   "type": "DATE"
+  },
+  {
+   "name": "matchfy_tso",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_tso_markcap",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_date_qtr",
+   "type": "DATE"
+  },
+  {
+   "name": "matchfy_date_ttm",
+   "type": "DATE"
+  },
+  {
+   "name": "matchfy_filing_code_qtr",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "matchfy_filing_code_ttm",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "matchfy_annual_quindic",
+   "type": "VARCHAR(1)"
+  },
+  {
+   "name": "matchfy_balsh_book_val",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_balsh_assets",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_balsh_cash_equivs",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_rev_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_rev_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_netinc_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_netinc_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_extraitm_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_extraitm_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_ebitda_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_incmst_ebitda_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_eff_accchange_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_eff_accchange_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_op_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_op_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_inv_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_inv_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_fin_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_fin_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_change_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "matchfy_cshflst_change_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_price_date",
+   "type": "DATE"
+  },
+  {
+   "name": "priorfy_tso_date",
+   "type": "DATE"
+  },
+  {
+   "name": "priorfy_tso",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_tso_markcap",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_date_qtr",
+   "type": "DATE"
+  },
+  {
+   "name": "priorfy_date_ttm",
+   "type": "DATE"
+  },
+  {
+   "name": "priorfy_filing_code_qtr",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "priorfy_filing_code_ttm",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "priorfy_annual_quindic",
+   "type": "VARCHAR(1)"
+  },
+  {
+   "name": "priorfy_balsh_book_val",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_balsh_assets",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_balsh_cash_equivs",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_rev_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_rev_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_netinc_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_netinc_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_extraitm_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_extraitm_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_ebitda_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_incmst_ebitda_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_eff_accchange_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_eff_accchange_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_op_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_op_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_inv_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_inv_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_fin_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_fin_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_change_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "priorfy_cshflst_change_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_price_date",
+   "type": "DATE"
+  },
+  {
+   "name": "closestqu_tso_date",
+   "type": "DATE"
+  },
+  {
+   "name": "closestqu_tso",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_tso_markcap",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_date_qtr",
+   "type": "DATE"
+  },
+  {
+   "name": "closestqu_date_ttm",
+   "type": "DATE"
+  },
+  {
+   "name": "closestqu_filing_code_qtr",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "closestqu_filing_code_ttm",
+   "type": "VARCHAR(12)"
+  },
+  {
+   "name": "closestqu_annual_quindic",
+   "type": "VARCHAR(1)"
+  },
+  {
+   "name": "closestqu_balsh_book_val",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_balsh_assets",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_balsh_cash_equivs",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_incmst_rev_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_incmst_rev_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_incmst_netinc_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_incmst_netinc_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_incmst_extraitm_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_incmst_extraitm_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_incmst_ebitda_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_incmst_ebitda_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_eff_accchange_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_eff_accchange_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_op_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_op_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_inv_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_inv_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_fin_act_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_fin_act_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_change_qtr",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "closestqu_cshflst_change_ttm",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "eventdate_aud_fkey",
+   "type": "DOUBLE PRECISION"
+  },
+  {
+   "name": "eventdate_aud_name",
+   "type": "VARCHAR(100)"
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+# WRDS inventory — 2026-10-13 (first day of renewed access)
+
+Pulled: `audit.feed17_director_and_officer_chan` (579,845 rows; file_date to 2026-09-24) → `data/directors_officers_wrds_2026-10-13.csv.gz` (23 columns incl. middle_name, suffix, comm_report, is_effective_date_estimate);
+`comp.funda` sich for linked gvkeys 2004–2024 → `data/comp_funda_sich_2004_2024.csv`; `audit.feed11_sox_404_internal_controls` → `data/sox404_icfr_wrds_2026-10-13.csv.gz`. Column lists: `columns_2026-10-13.json`. Numbers: `inventory_2026-10-13.json`.
+
+1. Person identifier: NONE. `do_off_pers_key` is unique per event row (294,674 keys for 294,674 board rows). The paper's "no person identifier" statement is now verified for the whole feed, not only our extract. §5.5 ("which the Audit Analytics feed may carry in fields our extract omits") must be corrected.
+2. Name collisions quantified: 34,679 (first|last) names appear at >1 firm (these create interlocks); 4,610 of them (13.3%) carry conflicting non-empty middle names across firms → likely distinct individuals merged. Middle name present on 51% of board rows (72% of multi-firm names have one somewhere); suffix on 8.5%. → Cheap robustness: identify directors by first|last and split when middle names conflict ("conflict-aware key"); rerun K/L.
+3. Committee role: `comm_standard` and `title_standard` are entirely null; `comm_report` (free text) present for 27.5% of appointments, 61% of which name the Audit committee → audit-committee assignment at appointment observable for ~17% of appointments (n ≈ 26k events). Enough for a descriptive split of the pre/post gaps (Chiu et al. role condition), not for a powered test.
+4. `is_effective_date_estimate` = 1 for 6.3% of board rows (18,529), mostly Declined Re-election (51%), Nominated (22%), Deceased (18%); appointments rarely estimated. → Robustness: drop estimated-date events.
+5. Extract completeness: only 5 board rows with eff_date ≤ 2025-12-31 were filed after the June extract → the paper's data are complete for its horizon.
+6. Historical SIC (`comp.funda.sich`): available for 83.7% of linked firm-years; 2-digit code differs from the current Compustat code in 8.5% of firm-years; 12.1% of firms change 2-digit industry at some point. → Same-industry indicator variant with historical SIC (Compustat-linked pairs).
+7. SOX 404 ICFR: 244,948 opinion rows, 20,231 firms, FY2000–2026; 92.5% of the paper's firms have at least one opinion; 40,343 "not effective" rows. Possible additional outcome (material weakness) — extension, not for this submission.
+
+## Implemented the same day (A–D)
+See SESSION_HANDOFF.md §28a. Variant JSONs: `K_rebuild_le6_namemid.json`, `K_rebuild_le6_noest.json`; main JSON blocks `audit_committee_split`, `common_shock_controls.historical_sic`. Tables: A.2 rows (historical SIC), A.6 (audit committee, new), A.7 rows (identification variants). The within-firm recent-exposure coefficient is the one estimate sensitive to the estimated-date exclusion (+0.57 → +0.41, t 1.55).

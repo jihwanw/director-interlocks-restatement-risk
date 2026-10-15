@@ -1,129 +1,38 @@
-# Board Interlock Networks and Accounting Risk
+# Director Interlocks and Restatement Risk: Appointment, Disclosure, and Departure
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18872817.svg)](https://doi.org/10.5281/zenodo.18872817)
+Replication code for the manuscript of that title (Kim and Woo, 2026; submitted to the *Journal of Accounting and Public Policy*).
 
-Replication code for:
+This repository contains the code that builds the dated, directed board-interlock network from Audit Analytics board-member events,
+estimates every number in the manuscript, generates every table and figure from the results JSON files, and audits the manuscript's
+numbers against those files. Aggregate results (`results_rebuild/*.json`) are included; the licensed microdata are not.
 
-> **"The Dark Side of Connectivity: How Board Interlock Networks Are Associated with Accounting Risk Through Director Mobility"**
->
-> Jihwan Woo and Nari Kim
->
-> *Journal of Business Research* (2026, submitted)
+## Data (licensed; not redistributed)
+- Audit Analytics via WRDS: `audit.feed17_director_and_officer_chan` (board-member events; extract 2026-06-09, middle names and committee
+  text 2026-10-13), `audit.feed39_financial_restatements` (2026-06-09), `audit.feed11_sox_404_internal_controls` (2026-10-13).
+- Compustat via WRDS: `comp.funda` (fundamentals; historical SIC `sich`), `comp.company`.
+- SEC EDGAR submissions API: SIC codes, current and former names, business address (fetched 2026-10-09/10 by `code/fetch_sec_sic.py`, `code/fetch_sec_address.py`).
+Place the extracts in `data/` with the file names expected by `code/rebuild_k_timing.py` (see its header docstring).
 
-## Overview
-
-We track how director mobility creates and dissolves board interlock edges over 20 years (2004–2023), and test whether restatement risk co-moves through these temporal connections. Using 561,306 director events and 154,920 edge lifecycles from WRDS, we find that firms receiving directors from restatement companies face significantly higher subsequent restatement risk — an effect that survives multiple identification strategies.
-
-### Board Interlock Network Evolution
-
-![Network Evolution](figures/fig9_network_graphs.png)
-*Board interlock networks at three time points. Red = restatement firms; blue = clean firms. The network grows denser over time, and restatement firms are distributed throughout.*
-
-### Temporal Contagion: Declining Over Time
-
-![Contagion Cohort](figures/fig3_contagion_cohort.png)
-*Top: Restatement rates for exposed (red) vs. clean (blue) groups. Bottom: Difference in percentage points. The contagion effect peaks in 2010–2014 and declines thereafter.*
-
-### Triangulation Across Identification Strategies
-
-![Triangulation](figures/fig5_triangulation.png)
-*Effect size decreases monotonically as controls become more stringent, while statistical significance is maintained — characteristic of a robust finding.*
-
-## Key Findings
-
-| Hypothesis | Finding | Effect Size | p-value |
-|:---:|--------|:---:|:---:|
-| H1 | Temporal contagion exists | +7.0 pp (exposed vs clean) | < 0.001 |
-| H2 | Dose-response relationship | +0.25 pp per exposed edge | < 0.001 |
-| H3 | Contagion declines over time | +12.9 pp (2010–14) → +2.1 pp (2020–23) | < 0.001 |
-| H4 | Contaminated edges dissolve faster | −0.95 years | < 0.001 |
-| H5 | Cross-community edges transmit more | +3.7 pp (cross vs within) | < 0.001 |
-
-### Robustness
-
-| Test | Result |
-|------|--------|
-| Strict fraud (SEC investigation / fraud) | Significant (p < 0.001) |
-| Multiple contagion windows (0, 1, 2, 3 yr) | All significant |
-| Non-executive directors | Strongest effect (+9.9 pp) |
-| Same-auditor control | Effect persists for different-auditor pairs (+4.2 pp) |
-| Industry × Year FE | Key variable remains significant (t = 3.32) |
-| Logit specification | Marginal effect confirms LPM |
-
-## Data
-
-All data are sourced from **Wharton Research Data Services (WRDS)** and require an institutional subscription. **Data are not included in this repository due to licensing restrictions.**
-
-| Dataset | WRDS Table | Records |
-|---------|-----------|:---:|
-| Directors & Officers | `audit.feed17_director_and_officer_changes` | 561,306 |
-| Restatements | `audit.feed39_financial_restatements` | 28,662 events |
-| Auditor-Company | `audit.feed01_audit_opinions` | 71,480 |
-| Compustat Financials | `comp.funda` | 48,110 firm-years |
-
-## Replication
-
-### Prerequisites
-
-```bash
-pip install wrds pandas numpy networkx scipy matplotlib
+## Pipeline (run from the repository root; Python 3.13, pandas, numpy, scipy, statsmodels, linearmodels, lifelines, networkx)
 ```
-
-### Steps
-
-```bash
-# 1. Download data from WRDS (requires credentials)
-python code/00_download_wrds_data.py
-
-# 2. Build yearly interlock networks and edge lifecycles
-python code/01_build_edge_lifecycles.py
-
-# 3. Temporal contagion analysis (H1, H3, H4)
-python code/02_temporal_contagion.py
-
-# 4. Firm FE regression and matched counterfactual (H2)
-python code/03_causal_analysis.py
-
-# 5. Robustness tests
-python code/04_robustness.py
+python code/rebuild_k_timing.py --sample artifacts --suffix _art  --aux-file data/directors_officers_wrds_2026-10-13.csv.gz --person-key name_mid   # primary sample
+python code/rebuild_k_timing.py --suffix _full                                                                                                   # all directors, no exclusions
+python code/rebuild_k_timing.py --max-firms 6 --suffix _le6                                                                                       # alternative: six-firm cap
+python code/rebuild_k_timing.py --sample artifacts --keep-common-surnames --suffix _artns --aux-file ... --person-key name_mid                   # variant
+python code/rebuild_k_timing.py --sample artifacts --suffix _art_name  --aux-file ... --person-key name                                           # variant
+python code/rebuild_k_timing.py --sample artifacts --suffix _art_noest --aux-file ... --person-key name_mid --drop-estimated-dates               # variant
+python code/rebuild_l_identification.py --suffix _art --max-firms 0      # identification layer (latent exposure, falsification, event study, bounds)
+python code/rebuild_m_icfr.py --suffix _art                              # SOX 404 outcome; appointment-level analysis
+python code/make_tables_k.py; python code/make_tables_l.py; python code/make_tables_m.py; python code/make_definitions.py   # tables and figures
+python code/audit_numbers_k.py                                           # every number in the prose traced to a JSON value
+python code/reproduce_headlines.py                                       # independent re-estimation of the headline numbers
 ```
+`PRIMARY_SUFFIX` (default `_art`) selects the primary sample for the generators and audits.
 
-All scripts include checkpoint functionality — if interrupted, re-running resumes from the last completed step.
+## Releases and archive
+- `v1.0` (2026-03-05): code of a superseded version of the paper, submitted to another journal under a different title; archived at Zenodo 10.5281/zenodo.18872817.
+- `v2.0-results` (2026-10-15): the code state that produced every result in the present manuscript.
+- `v2.0`: the archived submission release (code of `v2.0-results` plus documentation); Zenodo version DOI: [ZENODO-VERSION-DOI-PENDING]. Concept DOI (always resolves to the latest version): 10.5281/zenodo.18872816.
 
-### Output
-
-Results are saved as JSON files in `results/`:
-
-| File | Contents |
-|------|----------|
-| `temporal_network_results.json` | H1, H3, H4 results |
-| `causal_analysis_results.json` | H2 (Firm FE + matching) |
-| `robustness_results.json` | Strict fraud, windows, Industry×Year FE |
-| `community_detection_results.json` | H5 (community structure) |
-| `reviewer_response_results.json` | Director roles, same-auditor, restatement types |
-| `dynamic_network_results.json` | Edge birth analysis |
-
-## License
-
-Code: [MIT License](LICENSE)
-
-Data: Not included. Available from [WRDS](https://wrds-www.wharton.upenn.edu/) with institutional subscription.
-
-## Citation
-
-```bibtex
-@article{woo2026darkside,
-  title={The Dark Side of Connectivity: How Board Interlock Networks Are Associated 
-         with Accounting Risk Through Director Mobility},
-  author={Woo, Jihwan and Kim, Nari},
-  journal={Journal of Business Research},
-  year={2026},
-  doi={10.5281/zenodo.18872817},
-  note={Submitted}
-}
-```
-
-
-## Related project
-
-[fraud-detection-leakage-audit](https://github.com/jihwanw/fraud-detection-leakage-audit) asks the complementary *prediction* question on the same class of data: how much out-of-sample fraud-detection signal do interlock features carry under strict leakage control? The two designs (behavioral channel here; leakage-controlled prediction there) are distinct and the findings are complementary.
+## Licence
+MIT (see `LICENSE`). The data are licensed by their providers and are not included.

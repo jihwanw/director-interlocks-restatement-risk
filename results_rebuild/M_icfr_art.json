@@ -1,0 +1,1509 @@
+{
+ "suffix": "_art",
+ "coverage": {
+  "pairs_eq_window": 34211,
+  "pairs_with_opinion_in_both_windows": 24807,
+  "share": 0.7251,
+  "share_by_formation_period": {
+   "2004-2009": 0.5785,
+   "2010-2015": 0.7841,
+   "2016-2022": 0.7256
+  },
+  "share_exposed_in_covered": 0.7193,
+  "share_exposed_all": 0.6973,
+  "icfr_exposure": {
+   "share_origin_with_opinion_before_tie": 0.9089,
+   "share_icfr_exposed": 0.306,
+   "share_icfr_exposed5y": 0.1864,
+   "overlap_icfr5y_with_restatement5y": 0.6713
+  },
+  "firm_fy_adverse_share": 0.2112,
+  "firm_fy_new_adverse_share": 0.039,
+  "firm_fys": 155694,
+  "firms_with_opinion": 20162
+ },
+ "M1_pairs_covered": {
+  "n_rows": 24807,
+  "pre_rate": 0.1968,
+  "post_rate": 0.2132,
+  "pre_new_rate": 0.095,
+  "post_new_rate": 0.1225,
+  "exposed": {
+   "n_exposed": 17843,
+   "adverse": {
+    "pre": {
+     "exposed_rate": 0.1797,
+     "clean_rate": 0.2405,
+     "diff_pp": -6.079,
+     "se_pp": 0.872,
+     "t": -6.97,
+     "n_rows": 24807,
+     "n_exposed_rows": 17843
+    },
+    "post": {
+     "exposed_rate": 0.194,
+     "clean_rate": 0.2622,
+     "diff_pp": -6.818,
+     "se_pp": 0.951,
+     "t": -7.17,
+     "n_rows": 24807,
+     "n_exposed_rows": 17843
+    },
+    "did": {
+     "pre_gap_pp": -6.079,
+     "se_pre_pp": 0.872,
+     "diff_in_gaps_pp": -0.739,
+     "se_pp": 0.744,
+     "t": -0.99,
+     "controls": []
+    },
+    "did_cohortFE": {
+     "pre_gap_pp": -5.532,
+     "se_pre_pp": 0.86,
+     "diff_in_gaps_pp": -1.268,
+     "se_pp": 0.737,
+     "t": -1.72,
+     "controls": [
+      "formation-year FE + formation-year x post FE"
+     ]
+    }
+   },
+   "new_adverse": {
+    "pre": {
+     "exposed_rate": 0.0943,
+     "clean_rate": 0.0966,
+     "diff_pp": -0.232,
+     "se_pp": 0.503,
+     "t": -0.46,
+     "n_rows": 24807,
+     "n_exposed_rows": 17843
+    },
+    "post": {
+     "exposed_rate": 0.1201,
+     "clean_rate": 0.1288,
+     "diff_pp": -0.87,
+     "se_pp": 0.602,
+     "t": -1.44,
+     "n_rows": 24807,
+     "n_exposed_rows": 17843
+    },
+    "did": {
+     "pre_gap_pp": -0.232,
+     "se_pre_pp": 0.503,
+     "diff_in_gaps_pp": -0.639,
+     "se_pp": 0.761,
+     "t": -0.84,
+     "controls": []
+    },
+    "did_cohortFE": {
+     "pre_gap_pp": -0.508,
+     "se_pre_pp": 0.511,
+     "diff_in_gaps_pp": -0.389,
+     "se_pp": 0.759,
+     "t": -0.51,
+     "controls": [
+      "formation-year FE + formation-year x post FE"
+     ]
+    }
+   },
+   "no_pre_adverse_post_gap": {
+    "exposed_rate": 0.1192,
+    "clean_rate": 0.142,
+    "diff_pp": -2.283,
+    "se_pp": 0.732,
+    "t": -3.12,
+    "n_rows": 19925,
+    "n_exposed_rows": 14636
+   },
+   "no_pre_adverse_post_new_gap": {
+    "exposed_rate": 0.1192,
+    "clean_rate": 0.142,
+    "diff_pp": -2.283,
+    "se_pp": 0.732,
+    "t": -3.12,
+    "n_rows": 19925,
+    "n_exposed_rows": 14636
+   }
+  },
+  "exposed5y": {
+   "n_exposed": 10287,
+   "adverse": {
+    "pre": {
+     "exposed_rate": 0.1818,
+     "clean_rate": 0.2074,
+     "diff_pp": -2.566,
+     "se_pp": 0.685,
+     "t": -3.75,
+     "n_rows": 24807,
+     "n_exposed_rows": 10287
+    },
+    "post": {
+     "exposed_rate": 0.19,
+     "clean_rate": 0.2295,
+     "diff_pp": -3.95,
+     "se_pp": 0.724,
+     "t": -5.45,
+     "n_rows": 24807,
+     "n_exposed_rows": 10287
+    },
+    "did": {
+     "pre_gap_pp": -2.566,
+     "se_pre_pp": 0.685,
+     "diff_in_gaps_pp": -1.384,
+     "se_pp": 0.678,
+     "t": -2.04,
+     "controls": []
+    },
+    "did_cohortFE": {
+     "pre_gap_pp": -3.266,
+     "se_pre_pp": 0.714,
+     "diff_in_gaps_pp": -1.065,
+     "se_pp": 0.69,
+     "t": -1.54,
+     "controls": [
+      "formation-year FE + formation-year x post FE"
+     ]
+    }
+   },
+   "new_adverse": {
+    "pre": {
+     "exposed_rate": 0.091,
+     "clean_rate": 0.0978,
+     "diff_pp": -0.681,
+     "se_pp": 0.45,
+     "t": -1.51,
+     "n_rows": 24807,
+     "n_exposed_rows": 10287
+    },
+    "post": {
+     "exposed_rate": 0.1147,
+     "clean_rate": 0.1281,
+     "diff_pp": -1.339,
+     "se_pp": 0.526,
+     "t": -2.55,
+     "n_rows": 24807,
+     "n_exposed_rows": 10287
+    },
+    "did": {
+     "pre_gap_pp": -0.681,
+     "se_pre_pp": 0.45,
+     "diff_in_gaps_pp": -0.658,
+     "se_pp": 0.678,
+     "t": -0.97,
+     "controls": []
+    },
+    "did_cohortFE": {
+     "pre_gap_pp": -0.6,
+     "se_pre_pp": 0.449,
+     "diff_in_gaps_pp": -0.629,
+     "se_pp": 0.688,
+     "t": -0.91,
+     "controls": [
+      "formation-year FE + formation-year x post FE"
+     ]
+    }
+   },
+   "no_pre_adverse_post_gap": {
+    "exposed_rate": 0.1139,
+    "clean_rate": 0.1335,
+    "diff_pp": -1.954,
+    "se_pp": 0.606,
+    "t": -3.22,
+    "n_rows": 19925,
+    "n_exposed_rows": 8417
+   },
+   "no_pre_adverse_post_new_gap": {
+    "exposed_rate": 0.1139,
+    "clean_rate": 0.1335,
+    "diff_pp": -1.954,
+    "se_pp": 0.606,
+    "t": -3.22,
+    "n_rows": 19925,
+    "n_exposed_rows": 8417
+   }
+  },
+  "exposed_served": {
+   "n_exposed": 5487,
+   "adverse": {
+    "pre": {
+     "exposed_rate": 0.1901,
+     "clean_rate": 0.1987,
+     "diff_pp": -0.862,
+     "se_pp": 0.755,
+     "t": -1.14,
+     "n_rows": 24807,
+     "n_exposed_rows": 5487
+    },
+    "post": {
+     "exposed_rate": 0.2185,
+     "clean_rate": 0.2116,
+     "diff_pp": 0.687,
+     "se_pp": 0.815,
+     "t": 0.84,
+     "n_rows": 24807,
+     "n_exposed_rows": 5487
+    },
+    "did": {
+     "pre_gap_pp": -0.862,
+     "se_pre_pp": 0.755,
+     "diff_in_gaps_pp": 1.549,
+     "se_pp": 0.763,
+     "t": 2.03,
+     "controls": []
+    },
+    "did_cohortFE": {
+     "pre_gap_pp": -0.212,
+     "se_pre_pp": 0.735,
+     "diff_in_gaps_pp": 1.037,
+     "se_pp": 0.737,
+     "t": 1.41,
+     "controls": [
+      "formation-year FE + formation-year x post FE"
+     ]
+    }
+   },
+   "new_adverse": {
+    "pre": {
+     "exposed_rate": 0.0971,
+     "clean_rate": 0.0944,
+     "diff_pp": 0.278,
+     "se_pp": 0.498,
+     "t": 0.56,
+     "n_rows": 24807,
+     "n_exposed_rows": 5487
+    },
+    "post": {
+     "exposed_rate": 0.1349,
+     "clean_rate": 0.119,
+     "diff_pp": 1.582,
+     "se_pp": 0.614,
+     "t": 2.58,
+     "n_rows": 24807,
+     "n_exposed_rows": 5487
+    },
+    "did": {
+     "pre_gap_pp": 0.278,
+     "se_pre_pp": 0.498,
+     "diff_in_gaps_pp": 1.304,
+     "se_pp": 0.788,
+     "t": 1.66,
+     "controls": []
+    },
+    "did_cohortFE": {
+     "pre_gap_pp": 0.044,
+     "se_pre_pp": 0.503,
+     "diff_in_gaps_pp": 1.471,
+     "se_pp": 0.769,
+     "t": 1.91,
+     "controls": [
+      "formation-year FE + formation-year x post FE"
+     ]
+    }
+   },
+   "no_pre_adverse_post_gap": {
+    "exposed_rate": 0.137,
+    "clean_rate": 0.1218,
+    "diff_pp": 1.521,
+    "se_pp": 0.705,
+    "t": 2.16,
+    "n_rows": 19925,
+    "n_exposed_rows": 4444
+   },
+   "no_pre_adverse_post_new_gap": {
+    "exposed_rate": 0.137,
+    "clean_rate": 0.1218,
+    "diff_pp": 1.521,
+    "se_pp": 0.705,
+    "t": 2.16,
+    "n_rows": 19925,
+    "n_exposed_rows": 4444
+   }
+  },
+  "icfr_exposed": {
+   "n_exposed": 7741,
+   "adverse": {
+    "pre": {
+     "exposed_rate": 0.2765,
+     "clean_rate": 0.1607,
+     "diff_pp": 11.578,
+     "se_pp": 0.807,
+     "t": 14.35,
+     "n_rows": 24807,
+     "n_exposed_rows": 7741
+    },
+    "post": {
+     "exposed_rate": 0.2885,
+     "clean_rate": 0.179,
+     "diff_pp": 10.945,
+     "se_pp": 0.876,
+     "t": 12.49,
+     "n_rows": 24807,
+     "n_exposed_rows": 7741
+    },
+    "did": {
+     "pre_gap_pp": 11.578,
+     "se_pre_pp": 0.807,
+     "diff_in_gaps_pp": -0.633,
+     "se_pp": 0.743,
+     "t": -0.85,
+     "controls": []
+    },
+    "did_cohortFE": {
+     "pre_gap_pp": 11.878,
+     "se_pre_pp": 0.799,
+     "diff_in_gaps_pp": -0.874,
+     "se_pp": 0.738,
+     "t": -1.18,
+     "controls": [
+      "formation-year FE + formation-year x post FE"
+     ]
+    }
+   },
+   "new_adverse": {
+    "pre": {
+     "exposed_rate": 0.1192,
+     "clean_rate": 0.084,
+     "diff_pp": 3.527,
+     "se_pp": 0.479,
+     "t": 7.36,
+     "n_rows": 24807,
+     "n_exposed_rows": 7741
+    },
+    "post": {
+     "exposed_rate": 0.1406,
+     "clean_rate": 0.1144,
+     "diff_pp": 2.617,
+     "se_pp": 0.594,
+     "t": 4.41,
+     "n_rows": 24807,
+     "n_exposed_rows": 7741
+    },
+    "did": {
+     "pre_gap_pp": 3.527,
+     "se_pre_pp": 0.479,
+     "diff_in_gaps_pp": -0.91,
+     "se_pp": 0.74,
+     "t": -1.23,
+     "controls": []
+    },
+    "did_cohortFE": {
+     "pre_gap_pp": 3.43,
+     "se_pre_pp": 0.478,
+     "diff_in_gaps_pp": -0.834,
+     "se_pp": 0.738,
+     "t": -1.13,
+     "controls": [
+      "formation-year FE + formation-year x post FE"
+     ]
+    }
+   },
+   "no_pre_adverse_post_gap": {
+    "exposed_rate": 0.1528,
+    "clean_rate": 0.1144,
+    "diff_pp": 3.841,
+    "se_pp": 0.726,
+    "t": 5.29,
+    "n_rows": 19925,
+    "n_exposed_rows": 5601
+   },
+   "no_pre_adverse_post_new_gap": {
+    "exposed_rate": 0.1528,
+    "clean_rate": 0.1144,
+    "diff_pp": 3.841,
+    "se_pp": 0.726,
+    "t": 5.29,
+    "n_rows": 19925,
+    "n_exposed_rows": 5601
+   }
+  },
+  "icfr_exposed5y": {
+   "n_exposed": 4686,
+   "adverse": {
+    "pre": {
+     "exposed_rate": 0.3231,
+     "clean_rate": 0.1674,
+     "diff_pp": 15.57,
+     "se_pp": 1.004,
+     "t": 15.51,
+     "n_rows": 24807,
+     "n_exposed_rows": 4686
+    },
+    "post": {
+     "exposed_rate": 0.3348,
+     "clean_rate": 0.1848,
+     "diff_pp": 15.0,
+     "se_pp": 1.085,
+     "t": 13.83,
+     "n_rows": 24807,
+     "n_exposed_rows": 4686
+    },
+    "did": {
+     "pre_gap_pp": 15.57,
+     "se_pre_pp": 1.004,
+     "diff_in_gaps_pp": -0.571,
+     "se_pp": 0.977,
+     "t": -0.58,
+     "controls": []
+    },
+    "did_cohortFE": {
+     "pre_gap_pp": 15.217,
+     "se_pre_pp": 1.0,
+     "diff_in_gaps_pp": -0.404,
+     "se_pp": 0.964,
+     "t": -0.42,
+     "controls": [
+      "formation-year FE + formation-year x post FE"
+     ]
+    }
+   },
+   "new_adverse": {
+    "pre": {
+     "exposed_rate": 0.1257,
+     "clean_rate": 0.0878,
+     "diff_pp": 3.787,
+     "se_pp": 0.613,
+     "t": 6.18,
+     "n_rows": 24807,
+     "n_exposed_rows": 4686
+    },
+    "post": {
+     "exposed_rate": 0.1511,
+     "clean_rate": 0.1159,
+     "diff_pp": 3.519,
+     "se_pp": 0.754,
+     "t": 4.67,
+     "n_rows": 24807,
+     "n_exposed_rows": 4686
+    },
+    "did": {
+     "pre_gap_pp": 3.787,
+     "se_pre_pp": 0.613,
+     "diff_in_gaps_pp": -0.269,
+     "se_pp": 0.949,
+     "t": -0.28,
+     "controls": []
+    },
+    "did_cohortFE": {
+     "pre_gap_pp": 3.818,
+     "se_pre_pp": 0.605,
+     "diff_in_gaps_pp": -0.275,
+     "se_pp": 0.941,
+     "t": -0.29,
+     "controls": [
+      "formation-year FE + formation-year x post FE"
+     ]
+    }
+   },
+   "no_pre_adverse_post_gap": {
+    "exposed_rate": 0.1724,
+    "clean_rate": 0.1163,
+    "diff_pp": 5.617,
+    "se_pp": 0.97,
+    "t": 5.79,
+    "n_rows": 19925,
+    "n_exposed_rows": 3172
+   },
+   "no_pre_adverse_post_new_gap": {
+    "exposed_rate": 0.1724,
+    "clean_rate": 0.1163,
+    "diff_pp": 5.617,
+    "se_pp": 0.97,
+    "t": 5.79,
+    "n_rows": 19925,
+    "n_exposed_rows": 3172
+   }
+  }
+ },
+ "M1_pairs_covered_formed_2010plus": {
+  "n_rows": 21770,
+  "pre_rate": 0.1868,
+  "post_rate": 0.211,
+  "pre_new_rate": 0.0955,
+  "post_new_rate": 0.1231,
+  "exposed": {
+   "n_exposed": 16017,
+   "adverse": {
+    "pre": {
+     "exposed_rate": 0.1709,
+     "clean_rate": 0.231,
+     "diff_pp": -6.007,
+     "se_pp": 0.907,
+     "t": -6.63,
+     "n_rows": 21770,
+     "n_exposed_rows": 16017
+    },
+    "post": {
+     "exposed_rate": 0.1935,
+     "clean_rate": 0.2595,
+     "diff_pp": -6.597,
+     "se_pp": 0.983,
+     "t": -6.71,
+     "n_rows": 21770,
+     "n_exposed_rows": 16017
+    },
+    "did": {
+     "pre_gap_pp": -6.007,
+     "se_pre_pp": 0.907,
+     "diff_in_gaps_pp": -0.591,
+     "se_pp": 0.798,
+     "t": -0.74,
+     "controls": []
+    },
+    "did_cohortFE": {
+     "pre_gap_pp": -5.931,
+     "se_pre_pp": 0.895,
+     "diff_in_gaps_pp": -0.685,
+     "se_pp": 0.788,
+     "t": -0.87,
+     "controls": [
+      "formation-year FE + formation-year x post FE"
+     ]
+    }
+   },
+   "new_adverse": {
+    "pre": {
+     "exposed_rate": 0.0937,
+     "clean_rate": 0.1008,
+     "diff_pp": -0.717,
+     "se_pp": 0.552,
+     "t": -1.3,
+     "n_rows": 21770,
+     "n_exposed_rows": 16017
+    },
+    "post": {
+     "exposed_rate": 0.1217,
+     "clean_rate": 0.1269,
+     "diff_pp": -0.521,
+     "se_pp": 0.657,
+     "t": -0.79,
+     "n_rows": 21770,
+     "n_exposed_rows": 16017
+    },
+    "did": {
+     "pre_gap_pp": -0.717,
+     "se_pre_pp": 0.552,
+     "diff_in_gaps_pp": 0.196,
+     "se_pp": 0.846,
+     "t": 0.23,
+     "controls": []
+    },
+    "did_cohortFE": {
+     "pre_gap_pp": -0.817,
+     "se_pre_pp": 0.553,
+     "diff_in_gaps_pp": 0.246,
+     "se_pp": 0.837,
+     "t": 0.29,
+     "controls": [
+      "formation-year FE + formation-year x post FE"
+     ]
+    }
+   },
+   "no_pre_adverse_post_gap": {
+    "exposed_rate": 0.1216,
+    "clean_rate": 0.1399,
+    "diff_pp": -1.83,
+    "se_pp": 0.783,
+    "t": -2.34,
+    "n_rows": 17703,
+    "n_exposed_rows": 13279
+   },
+   "no_pre_adverse_post_new_gap": {
+    "exposed_rate": 0.1216,
+    "clean_rate": 0.1399,
+    "diff_pp": -1.83,
+    "se_pp": 0.783,
+    "t": -2.34,
+    "n_rows": 17703,
+    "n_exposed_rows": 13279
+   }
+  },
+  "exposed5y": {
+   "n_exposed": 8564,
+   "adverse": {
+    "pre": {
+     "exposed_rate": 0.1664,
+     "clean_rate": 0.2001,
+     "diff_pp": -3.367,
+     "se_pp": 0.69,
+     "t": -4.88,
+     "n_rows": 21770,
+     "n_exposed_rows": 8564
+    },
+    "post": {
+     "exposed_rate": 0.1887,
+     "clean_rate": 0.2254,
+     "diff_pp": -3.673,
+     "se_pp": 0.752,
+     "t": -4.89,
+     "n_rows": 21770,
+     "n_exposed_rows": 8564
+    },
+    "did": {
+     "pre_gap_pp": -3.367,
+     "se_pre_pp": 0.69,
+     "diff_in_gaps_pp": -0.306,
+     "se_pp": 0.727,
+     "t": -0.42,
+     "controls": []
+    },
+    "did_cohortFE": {
+     "pre_gap_pp": -3.391,
+     "se_pre_pp": 0.736,
+     "diff_in_gaps_pp": -0.474,
+     "se_pp": 0.734,
+     "t": -0.65,
+     "controls": [
+      "formation-year FE + formation-year x post FE"
+     ]
+    }
+   },
+   "new_adverse": {
+    "pre": {
+     "exposed_rate": 0.0897,
+     "clean_rate": 0.0993,
+     "diff_pp": -0.967,
+     "se_pp": 0.472,
+     "t": -2.05,
+     "n_rows": 21770,
+     "n_exposed_rows": 8564
+    },
+    "post": {
+     "exposed_rate": 0.117,
+     "clean_rate": 0.127,
+     "diff_pp": -0.999,
+     "se_pp": 0.578,
+     "t": -1.73,
+     "n_rows": 21770,
+     "n_exposed_rows": 8564
+    },
+    "did": {
+     "pre_gap_pp": -0.967,
+     "se_pre_pp": 0.472,
+     "diff_in_gaps_pp": -0.032,
+     "se_pp": 0.742,
+     "t": -0.04,
+     "controls": []
+    },
+    "did_cohortFE": {
+     "pre_gap_pp": -0.783,
+     "se_pre_pp": 0.482,
+     "diff_in_gaps_pp": -0.138,
+     "se_pp": 0.753,
+     "t": -0.18,
+     "controls": [
+      "formation-year FE + formation-year x post FE"
+     ]
+    }
+   },
+   "no_pre_adverse_post_gap": {
+    "exposed_rate": 0.1177,
+    "clean_rate": 0.132,
+    "diff_pp": -1.429,
+    "se_pp": 0.655,
+    "t": -2.18,
+    "n_rows": 17703,
+    "n_exposed_rows": 7139
+   },
+   "no_pre_adverse_post_new_gap": {
+    "exposed_rate": 0.1177,
+    "clean_rate": 0.132,
+    "diff_pp": -1.429,
+    "se_pp": 0.655,
+    "t": -2.18,
+    "n_rows": 17703,
+    "n_exposed_rows": 7139
+   }
+  },
+  "exposed_served": {
+   "n_exposed": 5137,
+   "adverse": {
+    "pre": {
+     "exposed_rate": 0.1861,
+     "clean_rate": 0.187,
+     "diff_pp": -0.094,
+     "se_pp": 0.761,
+     "t": -0.12,
+     "n_rows": 21770,
+     "n_exposed_rows": 5137
+    },
+    "post": {
+     "exposed_rate": 0.2186,
+     "clean_rate": 0.2086,
+     "diff_pp": 0.999,
+     "se_pp": 0.826,
+     "t": 1.21,
+     "n_rows": 21770,
+     "n_exposed_rows": 5137
+    },
+    "did": {
+     "pre_gap_pp": -0.094,
+     "se_pre_pp": 0.761,
+     "diff_in_gaps_pp": 1.093,
+     "se_pp": 0.781,
+     "t": 1.4,
+     "controls": []
+    },
+    "did_cohortFE": {
+     "pre_gap_pp": -0.046,
+     "se_pre_pp": 0.754,
+     "diff_in_gaps_pp": 1.048,
+     "se_pp": 0.762,
+     "t": 1.37,
+     "controls": [
+      "formation-year FE + formation-year x post FE"
+     ]
+    }
+   },
+   "new_adverse": {
+    "pre": {
+     "exposed_rate": 0.0977,
+     "clean_rate": 0.0949,
+     "diff_pp": 0.285,
+     "se_pp": 0.521,
+     "t": 0.55,
+     "n_rows": 21770,
+     "n_exposed_rows": 5137
+    },
+    "post": {
+     "exposed_rate": 0.1343,
+     "clean_rate": 0.1196,
+     "diff_pp": 1.474,
+     "se_pp": 0.635,
+     "t": 2.32,
+     "n_rows": 21770,
+     "n_exposed_rows": 5137
+    },
+    "did": {
+     "pre_gap_pp": 0.285,
+     "se_pre_pp": 0.521,
+     "diff_in_gaps_pp": 1.189,
+     "se_pp": 0.82,
+     "t": 1.45,
+     "controls": []
+    },
+    "did_cohortFE": {
+     "pre_gap_pp": 0.111,
+     "se_pre_pp": 0.526,
+     "diff_in_gaps_pp": 1.294,
+     "se_pp": 0.805,
+     "t": 1.61,
+     "controls": [
+      "formation-year FE + formation-year x post FE"
+     ]
+    }
+   },
+   "no_pre_adverse_post_gap": {
+    "exposed_rate": 0.1373,
+    "clean_rate": 0.1228,
+    "diff_pp": 1.452,
+    "se_pp": 0.724,
+    "t": 2.01,
+    "n_rows": 17703,
+    "n_exposed_rows": 4181
+   },
+   "no_pre_adverse_post_new_gap": {
+    "exposed_rate": 0.1373,
+    "clean_rate": 0.1228,
+    "diff_pp": 1.452,
+    "se_pp": 0.724,
+    "t": 2.01,
+    "n_rows": 17703,
+    "n_exposed_rows": 4181
+   }
+  },
+  "icfr_exposed": {
+   "n_exposed": 7047,
+   "adverse": {
+    "pre": {
+     "exposed_rate": 0.2709,
+     "clean_rate": 0.1466,
+     "diff_pp": 12.432,
+     "se_pp": 0.83,
+     "t": 14.99,
+     "n_rows": 21770,
+     "n_exposed_rows": 7047
+    },
+    "post": {
+     "exposed_rate": 0.2899,
+     "clean_rate": 0.1732,
+     "diff_pp": 11.671,
+     "se_pp": 0.903,
+     "t": 12.93,
+     "n_rows": 21770,
+     "n_exposed_rows": 7047
+    },
+    "did": {
+     "pre_gap_pp": 12.432,
+     "se_pre_pp": 0.83,
+     "diff_in_gaps_pp": -0.761,
+     "se_pp": 0.773,
+     "t": -0.98,
+     "controls": []
+    },
+    "did_cohortFE": {
+     "pre_gap_pp": 12.328,
+     "se_pre_pp": 0.833,
+     "diff_in_gaps_pp": -0.637,
+     "se_pp": 0.772,
+     "t": -0.82,
+     "controls": [
+      "formation-year FE + formation-year x post FE"
+     ]
+    }
+   },
+   "new_adverse": {
+    "pre": {
+     "exposed_rate": 0.1208,
+     "clean_rate": 0.0835,
+     "diff_pp": 3.729,
+     "se_pp": 0.511,
+     "t": 7.29,
+     "n_rows": 21770,
+     "n_exposed_rows": 7047
+    },
+    "post": {
+     "exposed_rate": 0.1416,
+     "clean_rate": 0.1142,
+     "diff_pp": 2.745,
+     "se_pp": 0.628,
+     "t": 4.37,
+     "n_rows": 21770,
+     "n_exposed_rows": 7047
+    },
+    "did": {
+     "pre_gap_pp": 3.729,
+     "se_pre_pp": 0.511,
+     "diff_in_gaps_pp": -0.984,
+     "se_pp": 0.784,
+     "t": -1.26,
+     "controls": []
+    },
+    "did_cohortFE": {
+     "pre_gap_pp": 3.699,
+     "se_pre_pp": 0.514,
+     "diff_in_gaps_pp": -0.959,
+     "se_pp": 0.787,
+     "t": -1.22,
+     "controls": [
+      "formation-year FE + formation-year x post FE"
+     ]
+    }
+   },
+   "no_pre_adverse_post_gap": {
+    "exposed_rate": 0.1543,
+    "clean_rate": 0.1147,
+    "diff_pp": 3.966,
+    "se_pp": 0.758,
+    "t": 5.23,
+    "n_rows": 17703,
+    "n_exposed_rows": 5138
+   },
+   "no_pre_adverse_post_new_gap": {
+    "exposed_rate": 0.1543,
+    "clean_rate": 0.1147,
+    "diff_pp": 3.966,
+    "se_pp": 0.758,
+    "t": 5.23,
+    "n_rows": 17703,
+    "n_exposed_rows": 5138
+   }
+  },
+  "icfr_exposed5y": {
+   "n_exposed": 3993,
+   "adverse": {
+    "pre": {
+     "exposed_rate": 0.3216,
+     "clean_rate": 0.1566,
+     "diff_pp": 16.501,
+     "se_pp": 1.079,
+     "t": 15.29,
+     "n_rows": 21770,
+     "n_exposed_rows": 3993
+    },
+    "post": {
+     "exposed_rate": 0.3454,
+     "clean_rate": 0.1808,
+     "diff_pp": 16.456,
+     "se_pp": 1.172,
+     "t": 14.04,
+     "n_rows": 21770,
+     "n_exposed_rows": 3993
+    },
+    "did": {
+     "pre_gap_pp": 16.501,
+     "se_pre_pp": 1.079,
+     "diff_in_gaps_pp": -0.045,
+     "se_pp": 1.053,
+     "t": -0.04,
+     "controls": []
+    },
+    "did_cohortFE": {
+     "pre_gap_pp": 16.433,
+     "se_pre_pp": 1.074,
+     "diff_in_gaps_pp": -0.011,
+     "se_pp": 1.041,
+     "t": -0.01,
+     "controls": [
+      "formation-year FE + formation-year x post FE"
+     ]
+    }
+   },
+   "new_adverse": {
+    "pre": {
+     "exposed_rate": 0.1297,
+     "clean_rate": 0.0879,
+     "diff_pp": 4.186,
+     "se_pp": 0.672,
+     "t": 6.23,
+     "n_rows": 21770,
+     "n_exposed_rows": 3993
+    },
+    "post": {
+     "exposed_rate": 0.1548,
+     "clean_rate": 0.1159,
+     "diff_pp": 3.883,
+     "se_pp": 0.829,
+     "t": 4.69,
+     "n_rows": 21770,
+     "n_exposed_rows": 3993
+    },
+    "did": {
+     "pre_gap_pp": 4.186,
+     "se_pre_pp": 0.672,
+     "diff_in_gaps_pp": -0.303,
+     "se_pp": 1.043,
+     "t": -0.29,
+     "controls": []
+    },
+    "did_cohortFE": {
+     "pre_gap_pp": 4.302,
+     "se_pre_pp": 0.663,
+     "diff_in_gaps_pp": -0.398,
+     "se_pp": 1.032,
+     "t": -0.39,
+     "controls": [
+      "formation-year FE + formation-year x post FE"
+     ]
+    }
+   },
+   "no_pre_adverse_post_gap": {
+    "exposed_rate": 0.1787,
+    "clean_rate": 0.1167,
+    "diff_pp": 6.195,
+    "se_pp": 1.068,
+    "t": 5.8,
+    "n_rows": 17703,
+    "n_exposed_rows": 2709
+   },
+   "no_pre_adverse_post_new_gap": {
+    "exposed_rate": 0.1787,
+    "clean_rate": 0.1167,
+    "diff_pp": 6.195,
+    "se_pp": 1.068,
+    "t": 5.8,
+    "n_rows": 17703,
+    "n_exposed_rows": 2709
+   }
+  }
+ },
+ "M1_restatement_outcomes_same_pairs": {
+  "exposed": {
+   "did_onset": {
+    "pre_gap_pp": 2.105,
+    "se_pre_pp": 0.807,
+    "diff_in_gaps_pp": -0.197,
+    "se_pp": 0.965,
+    "t": -0.2,
+    "controls": []
+   },
+   "did_onset_cohortFE": {
+    "pre_gap_pp": 1.797,
+    "se_pre_pp": 0.791,
+    "diff_in_gaps_pp": 0.175,
+    "se_pp": 0.963,
+    "t": 0.18,
+    "controls": [
+     "formation-year FE + formation-year x post FE"
+    ]
+   },
+   "did_file": {
+    "pre_gap_pp": 4.378,
+    "se_pre_pp": 0.842,
+    "diff_in_gaps_pp": -4.627,
+    "se_pp": 1.022,
+    "t": -4.53,
+    "controls": []
+   }
+  },
+  "exposed5y": {
+   "did_onset": {
+    "pre_gap_pp": 2.748,
+    "se_pre_pp": 0.749,
+    "diff_in_gaps_pp": 1.295,
+    "se_pp": 0.878,
+    "t": 1.47,
+    "controls": []
+   },
+   "did_onset_cohortFE": {
+    "pre_gap_pp": 1.014,
+    "se_pre_pp": 0.734,
+    "diff_in_gaps_pp": 0.48,
+    "se_pp": 0.907,
+    "t": 0.53,
+    "controls": [
+     "formation-year FE + formation-year x post FE"
+    ]
+   },
+   "did_file": {
+    "pre_gap_pp": 7.124,
+    "se_pre_pp": 0.812,
+    "diff_in_gaps_pp": -4.068,
+    "se_pp": 0.977,
+    "t": -4.16,
+    "controls": []
+   }
+  }
+ },
+ "M2_panel": {
+  "n_firm_years": 94350,
+  "n_firms": 10517,
+  "adverse_rate": 0.1381,
+  "new_adverse_rate": 0.0391,
+  "models": {
+   "adverse_any_exposed_lag1": {
+    "exposure_coef": {
+     "coef_pp": 0.03,
+     "se_pp": 0.216,
+     "t": 0.14
+    },
+    "n": 94350,
+    "within_r2": 0.00045,
+    "controls": [
+     "nnew_lag1",
+     "degree_lag",
+     "betweenness_lag",
+     "size",
+     "leverage",
+     "roa",
+     "had_prior_restate"
+    ]
+   },
+   "adverse_recent_exposed_lag1": {
+    "exposure_coef": {
+     "coef_pp": 0.054,
+     "se_pp": 0.189,
+     "t": 0.29
+    },
+    "n": 94350,
+    "within_r2": 0.00044,
+    "controls": [
+     "nnew_lag1",
+     "degree_lag",
+     "betweenness_lag",
+     "size",
+     "leverage",
+     "roa",
+     "had_prior_restate"
+    ]
+   },
+   "adverse_inbound_recent_lag1": {
+    "exposure_coef": {
+     "coef_pp": 0.104,
+     "se_pp": 0.275,
+     "t": 0.38
+    },
+    "n": 94350,
+    "within_r2": 0.00047,
+    "controls": [
+     "nnew_in_lag1",
+     "nnew_out_lag1",
+     "nexp5_out_lag1",
+     "degree_lag",
+     "betweenness_lag",
+     "size",
+     "leverage",
+     "roa",
+     "had_prior_restate"
+    ]
+   },
+   "adverse_recent_stock_boy": {
+    "exposure_coef": {
+     "coef_pp": -0.17,
+     "se_pp": 0.147,
+     "t": -1.16
+    },
+    "n": 94350,
+    "within_r2": 0.00066,
+    "controls": [
+     "nalive_boy",
+     "degree_lag",
+     "betweenness_lag",
+     "size",
+     "leverage",
+     "roa",
+     "had_prior_restate"
+    ]
+   },
+   "new_adverse_recent_exposed_lag1": {
+    "exposure_coef": {
+     "coef_pp": 0.01,
+     "se_pp": 0.156,
+     "t": 0.06
+    },
+    "n": 94350,
+    "within_r2": 0.00012,
+    "controls": [
+     "nnew_lag1",
+     "degree_lag",
+     "betweenness_lag",
+     "size",
+     "leverage",
+     "roa",
+     "had_prior_restate"
+    ]
+   },
+   "new_adverse_any_exposed_lag1": {
+    "exposure_coef": {
+     "coef_pp": -0.029,
+     "se_pp": 0.175,
+     "t": -0.16
+    },
+    "n": 94350,
+    "within_r2": 0.00012,
+    "controls": [
+     "nnew_lag1",
+     "degree_lag",
+     "betweenness_lag",
+     "size",
+     "leverage",
+     "roa",
+     "had_prior_restate"
+    ]
+   },
+   "onset_recent_exposed_lag1_same_firm_years": {
+    "exposure_coef": {
+     "coef_pp": 0.421,
+     "se_pp": 0.252,
+     "t": 1.67
+    },
+    "n": 94350
+   }
+  }
+ },
+ "M3_appointments": {
+  "n_appointments": 22041,
+  "n_pairs": 34211,
+  "share_multi_origin": 0.3402,
+  "mean_origins": 1.552,
+  "share_mixed_exposure_among_multi_origin": 0.4261,
+  "share_mixed_recent_among_multi_origin": 0.5114,
+  "any_exposed": {
+   "n_exposed": 16819,
+   "pre_file": {
+    "exposed_rate": 0.3046,
+    "clean_rate": 0.2553,
+    "diff_pp": 4.933,
+    "se_pp": 0.794,
+    "t": 6.22,
+    "n_rows": 22041,
+    "n_exposed_rows": 16819
+   },
+   "post_file": {
+    "exposed_rate": 0.2638,
+    "clean_rate": 0.2805,
+    "diff_pp": -1.674,
+    "se_pp": 0.82,
+    "t": -2.04,
+    "n_rows": 22041,
+    "n_exposed_rows": 16819
+   },
+   "did_file": {
+    "pre_gap_pp": 4.933,
+    "se_pre_pp": 0.794,
+    "diff_in_gaps_pp": -6.606,
+    "se_pp": 1.056,
+    "t": -6.26,
+    "controls": []
+   },
+   "pre_onset": {
+    "exposed_rate": 0.268,
+    "clean_rate": 0.2501,
+    "diff_pp": 1.793,
+    "se_pp": 0.807,
+    "t": 2.22,
+    "n_rows": 22041,
+    "n_exposed_rows": 16819
+   },
+   "post_onset": {
+    "exposed_rate": 0.1912,
+    "clean_rate": 0.1858,
+    "diff_pp": 0.54,
+    "se_pp": 0.736,
+    "t": 0.73,
+    "n_rows": 22041,
+    "n_exposed_rows": 16819
+   },
+   "did_onset": {
+    "pre_gap_pp": 1.793,
+    "se_pre_pp": 0.807,
+    "diff_in_gaps_pp": -1.253,
+    "se_pp": 0.967,
+    "t": -1.3,
+    "controls": []
+   },
+   "did_onset_cohortFE": {
+    "pre_gap_pp": 2.066,
+    "se_pre_pp": 0.804,
+    "diff_in_gaps_pp": -1.242,
+    "se_pp": 0.979,
+    "t": -1.27,
+    "controls": [
+     "formation-year FE + formation-year x post FE"
+    ]
+   },
+   "never_filed_post_onset": {
+    "exposed_rate": 0.1656,
+    "clean_rate": 0.1733,
+    "diff_pp": -0.77,
+    "se_pp": 1.044,
+    "t": -0.74,
+    "n_rows": 8992,
+    "n_exposed_rows": 6280
+   }
+  },
+  "all_exposed": {
+   "n_exposed": 13624,
+   "pre_file": {
+    "exposed_rate": 0.311,
+    "clean_rate": 0.2636,
+    "diff_pp": 4.736,
+    "se_pp": 0.715,
+    "t": 6.62,
+    "n_rows": 22041,
+    "n_exposed_rows": 13624
+   },
+   "post_file": {
+    "exposed_rate": 0.268,
+    "clean_rate": 0.2674,
+    "diff_pp": 0.055,
+    "se_pp": 0.714,
+    "t": 0.08,
+    "n_rows": 22041,
+    "n_exposed_rows": 13624
+   },
+   "did_file": {
+    "pre_gap_pp": 4.736,
+    "se_pre_pp": 0.715,
+    "diff_in_gaps_pp": -4.681,
+    "se_pp": 0.948,
+    "t": -4.94,
+    "controls": []
+   },
+   "pre_onset": {
+    "exposed_rate": 0.2701,
+    "clean_rate": 0.2535,
+    "diff_pp": 1.658,
+    "se_pp": 0.697,
+    "t": 2.38,
+    "n_rows": 22041,
+    "n_exposed_rows": 13624
+   },
+   "post_onset": {
+    "exposed_rate": 0.1977,
+    "clean_rate": 0.1771,
+    "diff_pp": 2.06,
+    "se_pp": 0.624,
+    "t": 3.3,
+    "n_rows": 22041,
+    "n_exposed_rows": 13624
+   },
+   "did_onset": {
+    "pre_gap_pp": 1.658,
+    "se_pre_pp": 0.697,
+    "diff_in_gaps_pp": 0.402,
+    "se_pp": 0.839,
+    "t": 0.48,
+    "controls": []
+   },
+   "did_onset_cohortFE": {
+    "pre_gap_pp": 1.56,
+    "se_pre_pp": 0.695,
+    "diff_in_gaps_pp": 0.289,
+    "se_pp": 0.84,
+    "t": 0.34,
+    "controls": [
+     "formation-year FE + formation-year x post FE"
+    ]
+   },
+   "never_filed_post_onset": {
+    "exposed_rate": 0.1741,
+    "clean_rate": 0.1604,
+    "diff_pp": 1.367,
+    "se_pp": 0.941,
+    "t": 1.45,
+    "n_rows": 8992,
+    "n_exposed_rows": 4928
+   }
+  },
+  "any_recent": {
+   "n_exposed": 11198,
+   "pre_file": {
+    "exposed_rate": 0.3294,
+    "clean_rate": 0.2552,
+    "diff_pp": 7.425,
+    "se_pp": 0.714,
+    "t": 10.4,
+    "n_rows": 22041,
+    "n_exposed_rows": 11198
+   },
+   "post_file": {
+    "exposed_rate": 0.28,
+    "clean_rate": 0.2552,
+    "diff_pp": 2.477,
+    "se_pp": 0.702,
+    "t": 3.53,
+    "n_rows": 22041,
+    "n_exposed_rows": 11198
+   },
+   "did_file": {
+    "pre_gap_pp": 7.425,
+    "se_pre_pp": 0.714,
+    "diff_in_gaps_pp": -4.947,
+    "se_pp": 0.926,
+    "t": -5.34,
+    "controls": []
+   },
+   "pre_onset": {
+    "exposed_rate": 0.2756,
+    "clean_rate": 0.2516,
+    "diff_pp": 2.399,
+    "se_pp": 0.686,
+    "t": 3.5,
+    "n_rows": 22041,
+    "n_exposed_rows": 11198
+   },
+   "post_onset": {
+    "exposed_rate": 0.2041,
+    "clean_rate": 0.1751,
+    "diff_pp": 2.901,
+    "se_pp": 0.629,
+    "t": 4.61,
+    "n_rows": 22041,
+    "n_exposed_rows": 11198
+   },
+   "did_onset": {
+    "pre_gap_pp": 2.399,
+    "se_pre_pp": 0.686,
+    "diff_in_gaps_pp": 0.501,
+    "se_pp": 0.823,
+    "t": 0.61,
+    "controls": []
+   },
+   "did_onset_cohortFE": {
+    "pre_gap_pp": 1.525,
+    "se_pre_pp": 0.693,
+    "diff_in_gaps_pp": -0.696,
+    "se_pp": 0.824,
+    "t": -0.84,
+    "controls": [
+     "formation-year FE + formation-year x post FE"
+    ]
+   },
+   "never_filed_post_onset": {
+    "exposed_rate": 0.1796,
+    "clean_rate": 0.1582,
+    "diff_pp": 2.146,
+    "se_pp": 0.951,
+    "t": 2.26,
+    "n_rows": 8992,
+    "n_exposed_rows": 4092
+   }
+  },
+  "all_recent": {
+   "n_exposed": 7363,
+   "pre_file": {
+    "exposed_rate": 0.3489,
+    "clean_rate": 0.2648,
+    "diff_pp": 8.409,
+    "se_pp": 0.777,
+    "t": 10.82,
+    "n_rows": 22041,
+    "n_exposed_rows": 7363
+   },
+   "post_file": {
+    "exposed_rate": 0.2889,
+    "clean_rate": 0.2572,
+    "diff_pp": 3.169,
+    "se_pp": 0.749,
+    "t": 4.23,
+    "n_rows": 22041,
+    "n_exposed_rows": 7363
+   },
+   "did_file": {
+    "pre_gap_pp": 8.409,
+    "se_pre_pp": 0.777,
+    "diff_in_gaps_pp": -5.24,
+    "se_pp": 1.022,
+    "t": -5.13,
+    "controls": []
+   },
+   "pre_onset": {
+    "exposed_rate": 0.2771,
+    "clean_rate": 0.2571,
+    "diff_pp": 1.994,
+    "se_pp": 0.751,
+    "t": 2.66,
+    "n_rows": 22041,
+    "n_exposed_rows": 7363
+   },
+   "post_onset": {
+    "exposed_rate": 0.2162,
+    "clean_rate": 0.1767,
+    "diff_pp": 3.956,
+    "se_pp": 0.672,
+    "t": 5.89,
+    "n_rows": 22041,
+    "n_exposed_rows": 7363
+   },
+   "did_onset": {
+    "pre_gap_pp": 1.994,
+    "se_pre_pp": 0.751,
+    "diff_in_gaps_pp": 1.962,
+    "se_pp": 0.897,
+    "t": 2.19,
+    "controls": []
+   },
+   "did_onset_cohortFE": {
+    "pre_gap_pp": 0.825,
+    "se_pre_pp": 0.757,
+    "diff_in_gaps_pp": 0.58,
+    "se_pp": 0.92,
+    "t": 0.63,
+    "controls": [
+     "formation-year FE + formation-year x post FE"
+    ]
+   },
+   "never_filed_post_onset": {
+    "exposed_rate": 0.1883,
+    "clean_rate": 0.1595,
+    "diff_pp": 2.881,
+    "se_pp": 1.098,
+    "t": 2.62,
+    "n_rows": 8992,
+    "n_exposed_rows": 2623
+   }
+  },
+  "share_recent_continuous_onset_cohortFE": {
+   "pre_gap_pp_per_unit": 1.484,
+   "diff_in_gaps_pp_per_unit": -0.118,
+   "se_pp": 0.948,
+   "t": -0.12
+  },
+  "share_exposed_continuous_onset_cohortFE": {
+   "pre_gap_pp_per_unit": 2.123,
+   "diff_in_gaps_pp_per_unit": -0.425,
+   "se_pp": 0.997,
+   "t": -0.43
+  }
+ }
+}

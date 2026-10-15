@@ -1,0 +1,6027 @@
+{
+  "director_firm_counts": {
+    "directors_with_interlocks": 19415,
+    "median_firms": 2.0,
+    "p90_firms": 5.0,
+    "max_firms": 58,
+    "share_directors_gt6": 0.0392,
+    "share_directors_gt10": 0.0086,
+    "share_edges_from_directors_gt6": 0.4501,
+    "share_edges_from_directors_gt10": 0.3016,
+    "share_edges_from_directors_gt20": 0.1948,
+    "cap_applied": 0,
+    "registrant_types": {
+      "n_blank_check_ciks": 1852,
+      "n_fund_like_ciks": 281,
+      "share_edges_with_blank_check_firm_directors_gt6": 0.0532,
+      "share_edges_with_blank_check_firm_directors_le6": 0.0863,
+      "share_edges_with_fund_like_firm_directors_gt6": 0.042,
+      "share_edges_with_fund_like_firm_directors_le6": 0.0031,
+      "share_edges_with_either_directors_gt6": 0.0951,
+      "share_edges_with_either_directors_le6": 0.0893,
+      "n_edges_gt6": 38244,
+      "n_edges_le6": 46732,
+      "seat_shares_directors_gt6": {
+        "operating_company": 0.8124,
+        "fund_partnership_reit_family": 0.1616,
+        "shell_or_blank_check": 0.0206,
+        "no_sic": 0.0054
+      },
+      "n_seats_directors_gt6": 7957,
+      "share_directors_common_surname_gt150_directors_gt6": 0.1143,
+      "seat_shares_directors_2to6": {
+        "operating_company": 0.9253,
+        "fund_partnership_reit_family": 0.0435,
+        "shell_or_blank_check": 0.0253,
+        "no_sic": 0.0059
+      },
+      "n_seats_directors_2to6": 57455,
+      "share_directors_common_surname_gt150_directors_2to6": 0.0352,
+      "note": "seat shares are over distinct director-firm seats; common surname = shared by more than 150 distinct director names in the feed"
+    }
+  },
+  "K0_edges": {
+    "spells": 136229,
+    "departure_events_without_observed_appointment": 71000,
+    "event_flow": {
+      "all_dno_events": 568332,
+      "board_member_start_or_end_events": 274306,
+      "start_events": 154504,
+      "end_events": 119802,
+      "repeat_start_events_ignored": 16172,
+      "spells_closed_by_a_departure": 47635,
+      "spells_open_at_horizon": 88594,
+      "departures_on_the_appointment_day_ignored": 0,
+      "departures_after_horizon_spell_censored": 1167,
+      "appointments_after_horizon_no_spell": 2073,
+      "zero_duration_spells_dropped": 30
+    },
+    "edge_lifecycles_all": 84976,
+    "edge_lifecycles_2004_2023": 77198,
+    "unique_pairs_2004_2023": 59086,
+    "share_ongoing_at_horizon_2004_2023": 0.5024,
+    "origin_identified_share": 0.7987,
+    "terminated_by_counts": {
+      "ongoing": 38781,
+      "destination": 18936,
+      "origin": 12466,
+      "both": 7015
+    },
+    "duration_years_median": 5.04,
+    "share_duration_lt_30d": 0.0104,
+    "share_duration_lt_1y": 0.1074,
+    "share_duration_lt_30d_closed_only": 0.021,
+    "old_pipeline_edges_for_reference": 155663,
+    "definition": "board-member events only; spell closes on any departure action; horizon 2025-12-31"
+  },
+  "restatements": {
+    "n_filings_to_horizon": 28880,
+    "share_with_period_begin": 0.9165,
+    "median_years_file_minus_begin": 1.62,
+    "share_filings_without_period_begin": 0.0835
+  },
+  "direction": {
+    "rows_both_directions": 154396,
+    "rows_appointment_direction": 61655,
+    "share_origin_identified": 0.7987
+  },
+  "K1_pairs": {
+    "outcome_file_in_window": {
+      "exposed_rate": 0.3095,
+      "clean_rate": 0.2853,
+      "diff_pp": 2.414,
+      "se_pp": 0.683,
+      "t": 3.53,
+      "ci95_pp": [
+        1.08,
+        3.75
+      ],
+      "n_rows": 61655,
+      "n_exposed_rows": 41212
+    },
+    "outcome_onset_in_window": {
+      "exposed_rate": 0.2161,
+      "clean_rate": 0.1925,
+      "diff_pp": 2.352,
+      "se_pp": 0.604,
+      "t": 3.89,
+      "ci95_pp": [
+        1.17,
+        3.54
+      ],
+      "n_rows": 61655,
+      "n_exposed_rows": 41212
+    },
+    "outcome_file_in_window_exposed5y": {
+      "exposed_rate": 0.3393,
+      "clean_rate": 0.2797,
+      "diff_pp": 5.962,
+      "se_pp": 0.575,
+      "t": 10.37,
+      "ci95_pp": [
+        4.83,
+        7.09
+      ],
+      "n_rows": 61655,
+      "n_exposed_rows": 22535
+    },
+    "outcome_onset_in_window_exposed5y": {
+      "exposed_rate": 0.247,
+      "clean_rate": 0.1859,
+      "diff_pp": 6.112,
+      "se_pp": 0.527,
+      "t": 11.6,
+      "ci95_pp": [
+        5.08,
+        7.14
+      ],
+      "n_rows": 61655,
+      "n_exposed_rows": 22535
+    },
+    "placebo_pre_file": {
+      "exposed_rate": 0.2236,
+      "clean_rate": 0.1896,
+      "diff_pp": 3.395,
+      "se_pp": 0.532,
+      "t": 6.38,
+      "ci95_pp": [
+        2.35,
+        4.44
+      ],
+      "n_rows": 61655,
+      "n_exposed_rows": 41212
+    },
+    "placebo_pre_onset": {
+      "exposed_rate": 0.2084,
+      "clean_rate": 0.1898,
+      "diff_pp": 1.861,
+      "se_pp": 0.555,
+      "t": 3.35,
+      "ci95_pp": [
+        0.77,
+        2.95
+      ],
+      "n_rows": 61655,
+      "n_exposed_rows": 41212
+    },
+    "equal_window_3y": {
+      "n_rows": 57878,
+      "pre_file": {
+        "exposed_rate": 0.2945,
+        "clean_rate": 0.2478,
+        "diff_pp": 4.665,
+        "se_pp": 0.633,
+        "t": 7.37,
+        "ci95_pp": [
+          3.42,
+          5.91
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 38650
+      },
+      "post_file": {
+        "exposed_rate": 0.2632,
+        "clean_rate": 0.255,
+        "diff_pp": 0.811,
+        "se_pp": 0.665,
+        "t": 1.22,
+        "ci95_pp": [
+          -0.49,
+          2.12
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 38650
+      },
+      "pre_onset": {
+        "exposed_rate": 0.281,
+        "clean_rate": 0.2517,
+        "diff_pp": 2.934,
+        "se_pp": 0.652,
+        "t": 4.5,
+        "ci95_pp": [
+          1.66,
+          4.21
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 38650
+      },
+      "post_onset": {
+        "exposed_rate": 0.1823,
+        "clean_rate": 0.1618,
+        "diff_pp": 2.046,
+        "se_pp": 0.532,
+        "t": 3.85,
+        "ci95_pp": [
+          1.0,
+          3.09
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 38650
+      },
+      "pre_severe": {
+        "exposed_rate": 0.0167,
+        "clean_rate": 0.0167,
+        "diff_pp": -0.003,
+        "se_pp": 0.22,
+        "t": -0.01,
+        "ci95_pp": [
+          -0.44,
+          0.43
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 38650
+      },
+      "post_severe": {
+        "exposed_rate": 0.0142,
+        "clean_rate": 0.0158,
+        "diff_pp": -0.153,
+        "se_pp": 0.151,
+        "t": -1.01,
+        "ci95_pp": [
+          -0.45,
+          0.14
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 38650
+      },
+      "did_file": {
+        "pre_gap_pp": 4.665,
+        "post_change_clean_pp": 0.723,
+        "diff_in_gaps_pp": -3.854,
+        "se_pp": 0.751,
+        "t": -5.13,
+        "ci95_pp": [
+          -5.33,
+          -2.38
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "did_onset": {
+        "pre_gap_pp": 2.934,
+        "post_change_clean_pp": -8.982,
+        "diff_in_gaps_pp": -0.889,
+        "se_pp": 0.681,
+        "t": -1.31,
+        "ci95_pp": [
+          -2.22,
+          0.45
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "did_severe": {
+        "pre_gap_pp": -0.003,
+        "post_change_clean_pp": -0.094,
+        "diff_in_gaps_pp": -0.15,
+        "se_pp": 0.253,
+        "t": -0.59,
+        "ci95_pp": [
+          -0.65,
+          0.35
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "did_file_exposed5y": {
+        "pre_gap_pp": 7.207,
+        "post_change_clean_pp": -0.417,
+        "diff_in_gaps_pp": -3.823,
+        "se_pp": 0.706,
+        "t": -5.42,
+        "ci95_pp": [
+          -5.21,
+          -2.44
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "did_file_cohortFE": {
+        "pre_gap_pp": 5.942,
+        "se_pre_pp": 0.614,
+        "diff_in_gaps_pp": -4.07,
+        "se_pp": 0.686,
+        "t": -5.93,
+        "controls": [
+          "formation-year FE + formation-year x post FE"
+        ]
+      },
+      "did_onset_cohortFE_recent": {
+        "pre_gap_pp": 3.075,
+        "se_pre_pp": 0.534,
+        "diff_in_gaps_pp": -0.811,
+        "se_pp": 0.599,
+        "t": -1.35,
+        "controls": [
+          "formation-year FE + formation-year x post FE"
+        ]
+      },
+      "did_file_cohortFE_recent": {
+        "pre_gap_pp": 5.508,
+        "se_pre_pp": 0.577,
+        "diff_in_gaps_pp": -3.107,
+        "se_pp": 0.662,
+        "t": -4.7,
+        "controls": [
+          "formation-year FE + formation-year x post FE"
+        ]
+      },
+      "did_onset_cohortFE_present": {
+        "pre_gap_pp": 2.648,
+        "se_pre_pp": 0.563,
+        "diff_in_gaps_pp": -0.949,
+        "se_pp": 0.657,
+        "t": -1.44,
+        "controls": [
+          "formation-year FE + formation-year x post FE"
+        ]
+      },
+      "did_file_cohortFE_present": {
+        "pre_gap_pp": 1.888,
+        "se_pre_pp": 0.545,
+        "diff_in_gaps_pp": 0.393,
+        "se_pp": 0.696,
+        "t": 0.56,
+        "controls": [
+          "formation-year FE + formation-year x post FE"
+        ]
+      },
+      "did_onset_cohortFE_present_at_filing": {
+        "pre_gap_pp": 2.501,
+        "se_pre_pp": 0.512,
+        "diff_in_gaps_pp": -0.382,
+        "se_pp": 0.595,
+        "t": -0.64,
+        "controls": [
+          "formation-year FE + formation-year x post FE"
+        ]
+      },
+      "did_file_cohortFE_present_at_filing": {
+        "pre_gap_pp": 3.578,
+        "se_pre_pp": 0.517,
+        "diff_in_gaps_pp": -1.129,
+        "se_pp": 0.63,
+        "t": -1.79,
+        "controls": [
+          "formation-year FE + formation-year x post FE"
+        ]
+      },
+      "did_onset_cohortFE_present_expost": {
+        "pre_gap_pp": 3.914,
+        "se_pre_pp": 0.519,
+        "diff_in_gaps_pp": -1.789,
+        "se_pp": 0.605,
+        "t": -2.96,
+        "controls": [
+          "formation-year FE + formation-year x post FE"
+        ]
+      },
+      "did_file_cohortFE_present_expost": {
+        "pre_gap_pp": 1.977,
+        "se_pre_pp": 0.513,
+        "diff_in_gaps_pp": 1.97,
+        "se_pp": 0.668,
+        "t": 2.95,
+        "controls": [
+          "formation-year FE + formation-year x post FE"
+        ]
+      },
+      "did_onset_cohortFE": {
+        "pre_gap_pp": 2.749,
+        "se_pre_pp": 0.595,
+        "diff_in_gaps_pp": -0.584,
+        "se_pp": 0.636,
+        "t": -0.92,
+        "controls": [
+          "formation-year FE + formation-year x post FE"
+        ]
+      },
+      "did_file_cohortFE_sameauditor": {
+        "pre_gap_pp": 5.917,
+        "se_pre_pp": 0.608,
+        "diff_in_gaps_pp": -4.068,
+        "se_pp": 0.686,
+        "t": -5.93,
+        "controls": [
+          "formation-year FE + formation-year x post FE",
+          "same_auditor_ever (+ x post)"
+        ]
+      },
+      "share_same_auditor_ever": 0.1869,
+      "director_clustered": {
+        "pre_file": {
+          "diff_pp": 4.665,
+          "se_pp_director_clustered": 0.709
+        },
+        "post_file": {
+          "diff_pp": 0.811,
+          "se_pp_director_clustered": 0.702
+        },
+        "did_file": {
+          "diff_in_gaps_pp": -3.854,
+          "se_pp_director_clustered": 0.772
+        },
+        "pre_onset": {
+          "diff_pp": 2.934,
+          "se_pp_director_clustered": 0.722
+        },
+        "post_onset": {
+          "diff_pp": 2.046,
+          "se_pp_director_clustered": 0.525
+        },
+        "did_onset": {
+          "diff_in_gaps_pp": -0.889,
+          "se_pp_director_clustered": 0.626
+        },
+        "n_directors": 16030,
+        "max_pairs_per_director": 830
+      },
+      "did_file_cohortFE_feedage": {
+        "pre_gap_pp": 5.728,
+        "se_pre_pp": 0.645,
+        "diff_in_gaps_pp": -2.807,
+        "se_pp": 0.698,
+        "t": -4.02,
+        "controls": [
+          "formation-year FE + formation-year x post FE",
+          "dst_feed_age (+ x post)",
+          "src_feed_age (+ x post)"
+        ]
+      },
+      "did_onset_cohortFE_feedage": {
+        "pre_gap_pp": 3.461,
+        "se_pre_pp": 0.606,
+        "diff_in_gaps_pp": -1.154,
+        "se_pp": 0.661,
+        "t": -1.75,
+        "controls": [
+          "formation-year FE + formation-year x post FE",
+          "dst_feed_age (+ x post)",
+          "src_feed_age (+ x post)"
+        ]
+      },
+      "did_file_cohortFE_feedage_dstsize": {
+        "pre_gap_pp": 2.748,
+        "se_pre_pp": 0.612,
+        "diff_in_gaps_pp": -1.571,
+        "se_pp": 0.785,
+        "t": -2.0,
+        "controls": [
+          "formation-year FE + formation-year x post FE",
+          "dst_feed_age (+ x post)",
+          "src_feed_age (+ x post)",
+          "dst_size (+ x post)"
+        ],
+        "n_rows": 41572
+      },
+      "did_onset_cohortFE_feedage_dstsize": {
+        "pre_gap_pp": 2.004,
+        "se_pre_pp": 0.625,
+        "diff_in_gaps_pp": -1.18,
+        "se_pp": 0.752,
+        "t": -1.57,
+        "controls": [
+          "formation-year FE + formation-year x post FE",
+          "dst_feed_age (+ x post)",
+          "src_feed_age (+ x post)",
+          "dst_size (+ x post)"
+        ],
+        "n_rows": 41572
+      },
+      "mean_dst_size_exposed_clean": [
+        7.22,
+        6.54
+      ],
+      "did_onset_cellFE_any": {
+        "pre_gap_pp": 2.626,
+        "se_pre_pp": 0.521,
+        "diff_in_gaps_pp": -1.547,
+        "se_pp": 0.602,
+        "t": -2.57,
+        "controls": [
+          "cell FE + cell x post FE"
+        ]
+      },
+      "did_file_cellFE_any": {
+        "pre_gap_pp": 4.404,
+        "se_pre_pp": 0.507,
+        "diff_in_gaps_pp": -3.202,
+        "se_pp": 0.653,
+        "t": -4.9,
+        "controls": [
+          "cell FE + cell x post FE"
+        ]
+      },
+      "did_onset_cellFE_recent": {
+        "pre_gap_pp": 2.546,
+        "se_pre_pp": 0.485,
+        "diff_in_gaps_pp": -1.407,
+        "se_pp": 0.573,
+        "t": -2.45,
+        "controls": [
+          "cell FE + cell x post FE"
+        ]
+      },
+      "did_file_cellFE_recent": {
+        "pre_gap_pp": 3.94,
+        "se_pre_pp": 0.485,
+        "diff_in_gaps_pp": -2.519,
+        "se_pp": 0.625,
+        "t": -4.03,
+        "controls": [
+          "cell FE + cell x post FE"
+        ]
+      },
+      "did_onset_cellFE_present": {
+        "pre_gap_pp": 2.219,
+        "se_pre_pp": 0.538,
+        "diff_in_gaps_pp": -0.953,
+        "se_pp": 0.643,
+        "t": -1.48,
+        "controls": [
+          "cell FE + cell x post FE"
+        ]
+      },
+      "did_file_cellFE_present": {
+        "pre_gap_pp": 1.366,
+        "se_pre_pp": 0.515,
+        "diff_in_gaps_pp": 0.33,
+        "se_pp": 0.668,
+        "t": 0.49,
+        "controls": [
+          "cell FE + cell x post FE"
+        ]
+      },
+      "did_onset_cohortFE_recent_dstsize": {
+        "pre_gap_pp": 1.83,
+        "se_pre_pp": 0.558,
+        "diff_in_gaps_pp": -1.084,
+        "se_pp": 0.649,
+        "t": -1.67,
+        "controls": [
+          "formation-year FE + formation-year x post FE",
+          "dst_feed_age (+ x post)",
+          "src_feed_age (+ x post)",
+          "dst_size (+ x post)"
+        ],
+        "n_rows": 41572
+      },
+      "did_file_severe_source": {
+        "pre_gap_pp": 1.655,
+        "post_change_clean_pp": -1.848,
+        "diff_in_gaps_pp": -0.026,
+        "se_pp": 1.115,
+        "t": -0.02,
+        "ci95_pp": [
+          -2.21,
+          2.16
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      }
+    },
+    "both_compustat_linked": {
+      "n_rows": 45682,
+      "pre_file": {
+        "exposed_rate": 0.2965,
+        "clean_rate": 0.2629,
+        "diff_pp": 3.363,
+        "se_pp": 0.578,
+        "t": 5.82,
+        "ci95_pp": [
+          2.23,
+          4.5
+        ],
+        "n_rows": 45682,
+        "n_exposed_rows": 32083
+      },
+      "post_file": {
+        "exposed_rate": 0.2659,
+        "clean_rate": 0.2769,
+        "diff_pp": -1.092,
+        "se_pp": 0.603,
+        "t": -1.81,
+        "ci95_pp": [
+          -2.27,
+          0.09
+        ],
+        "n_rows": 45682,
+        "n_exposed_rows": 32083
+      },
+      "did_file": {
+        "pre_gap_pp": 3.363,
+        "post_change_clean_pp": 1.397,
+        "diff_in_gaps_pp": -4.455,
+        "se_pp": 0.745,
+        "t": -5.98,
+        "ci95_pp": [
+          -5.92,
+          -2.99
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "post_onset": {
+        "exposed_rate": 0.1842,
+        "clean_rate": 0.1767,
+        "diff_pp": 0.754,
+        "se_pp": 0.512,
+        "t": 1.47,
+        "ci95_pp": [
+          -0.25,
+          1.76
+        ],
+        "n_rows": 45682,
+        "n_exposed_rows": 32083
+      },
+      "did_onset": {
+        "pre_gap_pp": 1.242,
+        "post_change_clean_pp": -9.464,
+        "diff_in_gaps_pp": -0.488,
+        "se_pp": 0.68,
+        "t": -0.72,
+        "ci95_pp": [
+          -1.82,
+          0.84
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "never_restated_post_file": {
+        "exposed_rate": 0.2632,
+        "clean_rate": 0.2814,
+        "diff_pp": -1.819,
+        "se_pp": 0.934,
+        "t": -1.95,
+        "ci95_pp": [
+          -3.65,
+          0.01
+        ],
+        "n_rows": 18888,
+        "n_exposed_rows": 12339
+      },
+      "never_restated_post_onset": {
+        "exposed_rate": 0.162,
+        "clean_rate": 0.1591,
+        "diff_pp": 0.29,
+        "se_pp": 0.72,
+        "t": 0.4,
+        "ci95_pp": [
+          -1.12,
+          1.7
+        ],
+        "n_rows": 18888,
+        "n_exposed_rows": 12339
+      }
+    },
+    "equal_window_formed_2008plus": {
+      "n_rows": 52994,
+      "pre_file": {
+        "exposed_rate": 0.2877,
+        "clean_rate": 0.2404,
+        "diff_pp": 4.738,
+        "se_pp": 0.661,
+        "t": 7.16,
+        "ci95_pp": [
+          3.44,
+          6.03
+        ],
+        "n_rows": 52994,
+        "n_exposed_rows": 36494
+      },
+      "post_file": {
+        "exposed_rate": 0.2549,
+        "clean_rate": 0.2348,
+        "diff_pp": 2.016,
+        "se_pp": 0.681,
+        "t": 2.96,
+        "ci95_pp": [
+          0.68,
+          3.35
+        ],
+        "n_rows": 52994,
+        "n_exposed_rows": 36494
+      },
+      "did_file": {
+        "pre_gap_pp": 4.738,
+        "post_change_clean_pp": -0.558,
+        "diff_in_gaps_pp": -2.722,
+        "se_pp": 0.745,
+        "t": -3.65,
+        "ci95_pp": [
+          -4.18,
+          -1.26
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "did_file_cohortFE": {
+        "pre_gap_pp": 5.531,
+        "se_pre_pp": 0.647,
+        "diff_in_gaps_pp": -3.666,
+        "se_pp": 0.727,
+        "t": -5.04,
+        "controls": [
+          "formation-year FE + formation-year x post FE"
+        ]
+      },
+      "pre_onset": {
+        "exposed_rate": 0.281,
+        "clean_rate": 0.2502,
+        "diff_pp": 3.085,
+        "se_pp": 0.69,
+        "t": 4.47,
+        "ci95_pp": [
+          1.73,
+          4.44
+        ],
+        "n_rows": 52994,
+        "n_exposed_rows": 36494
+      },
+      "post_onset": {
+        "exposed_rate": 0.1821,
+        "clean_rate": 0.1598,
+        "diff_pp": 2.238,
+        "se_pp": 0.562,
+        "t": 3.98,
+        "ci95_pp": [
+          1.14,
+          3.34
+        ],
+        "n_rows": 52994,
+        "n_exposed_rows": 36494
+      },
+      "did_onset": {
+        "pre_gap_pp": 3.085,
+        "post_change_clean_pp": -9.042,
+        "diff_in_gaps_pp": -0.847,
+        "se_pp": 0.718,
+        "t": -1.18,
+        "ci95_pp": [
+          -2.25,
+          0.56
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "never_restated_post_file": {
+        "exposed_rate": 0.2497,
+        "clean_rate": 0.2159,
+        "diff_pp": 3.379,
+        "se_pp": 1.094,
+        "t": 3.09,
+        "ci95_pp": [
+          1.24,
+          5.52
+        ],
+        "n_rows": 22735,
+        "n_exposed_rows": 14342
+      },
+      "never_restated_post_onset": {
+        "exposed_rate": 0.162,
+        "clean_rate": 0.1361,
+        "diff_pp": 2.598,
+        "se_pp": 0.857,
+        "t": 3.03,
+        "ci95_pp": [
+          0.92,
+          4.28
+        ],
+        "n_rows": 22735,
+        "n_exposed_rows": 14342
+      }
+    },
+    "exposure_served_during_misstatement": {
+      "share_exposed_served": 0.2098,
+      "pre_file": {
+        "exposed_rate": 0.2817,
+        "clean_rate": 0.2782,
+        "diff_pp": 0.342,
+        "se_pp": 0.587,
+        "t": 0.58,
+        "ci95_pp": [
+          -0.81,
+          1.49
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 12142
+      },
+      "post_file": {
+        "exposed_rate": 0.2705,
+        "clean_rate": 0.2578,
+        "diff_pp": 1.266,
+        "se_pp": 0.599,
+        "t": 2.11,
+        "ci95_pp": [
+          0.09,
+          2.44
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 12142
+      },
+      "did_file": {
+        "pre_gap_pp": 0.342,
+        "post_change_clean_pp": -2.044,
+        "diff_in_gaps_pp": 0.924,
+        "se_pp": 0.746,
+        "t": 1.24,
+        "ci95_pp": [
+          -0.54,
+          2.39
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "pre_onset": {
+        "exposed_rate": 0.2928,
+        "clean_rate": 0.2655,
+        "diff_pp": 2.724,
+        "se_pp": 0.606,
+        "t": 4.49,
+        "ci95_pp": [
+          1.54,
+          3.91
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 12142
+      },
+      "post_onset": {
+        "exposed_rate": 0.1842,
+        "clean_rate": 0.1732,
+        "diff_pp": 1.105,
+        "se_pp": 0.507,
+        "t": 2.18,
+        "ci95_pp": [
+          0.11,
+          2.1
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 12142
+      },
+      "did_onset": {
+        "pre_gap_pp": 2.724,
+        "post_change_clean_pp": -9.236,
+        "diff_in_gaps_pp": -1.619,
+        "se_pp": 0.694,
+        "t": -2.33,
+        "ci95_pp": [
+          -2.98,
+          -0.26
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "never_restated_post_file": {
+        "exposed_rate": 0.2847,
+        "clean_rate": 0.2471,
+        "diff_pp": 3.755,
+        "se_pp": 0.991,
+        "t": 3.79,
+        "ci95_pp": [
+          1.81,
+          5.7
+        ],
+        "n_rows": 25650,
+        "n_exposed_rows": 5020
+      },
+      "never_restated_post_onset": {
+        "exposed_rate": 0.1721,
+        "clean_rate": 0.1506,
+        "diff_pp": 2.155,
+        "se_pp": 0.789,
+        "t": 2.73,
+        "ci95_pp": [
+          0.61,
+          3.7
+        ],
+        "n_rows": 25650,
+        "n_exposed_rows": 5020
+      },
+      "life_plus1y_file": {
+        "exposed_rate": 0.3151,
+        "clean_rate": 0.2978,
+        "diff_pp": 1.731,
+        "se_pp": 0.604,
+        "t": 2.86,
+        "ci95_pp": [
+          0.55,
+          2.92
+        ],
+        "n_rows": 61655,
+        "n_exposed_rows": 12969
+      },
+      "life_plus1y_onset": {
+        "exposed_rate": 0.2158,
+        "clean_rate": 0.2062,
+        "diff_pp": 0.958,
+        "se_pp": 0.538,
+        "t": 1.78,
+        "ci95_pp": [
+          -0.1,
+          2.01
+        ],
+        "n_rows": 61655,
+        "n_exposed_rows": 12969
+      },
+      "never_restated_pre_onset": {
+        "exposed_rate": 0.2,
+        "clean_rate": 0.158,
+        "diff_pp": 4.198,
+        "se_pp": 0.88,
+        "t": 4.77,
+        "ci95_pp": [
+          2.47,
+          5.92
+        ],
+        "n_rows": 25650,
+        "n_exposed_rows": 5020
+      },
+      "never_restated_did_onset": {
+        "pre_gap_pp": 4.198,
+        "post_change_clean_pp": -0.746,
+        "diff_in_gaps_pp": -2.042,
+        "se_pp": 1.053,
+        "t": -1.94,
+        "ci95_pp": [
+          -4.11,
+          0.02
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      }
+    },
+    "exposure_recent_5y": {
+      "share_exposed5y": 0.3749,
+      "pre_file": {
+        "exposed_rate": 0.324,
+        "clean_rate": 0.2519,
+        "diff_pp": 7.207,
+        "se_pp": 0.582,
+        "t": 12.38,
+        "ci95_pp": [
+          6.07,
+          8.35
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 21696
+      },
+      "post_file": {
+        "exposed_rate": 0.2816,
+        "clean_rate": 0.2478,
+        "diff_pp": 3.384,
+        "se_pp": 0.567,
+        "t": 5.97,
+        "ci95_pp": [
+          2.27,
+          4.5
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 21696
+      },
+      "did_file": {
+        "pre_gap_pp": 7.207,
+        "post_change_clean_pp": -0.417,
+        "diff_in_gaps_pp": -3.823,
+        "se_pp": 0.706,
+        "t": -5.42,
+        "ci95_pp": [
+          -5.21,
+          -2.44
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "pre_onset": {
+        "exposed_rate": 0.2891,
+        "clean_rate": 0.2605,
+        "diff_pp": 2.859,
+        "se_pp": 0.557,
+        "t": 5.14,
+        "ci95_pp": [
+          1.77,
+          3.95
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 21696
+      },
+      "post_onset": {
+        "exposed_rate": 0.2007,
+        "clean_rate": 0.1604,
+        "diff_pp": 4.027,
+        "se_pp": 0.493,
+        "t": 8.16,
+        "ci95_pp": [
+          3.06,
+          4.99
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 21696
+      },
+      "did_onset": {
+        "pre_gap_pp": 2.859,
+        "post_change_clean_pp": -10.013,
+        "diff_in_gaps_pp": 1.168,
+        "se_pp": 0.628,
+        "t": 1.86,
+        "ci95_pp": [
+          -0.06,
+          2.4
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "never_restated_pre_onset": {
+        "exposed_rate": 0.1793,
+        "clean_rate": 0.1597,
+        "diff_pp": 1.96,
+        "se_pp": 0.752,
+        "t": 2.61,
+        "ci95_pp": [
+          0.49,
+          3.43
+        ],
+        "n_rows": 25650,
+        "n_exposed_rows": 8573
+      },
+      "never_restated_post_onset": {
+        "exposed_rate": 0.18,
+        "clean_rate": 0.1421,
+        "diff_pp": 3.786,
+        "se_pp": 0.715,
+        "t": 5.29,
+        "ci95_pp": [
+          2.38,
+          5.19
+        ],
+        "n_rows": 25650,
+        "n_exposed_rows": 8573
+      },
+      "never_restated_post_file": {
+        "exposed_rate": 0.2795,
+        "clean_rate": 0.2419,
+        "diff_pp": 3.758,
+        "se_pp": 0.882,
+        "t": 4.26,
+        "ci95_pp": [
+          2.03,
+          5.49
+        ],
+        "n_rows": 25650,
+        "n_exposed_rows": 8573
+      },
+      "never_restated_did_onset": {
+        "pre_gap_pp": 1.96,
+        "post_change_clean_pp": -1.757,
+        "diff_in_gaps_pp": 1.827,
+        "se_pp": 0.919,
+        "t": 1.99,
+        "ci95_pp": [
+          0.03,
+          3.63
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "never_restated_did_onset_cohortFE": {
+        "pre_gap_pp": 2.619,
+        "se_pre_pp": 0.695,
+        "diff_in_gaps_pp": -0.068,
+        "se_pp": 0.871,
+        "t": -0.08,
+        "controls": [
+          "formation-year FE + formation-year x post FE"
+        ]
+      }
+    },
+    "exposure_present_expost": {
+      "share": 0.2809,
+      "pre_file": {
+        "exposed_rate": 0.2879,
+        "clean_rate": 0.2755,
+        "diff_pp": 1.239,
+        "se_pp": 0.539,
+        "t": 2.3,
+        "ci95_pp": [
+          0.18,
+          2.3
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 16257
+      },
+      "post_file": {
+        "exposed_rate": 0.2884,
+        "clean_rate": 0.2495,
+        "diff_pp": 3.889,
+        "se_pp": 0.561,
+        "t": 6.93,
+        "ci95_pp": [
+          2.79,
+          4.99
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 16257
+      },
+      "did_file": {
+        "pre_gap_pp": 1.239,
+        "post_change_clean_pp": -2.595,
+        "diff_in_gaps_pp": 2.65,
+        "se_pp": 0.698,
+        "t": 3.8,
+        "ci95_pp": [
+          1.28,
+          4.02
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "pre_onset": {
+        "exposed_rate": 0.3013,
+        "clean_rate": 0.2595,
+        "diff_pp": 4.184,
+        "se_pp": 0.55,
+        "t": 7.6,
+        "ci95_pp": [
+          3.11,
+          5.26
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 16257
+      },
+      "post_onset": {
+        "exposed_rate": 0.1907,
+        "clean_rate": 0.1696,
+        "diff_pp": 2.111,
+        "se_pp": 0.468,
+        "t": 4.51,
+        "ci95_pp": [
+          1.19,
+          3.03
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 16257
+      },
+      "did_onset": {
+        "pre_gap_pp": 4.184,
+        "post_change_clean_pp": -8.993,
+        "diff_in_gaps_pp": -2.073,
+        "se_pp": 0.637,
+        "t": -3.25,
+        "ci95_pp": [
+          -3.32,
+          -0.82
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "never_restated_post_onset": {
+        "exposed_rate": 0.1785,
+        "clean_rate": 0.1462,
+        "diff_pp": 3.23,
+        "se_pp": 0.716,
+        "t": 4.51,
+        "ci95_pp": [
+          1.83,
+          4.63
+        ],
+        "n_rows": 25650,
+        "n_exposed_rows": 6830
+      },
+      "never_restated_pre_onset": {
+        "exposed_rate": 0.2158,
+        "clean_rate": 0.1482,
+        "diff_pp": 6.757,
+        "se_pp": 0.818,
+        "t": 8.26,
+        "ci95_pp": [
+          5.15,
+          8.36
+        ],
+        "n_rows": 25650,
+        "n_exposed_rows": 6830
+      }
+    },
+    "exposure_present_at_filing": {
+      "share": 0.2948,
+      "pre_file": {
+        "exposed_rate": 0.3043,
+        "clean_rate": 0.2684,
+        "diff_pp": 3.594,
+        "se_pp": 0.541,
+        "t": 6.65,
+        "ci95_pp": [
+          2.53,
+          4.65
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 17065
+      },
+      "post_file": {
+        "exposed_rate": 0.2747,
+        "clean_rate": 0.2545,
+        "diff_pp": 2.021,
+        "se_pp": 0.529,
+        "t": 3.82,
+        "ci95_pp": [
+          0.98,
+          3.06
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 17065
+      },
+      "did_file": {
+        "pre_gap_pp": 3.594,
+        "post_change_clean_pp": -1.387,
+        "diff_in_gaps_pp": -1.572,
+        "se_pp": 0.674,
+        "t": -2.33,
+        "ci95_pp": [
+          -2.89,
+          -0.25
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "pre_onset": {
+        "exposed_rate": 0.2894,
+        "clean_rate": 0.2637,
+        "diff_pp": 2.576,
+        "se_pp": 0.541,
+        "t": 4.76,
+        "ci95_pp": [
+          1.52,
+          3.64
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 17065
+      },
+      "post_onset": {
+        "exposed_rate": 0.192,
+        "clean_rate": 0.1686,
+        "diff_pp": 2.335,
+        "se_pp": 0.447,
+        "t": 5.22,
+        "ci95_pp": [
+          1.46,
+          3.21
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 17065
+      },
+      "did_onset": {
+        "pre_gap_pp": 2.576,
+        "post_change_clean_pp": -9.504,
+        "diff_in_gaps_pp": -0.241,
+        "se_pp": 0.616,
+        "t": -0.39,
+        "ci95_pp": [
+          -1.45,
+          0.97
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "never_restated_pre_onset": {
+        "exposed_rate": 0.194,
+        "clean_rate": 0.156,
+        "diff_pp": 3.805,
+        "se_pp": 0.785,
+        "t": 4.85,
+        "ci95_pp": [
+          2.27,
+          5.34
+        ],
+        "n_rows": 25650,
+        "n_exposed_rows": 6911
+      },
+      "never_restated_post_onset": {
+        "exposed_rate": 0.1736,
+        "clean_rate": 0.1478,
+        "diff_pp": 2.582,
+        "se_pp": 0.704,
+        "t": 3.67,
+        "ci95_pp": [
+          1.2,
+          3.96
+        ],
+        "n_rows": 25650,
+        "n_exposed_rows": 6911
+      },
+      "never_restated_post_file": {
+        "exposed_rate": 0.2822,
+        "clean_rate": 0.2442,
+        "diff_pp": 3.791,
+        "se_pp": 0.899,
+        "t": 4.22,
+        "ci95_pp": [
+          2.03,
+          5.55
+        ],
+        "n_rows": 25650,
+        "n_exposed_rows": 6911
+      },
+      "never_restated_did_onset": {
+        "pre_gap_pp": 3.805,
+        "post_change_clean_pp": -0.816,
+        "diff_in_gaps_pp": -1.224,
+        "se_pp": 0.936,
+        "t": -1.31,
+        "ci95_pp": [
+          -3.06,
+          0.61
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      }
+    },
+    "observable_pre_window_both_firms_3y_in_feed": {
+      "n_rows": 31893,
+      "share_rows": 0.551,
+      "mean_dst_feed_age_exposed": 6.05,
+      "mean_dst_feed_age_clean": 4.76,
+      "pre_file": {
+        "exposed_rate": 0.3122,
+        "clean_rate": 0.2614,
+        "diff_pp": 5.073,
+        "se_pp": 0.95,
+        "t": 5.34,
+        "ci95_pp": [
+          3.21,
+          6.93
+        ],
+        "n_rows": 31893,
+        "n_exposed_rows": 23715
+      },
+      "post_file": {
+        "exposed_rate": 0.2286,
+        "clean_rate": 0.2022,
+        "diff_pp": 2.634,
+        "se_pp": 0.85,
+        "t": 3.1,
+        "ci95_pp": [
+          0.97,
+          4.3
+        ],
+        "n_rows": 31893,
+        "n_exposed_rows": 23715
+      },
+      "did_file": {
+        "pre_gap_pp": 5.073,
+        "post_change_clean_pp": -5.918,
+        "diff_in_gaps_pp": -2.439,
+        "se_pp": 0.941,
+        "t": -2.59,
+        "ci95_pp": [
+          -4.28,
+          -0.59
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "pre_onset": {
+        "exposed_rate": 0.2579,
+        "clean_rate": 0.2172,
+        "diff_pp": 4.073,
+        "se_pp": 0.833,
+        "t": 4.89,
+        "ci95_pp": [
+          2.44,
+          5.71
+        ],
+        "n_rows": 31893,
+        "n_exposed_rows": 23715
+      },
+      "post_onset": {
+        "exposed_rate": 0.181,
+        "clean_rate": 0.1584,
+        "diff_pp": 2.267,
+        "se_pp": 0.779,
+        "t": 2.91,
+        "ci95_pp": [
+          0.74,
+          3.79
+        ],
+        "n_rows": 31893,
+        "n_exposed_rows": 23715
+      },
+      "did_onset": {
+        "pre_gap_pp": 4.073,
+        "post_change_clean_pp": -5.882,
+        "diff_in_gaps_pp": -1.805,
+        "se_pp": 0.878,
+        "t": -2.06,
+        "ci95_pp": [
+          -3.53,
+          -0.08
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "never_restated_post_onset": {
+        "exposed_rate": 0.1346,
+        "clean_rate": 0.1071,
+        "diff_pp": 2.742,
+        "se_pp": 1.622,
+        "t": 1.69,
+        "ci95_pp": [
+          -0.44,
+          5.92
+        ],
+        "n_rows": 8422,
+        "n_exposed_rows": 5566
+      }
+    },
+    "board_refresh_test": {
+      "share_dst_filed_12m_before": 0.1319,
+      "exposed_share_if_dst_filed_12m_before": 0.7087,
+      "exposed_share_otherwise": 0.6616,
+      "diff_pp": 4.708,
+      "se_pp": 0.84,
+      "recent_exposed_share_if_dst_filed_12m_before": 0.4277,
+      "recent_exposed_share_otherwise": 0.3668,
+      "recent_diff_pp": 6.082,
+      "recent_se_pp": 0.845,
+      "any_diff_pp_yearFE": 5.438,
+      "any_se_pp_yearFE": 0.752,
+      "recent_diff_pp_yearFE": 4.755,
+      "recent_se_pp_yearFE": 0.751
+    },
+    "clean_destinations_no_history": {
+      "n_rows": 21772,
+      "share_of_rows": 0.3762,
+      "exposed": {
+        "n_exposed": 13015,
+        "post_file": {
+          "exposed_rate": 0.1264,
+          "clean_rate": 0.1268,
+          "diff_pp": -0.036,
+          "se_pp": 0.76,
+          "t": -0.05,
+          "ci95_pp": [
+            -1.53,
+            1.45
+          ],
+          "n_rows": 21772,
+          "n_exposed_rows": 13015
+        },
+        "post_onset": {
+          "exposed_rate": 0.1368,
+          "clean_rate": 0.1254,
+          "diff_pp": 1.138,
+          "se_pp": 0.779,
+          "t": 1.46,
+          "ci95_pp": [
+            -0.39,
+            2.67
+          ],
+          "n_rows": 21772,
+          "n_exposed_rows": 13015
+        },
+        "post_severe": {
+          "exposed_rate": 0.007,
+          "clean_rate": 0.0064,
+          "diff_pp": 0.06,
+          "se_pp": 0.152,
+          "t": 0.39,
+          "ci95_pp": [
+            -0.24,
+            0.36
+          ],
+          "n_rows": 21772,
+          "n_exposed_rows": 13015
+        },
+        "post_onset_yearFE": {
+          "diff_pp": 1.852,
+          "se_pp": 0.711,
+          "t": 2.6
+        },
+        "post_file_yearFE": {
+          "diff_pp": 1.867,
+          "se_pp": 0.651,
+          "t": 2.87
+        }
+      },
+      "exposed5y": {
+        "n_exposed": 7190,
+        "post_file": {
+          "exposed_rate": 0.1476,
+          "clean_rate": 0.1162,
+          "diff_pp": 3.14,
+          "se_pp": 0.704,
+          "t": 4.46,
+          "ci95_pp": [
+            1.76,
+            4.52
+          ],
+          "n_rows": 21772,
+          "n_exposed_rows": 7190
+        },
+        "post_onset": {
+          "exposed_rate": 0.1534,
+          "clean_rate": 0.1217,
+          "diff_pp": 3.168,
+          "se_pp": 0.716,
+          "t": 4.42,
+          "ci95_pp": [
+            1.76,
+            4.57
+          ],
+          "n_rows": 21772,
+          "n_exposed_rows": 7190
+        },
+        "post_severe": {
+          "exposed_rate": 0.0085,
+          "clean_rate": 0.0059,
+          "diff_pp": 0.259,
+          "se_pp": 0.139,
+          "t": 1.86,
+          "ci95_pp": [
+            -0.01,
+            0.53
+          ],
+          "n_rows": 21772,
+          "n_exposed_rows": 7190
+        },
+        "post_onset_yearFE": {
+          "diff_pp": 2.042,
+          "se_pp": 0.702,
+          "t": 2.91
+        },
+        "post_file_yearFE": {
+          "diff_pp": 2.048,
+          "se_pp": 0.678,
+          "t": 3.02
+        }
+      },
+      "exposed_served": {
+        "n_exposed": 4117,
+        "post_file": {
+          "exposed_rate": 0.1343,
+          "clean_rate": 0.1247,
+          "diff_pp": 0.96,
+          "se_pp": 0.792,
+          "t": 1.21,
+          "ci95_pp": [
+            -0.59,
+            2.51
+          ],
+          "n_rows": 21772,
+          "n_exposed_rows": 4117
+        },
+        "post_onset": {
+          "exposed_rate": 0.1433,
+          "clean_rate": 0.1296,
+          "diff_pp": 1.371,
+          "se_pp": 0.784,
+          "t": 1.75,
+          "ci95_pp": [
+            -0.17,
+            2.91
+          ],
+          "n_rows": 21772,
+          "n_exposed_rows": 4117
+        },
+        "post_severe": {
+          "exposed_rate": 0.008,
+          "clean_rate": 0.0065,
+          "diff_pp": 0.156,
+          "se_pp": 0.21,
+          "t": 0.74,
+          "ci95_pp": [
+            -0.26,
+            0.57
+          ],
+          "n_rows": 21772,
+          "n_exposed_rows": 4117
+        },
+        "post_onset_yearFE": {
+          "diff_pp": 2.285,
+          "se_pp": 0.723,
+          "t": 3.16
+        },
+        "post_file_yearFE": {
+          "diff_pp": 2.738,
+          "se_pp": 0.731,
+          "t": 3.74
+        }
+      },
+      "exposed_present_at_filing": {
+        "n_exposed": 5696,
+        "post_file": {
+          "exposed_rate": 0.1359,
+          "clean_rate": 0.1232,
+          "diff_pp": 1.266,
+          "se_pp": 0.708,
+          "t": 1.79,
+          "ci95_pp": [
+            -0.12,
+            2.65
+          ],
+          "n_rows": 21772,
+          "n_exposed_rows": 5696
+        },
+        "post_onset": {
+          "exposed_rate": 0.1438,
+          "clean_rate": 0.1281,
+          "diff_pp": 1.571,
+          "se_pp": 0.701,
+          "t": 2.24,
+          "ci95_pp": [
+            0.2,
+            2.95
+          ],
+          "n_rows": 21772,
+          "n_exposed_rows": 5696
+        },
+        "post_severe": {
+          "exposed_rate": 0.0081,
+          "clean_rate": 0.0063,
+          "diff_pp": 0.179,
+          "se_pp": 0.184,
+          "t": 0.97,
+          "ci95_pp": [
+            -0.18,
+            0.54
+          ],
+          "n_rows": 21772,
+          "n_exposed_rows": 5696
+        },
+        "post_onset_yearFE": {
+          "diff_pp": 1.854,
+          "se_pp": 0.659,
+          "t": 2.81
+        },
+        "post_file_yearFE": {
+          "diff_pp": 2.282,
+          "se_pp": 0.651,
+          "t": 3.51
+        }
+      }
+    },
+    "never_restated_yearFE": {
+      "post_onset_yearFE_exposed": {
+        "diff_pp": 2.689,
+        "se_pp": 0.737,
+        "t": 3.65
+      },
+      "post_onset_yearFE_exposed5y": {
+        "diff_pp": 2.551,
+        "se_pp": 0.706,
+        "t": 3.61
+      },
+      "post_onset_yearFE_exposed_served": {
+        "diff_pp": 3.057,
+        "se_pp": 0.714,
+        "t": 4.28
+      },
+      "post_onset_yearFE_exposed_present_at_filing": {
+        "diff_pp": 2.791,
+        "se_pp": 0.655,
+        "t": 4.26
+      }
+    },
+    "blank_check_flag": {
+      "ciks_fetched": 21427,
+      "ciks_fetched_ok": 21427,
+      "n_blank_check_ciks": 1852,
+      "share_pairs_with_blank_check_firm": 0.0676,
+      "share_restatement_filings_2020_2023_by_blank_check": 0.3086
+    },
+    "excluding_blank_check_firms": {
+      "n_rows": 53963,
+      "pre_file": {
+        "exposed_rate": 0.2924,
+        "clean_rate": 0.2474,
+        "diff_pp": 4.498,
+        "se_pp": 0.664,
+        "t": 6.78,
+        "ci95_pp": [
+          3.2,
+          5.8
+        ],
+        "n_rows": 53963,
+        "n_exposed_rows": 36247
+      },
+      "post_file": {
+        "exposed_rate": 0.2521,
+        "clean_rate": 0.242,
+        "diff_pp": 1.015,
+        "se_pp": 0.669,
+        "t": 1.52,
+        "ci95_pp": [
+          -0.3,
+          2.33
+        ],
+        "n_rows": 53963,
+        "n_exposed_rows": 36247
+      },
+      "did_file": {
+        "pre_gap_pp": 4.498,
+        "post_change_clean_pp": -0.542,
+        "diff_in_gaps_pp": -3.483,
+        "se_pp": 0.75,
+        "t": -4.64,
+        "ci95_pp": [
+          -4.95,
+          -2.01
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "did_file_cohortFE": {
+        "pre_gap_pp": 5.868,
+        "se_pre_pp": 0.644,
+        "diff_in_gaps_pp": -3.6,
+        "se_pp": 0.685,
+        "t": -5.26,
+        "controls": [
+          "formation-year FE + formation-year x post FE"
+        ]
+      },
+      "pre_onset": {
+        "exposed_rate": 0.2652,
+        "clean_rate": 0.2349,
+        "diff_pp": 3.031,
+        "se_pp": 0.65,
+        "t": 4.66,
+        "ci95_pp": [
+          1.76,
+          4.3
+        ],
+        "n_rows": 53963,
+        "n_exposed_rows": 36247
+      },
+      "post_onset": {
+        "exposed_rate": 0.1822,
+        "clean_rate": 0.1617,
+        "diff_pp": 2.05,
+        "se_pp": 0.553,
+        "t": 3.71,
+        "ci95_pp": [
+          0.97,
+          3.13
+        ],
+        "n_rows": 53963,
+        "n_exposed_rows": 36247
+      },
+      "did_onset": {
+        "pre_gap_pp": 3.031,
+        "post_change_clean_pp": -7.315,
+        "diff_in_gaps_pp": -0.98,
+        "se_pp": 0.677,
+        "t": -1.45,
+        "ci95_pp": [
+          -2.31,
+          0.35
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "never_restated_post_file": {
+        "exposed_rate": 0.237,
+        "clean_rate": 0.221,
+        "diff_pp": 1.596,
+        "se_pp": 1.003,
+        "t": 1.59,
+        "ci95_pp": [
+          -0.37,
+          3.56
+        ],
+        "n_rows": 23315,
+        "n_exposed_rows": 14116
+      },
+      "never_restated_post_onset": {
+        "exposed_rate": 0.1617,
+        "clean_rate": 0.1418,
+        "diff_pp": 1.991,
+        "se_pp": 0.816,
+        "t": 2.44,
+        "ci95_pp": [
+          0.39,
+          3.59
+        ],
+        "n_rows": 23315,
+        "n_exposed_rows": 14116
+      },
+      "life_plus1y_file": {
+        "exposed_rate": 0.3017,
+        "clean_rate": 0.2757,
+        "diff_pp": 2.606,
+        "se_pp": 0.699,
+        "t": 3.73,
+        "ci95_pp": [
+          1.24,
+          3.98
+        ],
+        "n_rows": 57050,
+        "n_exposed_rows": 38331
+      },
+      "recent5y_did_onset": {
+        "pre_gap_pp": 3.563,
+        "post_change_clean_pp": -8.255,
+        "diff_in_gaps_pp": 0.743,
+        "se_pp": 0.631,
+        "t": 1.18,
+        "ci95_pp": [
+          -0.49,
+          1.98
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "recent5y_post_onset": {
+        "exposed_rate": 0.2023,
+        "clean_rate": 0.1592,
+        "diff_pp": 4.305,
+        "se_pp": 0.515,
+        "t": 8.36,
+        "ci95_pp": [
+          3.3,
+          5.31
+        ],
+        "n_rows": 53963,
+        "n_exposed_rows": 20420
+      },
+      "recent5y_pre_onset": {
+        "exposed_rate": 0.2774,
+        "clean_rate": 0.2417,
+        "diff_pp": 3.563,
+        "se_pp": 0.561,
+        "t": 6.35,
+        "ci95_pp": [
+          2.46,
+          4.66
+        ],
+        "n_rows": 53963,
+        "n_exposed_rows": 20420
+      },
+      "clean_post_onset": {
+        "exposed_rate": 0.1345,
+        "clean_rate": 0.1226,
+        "diff_pp": 1.191,
+        "se_pp": 0.804,
+        "t": 1.48,
+        "ci95_pp": [
+          -0.39,
+          2.77
+        ],
+        "n_rows": 20347,
+        "n_exposed_rows": 12196
+      },
+      "clean_post_onset_recent5y": {
+        "exposed_rate": 0.1526,
+        "clean_rate": 0.1184,
+        "diff_pp": 3.418,
+        "se_pp": 0.742,
+        "t": 4.61,
+        "ci95_pp": [
+          1.96,
+          4.87
+        ],
+        "n_rows": 20347,
+        "n_exposed_rows": 6710
+      }
+    },
+    "common_name_sensitivity": {
+      "surname_shared_by_at_most_150_names": {
+        "n_rows": 52580,
+        "share_rows_kept": 0.9085,
+        "pre_file": {
+          "exposed_rate": 0.296,
+          "clean_rate": 0.2468,
+          "diff_pp": 4.921,
+          "se_pp": 0.671,
+          "t": 7.33,
+          "ci95_pp": [
+            3.61,
+            6.24
+          ],
+          "n_rows": 52580,
+          "n_exposed_rows": 35023
+        },
+        "post_file": {
+          "exposed_rate": 0.2626,
+          "clean_rate": 0.253,
+          "diff_pp": 0.962,
+          "se_pp": 0.707,
+          "t": 1.36,
+          "ci95_pp": [
+            -0.42,
+            2.35
+          ],
+          "n_rows": 52580,
+          "n_exposed_rows": 35023
+        },
+        "did_file": {
+          "pre_gap_pp": 4.921,
+          "post_change_clean_pp": 0.621,
+          "diff_in_gaps_pp": -3.959,
+          "se_pp": 0.801,
+          "t": -4.94,
+          "ci95_pp": [
+            -5.53,
+            -2.39
+          ],
+          "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+        },
+        "pre_onset": {
+          "exposed_rate": 0.2804,
+          "clean_rate": 0.2515,
+          "diff_pp": 2.886,
+          "se_pp": 0.691,
+          "t": 4.18,
+          "ci95_pp": [
+            1.53,
+            4.24
+          ],
+          "n_rows": 52580,
+          "n_exposed_rows": 35023
+        },
+        "post_onset": {
+          "exposed_rate": 0.1816,
+          "clean_rate": 0.1572,
+          "diff_pp": 2.436,
+          "se_pp": 0.555,
+          "t": 4.39,
+          "ci95_pp": [
+            1.35,
+            3.52
+          ],
+          "n_rows": 52580,
+          "n_exposed_rows": 35023
+        },
+        "did_onset": {
+          "pre_gap_pp": 2.886,
+          "post_change_clean_pp": -9.432,
+          "diff_in_gaps_pp": -0.45,
+          "se_pp": 0.72,
+          "t": -0.63,
+          "ci95_pp": [
+            -1.86,
+            0.96
+          ],
+          "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+        },
+        "clean_destinations_post_onset": {
+          "exposed_rate": 0.1372,
+          "clean_rate": 0.1228,
+          "diff_pp": 1.433,
+          "se_pp": 0.829,
+          "t": 1.73,
+          "ci95_pp": [
+            -0.19,
+            3.06
+          ],
+          "n_rows": 19760,
+          "n_exposed_rows": 11693
+        },
+        "clean_destinations_post_onset_recent5y": {
+          "exposed_rate": 0.1547,
+          "clean_rate": 0.1198,
+          "diff_pp": 3.487,
+          "se_pp": 0.767,
+          "t": 4.55,
+          "ci95_pp": [
+            1.98,
+            4.99
+          ],
+          "n_rows": 19760,
+          "n_exposed_rows": 6530
+        }
+      },
+      "surname_shared_by_at_most_50_names": {
+        "n_rows": 43389,
+        "share_rows_kept": 0.7497,
+        "pre_file": {
+          "exposed_rate": 0.2975,
+          "clean_rate": 0.244,
+          "diff_pp": 5.347,
+          "se_pp": 0.697,
+          "t": 7.67,
+          "ci95_pp": [
+            3.98,
+            6.71
+          ],
+          "n_rows": 43389,
+          "n_exposed_rows": 28883
+        },
+        "post_file": {
+          "exposed_rate": 0.2621,
+          "clean_rate": 0.2536,
+          "diff_pp": 0.851,
+          "se_pp": 0.747,
+          "t": 1.14,
+          "ci95_pp": [
+            -0.61,
+            2.32
+          ],
+          "n_rows": 43389,
+          "n_exposed_rows": 28883
+        },
+        "did_file": {
+          "pre_gap_pp": 5.347,
+          "post_change_clean_pp": 0.951,
+          "diff_in_gaps_pp": -4.497,
+          "se_pp": 0.883,
+          "t": -5.09,
+          "ci95_pp": [
+            -6.23,
+            -2.77
+          ],
+          "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+        },
+        "pre_onset": {
+          "exposed_rate": 0.2813,
+          "clean_rate": 0.2535,
+          "diff_pp": 2.786,
+          "se_pp": 0.718,
+          "t": 3.88,
+          "ci95_pp": [
+            1.38,
+            4.19
+          ],
+          "n_rows": 43389,
+          "n_exposed_rows": 28883
+        },
+        "post_onset": {
+          "exposed_rate": 0.1811,
+          "clean_rate": 0.1552,
+          "diff_pp": 2.59,
+          "se_pp": 0.579,
+          "t": 4.47,
+          "ci95_pp": [
+            1.46,
+            3.72
+          ],
+          "n_rows": 43389,
+          "n_exposed_rows": 28883
+        },
+        "did_onset": {
+          "pre_gap_pp": 2.786,
+          "post_change_clean_pp": -9.824,
+          "diff_in_gaps_pp": -0.196,
+          "se_pp": 0.766,
+          "t": -0.26,
+          "ci95_pp": [
+            -1.7,
+            1.3
+          ],
+          "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+        },
+        "clean_destinations_post_onset": {
+          "exposed_rate": 0.1362,
+          "clean_rate": 0.1227,
+          "diff_pp": 1.353,
+          "se_pp": 0.814,
+          "t": 1.66,
+          "ci95_pp": [
+            -0.24,
+            2.95
+          ],
+          "n_rows": 16318,
+          "n_exposed_rows": 9641
+        },
+        "clean_destinations_post_onset_recent5y": {
+          "exposed_rate": 0.1514,
+          "clean_rate": 0.1202,
+          "diff_pp": 3.12,
+          "se_pp": 0.798,
+          "t": 3.91,
+          "ci95_pp": [
+            1.56,
+            4.68
+          ],
+          "n_rows": 16318,
+          "n_exposed_rows": 5455
+        }
+      }
+    },
+    "artifact_flags": {
+      "n_family_ciks": 1503,
+      "n_shell_ciks": 2000,
+      "share_pairs_flagged": 0.2539,
+      "share_flagged_among_high_seat_directors": 0.396,
+      "share_flagged_among_other_directors": 0.172
+    },
+    "artifacts_removed_all_directors": {
+      "n_rows": 43183,
+      "pre_file": {
+        "exposed_rate": 0.3013,
+        "clean_rate": 0.2677,
+        "diff_pp": 3.362,
+        "se_pp": 0.638,
+        "t": 5.27,
+        "ci95_pp": [
+          2.11,
+          4.61
+        ],
+        "n_rows": 43183,
+        "n_exposed_rows": 30187
+      },
+      "post_file": {
+        "exposed_rate": 0.2595,
+        "clean_rate": 0.2653,
+        "diff_pp": -0.583,
+        "se_pp": 0.631,
+        "t": -0.92,
+        "ci95_pp": [
+          -1.82,
+          0.65
+        ],
+        "n_rows": 43183,
+        "n_exposed_rows": 30187
+      },
+      "did_file": {
+        "pre_gap_pp": 3.362,
+        "post_change_clean_pp": -0.239,
+        "diff_in_gaps_pp": -3.945,
+        "se_pp": 0.793,
+        "t": -4.97,
+        "ci95_pp": [
+          -5.5,
+          -2.39
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "pre_onset": {
+        "exposed_rate": 0.2714,
+        "clean_rate": 0.2593,
+        "diff_pp": 1.21,
+        "se_pp": 0.618,
+        "t": 1.96,
+        "ci95_pp": [
+          -0.0,
+          2.42
+        ],
+        "n_rows": 43183,
+        "n_exposed_rows": 30187
+      },
+      "post_onset": {
+        "exposed_rate": 0.1856,
+        "clean_rate": 0.1726,
+        "diff_pp": 1.299,
+        "se_pp": 0.54,
+        "t": 2.4,
+        "ci95_pp": [
+          0.24,
+          2.36
+        ],
+        "n_rows": 43183,
+        "n_exposed_rows": 30187
+      },
+      "did_onset": {
+        "pre_gap_pp": 1.21,
+        "post_change_clean_pp": -8.672,
+        "diff_in_gaps_pp": 0.089,
+        "se_pp": 0.718,
+        "t": 0.12,
+        "ci95_pp": [
+          -1.32,
+          1.5
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "never_restated_post_file": {
+        "exposed_rate": 0.2495,
+        "clean_rate": 0.256,
+        "diff_pp": -0.649,
+        "se_pp": 0.974,
+        "t": -0.67,
+        "ci95_pp": [
+          -2.56,
+          1.26
+        ],
+        "n_rows": 17516,
+        "n_exposed_rows": 11308
+      },
+      "never_restated_post_onset": {
+        "exposed_rate": 0.1673,
+        "clean_rate": 0.1574,
+        "diff_pp": 0.994,
+        "se_pp": 0.814,
+        "t": 1.22,
+        "ci95_pp": [
+          -0.6,
+          2.59
+        ],
+        "n_rows": 17516,
+        "n_exposed_rows": 11308
+      },
+      "clean_post_onset": {
+        "exposed_rate": 0.1391,
+        "clean_rate": 0.1369,
+        "diff_pp": 0.221,
+        "se_pp": 0.803,
+        "t": 0.28,
+        "ci95_pp": [
+          -1.35,
+          1.79
+        ],
+        "n_rows": 15043,
+        "n_exposed_rows": 9682
+      },
+      "clean_post_onset_recent5y": {
+        "exposed_rate": 0.1572,
+        "clean_rate": 0.1278,
+        "diff_pp": 2.941,
+        "se_pp": 0.837,
+        "t": 3.52,
+        "ci95_pp": [
+          1.3,
+          4.58
+        ],
+        "n_rows": 15043,
+        "n_exposed_rows": 5374
+      },
+      "life_plus1y_file": {
+        "exposed_rate": 0.3087,
+        "clean_rate": 0.2991,
+        "diff_pp": 0.963,
+        "se_pp": 0.645,
+        "t": 1.49,
+        "ci95_pp": [
+          -0.3,
+          2.23
+        ],
+        "n_rows": 45772,
+        "n_exposed_rows": 31932
+      }
+    },
+    "high_seat_directors_only": {
+      "n_rows": 21159,
+      "pre_file": {
+        "exposed_rate": 0.2866,
+        "clean_rate": 0.236,
+        "diff_pp": 5.057,
+        "se_pp": 1.233,
+        "t": 4.1,
+        "ci95_pp": [
+          2.64,
+          7.47
+        ],
+        "n_rows": 21159,
+        "n_exposed_rows": 13457
+      },
+      "post_file": {
+        "exposed_rate": 0.2604,
+        "clean_rate": 0.2273,
+        "diff_pp": 3.304,
+        "se_pp": 1.239,
+        "t": 2.67,
+        "ci95_pp": [
+          0.88,
+          5.73
+        ],
+        "n_rows": 21159,
+        "n_exposed_rows": 13457
+      },
+      "did_file": {
+        "pre_gap_pp": 5.057,
+        "post_change_clean_pp": -0.87,
+        "diff_in_gaps_pp": -1.753,
+        "se_pp": 1.352,
+        "t": -1.3,
+        "ci95_pp": [
+          -4.4,
+          0.9
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "pre_onset": {
+        "exposed_rate": 0.2851,
+        "clean_rate": 0.2305,
+        "diff_pp": 5.467,
+        "se_pp": 1.229,
+        "t": 4.45,
+        "ci95_pp": [
+          3.06,
+          7.88
+        ],
+        "n_rows": 21159,
+        "n_exposed_rows": 13457
+      },
+      "post_onset": {
+        "exposed_rate": 0.1788,
+        "clean_rate": 0.1471,
+        "diff_pp": 3.169,
+        "se_pp": 0.958,
+        "t": 3.31,
+        "ci95_pp": [
+          1.29,
+          5.05
+        ],
+        "n_rows": 21159,
+        "n_exposed_rows": 13457
+      },
+      "did_onset": {
+        "pre_gap_pp": 5.467,
+        "post_change_clean_pp": -8.335,
+        "diff_in_gaps_pp": -2.298,
+        "se_pp": 1.242,
+        "t": -1.85,
+        "ci95_pp": [
+          -4.73,
+          0.14
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "never_restated_post_file": {
+        "exposed_rate": 0.2634,
+        "clean_rate": 0.2039,
+        "diff_pp": 5.949,
+        "se_pp": 1.772,
+        "t": 3.36,
+        "ci95_pp": [
+          2.48,
+          9.42
+        ],
+        "n_rows": 10029,
+        "n_exposed_rows": 5688
+      },
+      "never_restated_post_onset": {
+        "exposed_rate": 0.1667,
+        "clean_rate": 0.1251,
+        "diff_pp": 4.158,
+        "se_pp": 1.395,
+        "t": 2.98,
+        "ci95_pp": [
+          1.42,
+          6.89
+        ],
+        "n_rows": 10029,
+        "n_exposed_rows": 5688
+      },
+      "clean_post_onset": {
+        "exposed_rate": 0.1341,
+        "clean_rate": 0.1054,
+        "diff_pp": 2.872,
+        "se_pp": 1.389,
+        "t": 2.07,
+        "ci95_pp": [
+          0.15,
+          5.59
+        ],
+        "n_rows": 8593,
+        "n_exposed_rows": 4750
+      },
+      "clean_post_onset_recent5y": {
+        "exposed_rate": 0.1539,
+        "clean_rate": 0.107,
+        "diff_pp": 4.69,
+        "se_pp": 1.316,
+        "t": 3.56,
+        "ci95_pp": [
+          2.11,
+          7.27
+        ],
+        "n_rows": 8593,
+        "n_exposed_rows": 2612
+      },
+      "life_plus1y_file": null
+    },
+    "high_seat_directors_only_artifacts_removed": {
+      "n_rows": 12779,
+      "pre_file": {
+        "exposed_rate": 0.2998,
+        "clean_rate": 0.2827,
+        "diff_pp": 1.7,
+        "se_pp": 1.294,
+        "t": 1.31,
+        "ci95_pp": [
+          -0.84,
+          4.24
+        ],
+        "n_rows": 12779,
+        "n_exposed_rows": 8924
+      },
+      "post_file": {
+        "exposed_rate": 0.2669,
+        "clean_rate": 0.2672,
+        "diff_pp": -0.026,
+        "se_pp": 1.264,
+        "t": -0.02,
+        "ci95_pp": [
+          -2.5,
+          2.45
+        ],
+        "n_rows": 12779,
+        "n_exposed_rows": 8924
+      },
+      "did_file": {
+        "pre_gap_pp": 1.7,
+        "post_change_clean_pp": -1.556,
+        "diff_in_gaps_pp": -1.727,
+        "se_pp": 1.544,
+        "t": -1.12,
+        "ci95_pp": [
+          -4.75,
+          1.3
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "pre_onset": {
+        "exposed_rate": 0.2885,
+        "clean_rate": 0.2776,
+        "diff_pp": 1.099,
+        "se_pp": 1.239,
+        "t": 0.89,
+        "ci95_pp": [
+          -1.33,
+          3.53
+        ],
+        "n_rows": 12779,
+        "n_exposed_rows": 8924
+      },
+      "post_onset": {
+        "exposed_rate": 0.1828,
+        "clean_rate": 0.1668,
+        "diff_pp": 1.597,
+        "se_pp": 0.992,
+        "t": 1.61,
+        "ci95_pp": [
+          -0.35,
+          3.54
+        ],
+        "n_rows": 12779,
+        "n_exposed_rows": 8924
+      },
+      "did_onset": {
+        "pre_gap_pp": 1.099,
+        "post_change_clean_pp": -11.077,
+        "diff_in_gaps_pp": 0.498,
+        "se_pp": 1.449,
+        "t": 0.34,
+        "ci95_pp": [
+          -2.34,
+          3.34
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "never_restated_post_file": {
+        "exposed_rate": 0.278,
+        "clean_rate": 0.2571,
+        "diff_pp": 2.084,
+        "se_pp": 1.965,
+        "t": 1.06,
+        "ci95_pp": [
+          -1.77,
+          5.94
+        ],
+        "n_rows": 5239,
+        "n_exposed_rows": 3450
+      },
+      "never_restated_post_onset": {
+        "exposed_rate": 0.1875,
+        "clean_rate": 0.1537,
+        "diff_pp": 3.382,
+        "se_pp": 1.581,
+        "t": 2.14,
+        "ci95_pp": [
+          0.28,
+          6.48
+        ],
+        "n_rows": 5239,
+        "n_exposed_rows": 3450
+      },
+      "clean_post_onset": {
+        "exposed_rate": 0.1483,
+        "clean_rate": 0.1295,
+        "diff_pp": 1.879,
+        "se_pp": 1.566,
+        "t": 1.2,
+        "ci95_pp": [
+          -1.19,
+          4.95
+        ],
+        "n_rows": 4374,
+        "n_exposed_rows": 2860
+      },
+      "clean_post_onset_recent5y": {
+        "exposed_rate": 0.1722,
+        "clean_rate": 0.1247,
+        "diff_pp": 4.746,
+        "se_pp": 1.795,
+        "t": 2.64,
+        "ci95_pp": [
+          1.23,
+          8.26
+        ],
+        "n_rows": 4374,
+        "n_exposed_rows": 1568
+      },
+      "life_plus1y_file": null
+    },
+    "most_connected_names": [
+      {
+        "rank": 1,
+        "firms_interlocked": 58,
+        "share_firms_shell": 0.0,
+        "share_firms_family": 1.0
+      },
+      {
+        "rank": 2,
+        "firms_interlocked": 53,
+        "share_firms_shell": 0.019,
+        "share_firms_family": 0.019
+      },
+      {
+        "rank": 3,
+        "firms_interlocked": 50,
+        "share_firms_shell": 0.0,
+        "share_firms_family": 1.0
+      },
+      {
+        "rank": 4,
+        "firms_interlocked": 49,
+        "share_firms_shell": 0.0,
+        "share_firms_family": 0.98
+      },
+      {
+        "rank": 5,
+        "firms_interlocked": 45,
+        "share_firms_shell": 0.0,
+        "share_firms_family": 1.0
+      }
+    ],
+    "event_time_gaps": {
+      "-3": {
+        "file": {
+          "exposed_rate": 0.1128,
+          "clean_rate": 0.0859,
+          "diff_pp": 2.694,
+          "se_pp": 0.365,
+          "t": 7.38,
+          "ci95_pp": [
+            1.98,
+            3.41
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 38650
+        },
+        "onset": {
+          "exposed_rate": 0.1065,
+          "clean_rate": 0.0877,
+          "diff_pp": 1.884,
+          "se_pp": 0.366,
+          "t": 5.15,
+          "ci95_pp": [
+            1.17,
+            2.6
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 38650
+        },
+        "file_recent5y": {
+          "exposed_rate": 0.124,
+          "clean_rate": 0.0918,
+          "diff_pp": 3.227,
+          "se_pp": 0.374,
+          "t": 8.64,
+          "ci95_pp": [
+            2.5,
+            3.96
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 21696
+        },
+        "onset_recent5y": {
+          "exposed_rate": 0.11,
+          "clean_rate": 0.0944,
+          "diff_pp": 1.561,
+          "se_pp": 0.346,
+          "t": 4.51,
+          "ci95_pp": [
+            0.88,
+            2.24
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 21696
+        }
+      },
+      "-2": {
+        "file": {
+          "exposed_rate": 0.1157,
+          "clean_rate": 0.1022,
+          "diff_pp": 1.346,
+          "se_pp": 0.416,
+          "t": 3.23,
+          "ci95_pp": [
+            0.53,
+            2.16
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 38650
+        },
+        "onset": {
+          "exposed_rate": 0.116,
+          "clean_rate": 0.0964,
+          "diff_pp": 1.962,
+          "se_pp": 0.408,
+          "t": 4.81,
+          "ci95_pp": [
+            1.16,
+            2.76
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 38650
+        },
+        "file_recent5y": {
+          "exposed_rate": 0.1312,
+          "clean_rate": 0.0992,
+          "diff_pp": 3.197,
+          "se_pp": 0.395,
+          "t": 8.09,
+          "ci95_pp": [
+            2.42,
+            3.97
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 21696
+        },
+        "onset_recent5y": {
+          "exposed_rate": 0.1187,
+          "clean_rate": 0.104,
+          "diff_pp": 1.466,
+          "se_pp": 0.37,
+          "t": 3.96,
+          "ci95_pp": [
+            0.74,
+            2.19
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 21696
+        }
+      },
+      "-1": {
+        "file": {
+          "exposed_rate": 0.14,
+          "clean_rate": 0.1157,
+          "diff_pp": 2.431,
+          "se_pp": 0.432,
+          "t": 5.63,
+          "ci95_pp": [
+            1.58,
+            3.28
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 38650
+        },
+        "onset": {
+          "exposed_rate": 0.1227,
+          "clean_rate": 0.1157,
+          "diff_pp": 0.697,
+          "se_pp": 0.438,
+          "t": 1.59,
+          "ci95_pp": [
+            -0.16,
+            1.56
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 38650
+        },
+        "file_recent5y": {
+          "exposed_rate": 0.1505,
+          "clean_rate": 0.1208,
+          "diff_pp": 2.973,
+          "se_pp": 0.412,
+          "t": 7.21,
+          "ci95_pp": [
+            2.16,
+            3.78
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 21696
+        },
+        "onset_recent5y": {
+          "exposed_rate": 0.1261,
+          "clean_rate": 0.117,
+          "diff_pp": 0.91,
+          "se_pp": 0.385,
+          "t": 2.36,
+          "ci95_pp": [
+            0.15,
+            1.66
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 21696
+        }
+      },
+      "0": {
+        "file": {
+          "exposed_rate": 0.1423,
+          "clean_rate": 0.1337,
+          "diff_pp": 0.862,
+          "se_pp": 0.484,
+          "t": 1.78,
+          "ci95_pp": [
+            -0.09,
+            1.81
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 38650
+        },
+        "onset": {
+          "exposed_rate": 0.0905,
+          "clean_rate": 0.0791,
+          "diff_pp": 1.138,
+          "se_pp": 0.383,
+          "t": 2.97,
+          "ci95_pp": [
+            0.39,
+            1.89
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 38650
+        },
+        "file_recent5y": {
+          "exposed_rate": 0.1468,
+          "clean_rate": 0.135,
+          "diff_pp": 1.189,
+          "se_pp": 0.421,
+          "t": 2.83,
+          "ci95_pp": [
+            0.36,
+            2.01
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 21696
+        },
+        "onset_recent5y": {
+          "exposed_rate": 0.099,
+          "clean_rate": 0.0793,
+          "diff_pp": 1.961,
+          "se_pp": 0.362,
+          "t": 5.42,
+          "ci95_pp": [
+            1.25,
+            2.67
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 21696
+        }
+      },
+      "1": {
+        "file": {
+          "exposed_rate": 0.105,
+          "clean_rate": 0.0996,
+          "diff_pp": 0.543,
+          "se_pp": 0.4,
+          "t": 1.36,
+          "ci95_pp": [
+            -0.24,
+            1.33
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 38650
+        },
+        "onset": {
+          "exposed_rate": 0.0745,
+          "clean_rate": 0.066,
+          "diff_pp": 0.847,
+          "se_pp": 0.323,
+          "t": 2.62,
+          "ci95_pp": [
+            0.21,
+            1.48
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 38650
+        },
+        "file_recent5y": {
+          "exposed_rate": 0.1158,
+          "clean_rate": 0.0957,
+          "diff_pp": 2.017,
+          "se_pp": 0.384,
+          "t": 5.25,
+          "ci95_pp": [
+            1.26,
+            2.77
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 21696
+        },
+        "onset_recent5y": {
+          "exposed_rate": 0.0817,
+          "clean_rate": 0.0656,
+          "diff_pp": 1.611,
+          "se_pp": 0.327,
+          "t": 4.92,
+          "ci95_pp": [
+            0.97,
+            2.25
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 21696
+        }
+      },
+      "2": {
+        "file": {
+          "exposed_rate": 0.0873,
+          "clean_rate": 0.0788,
+          "diff_pp": 0.848,
+          "se_pp": 0.377,
+          "t": 2.25,
+          "ci95_pp": [
+            0.11,
+            1.59
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 38650
+        },
+        "onset": {
+          "exposed_rate": 0.0635,
+          "clean_rate": 0.0541,
+          "diff_pp": 0.938,
+          "se_pp": 0.329,
+          "t": 2.85,
+          "ci95_pp": [
+            0.29,
+            1.58
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 38650
+        },
+        "file_recent5y": {
+          "exposed_rate": 0.0945,
+          "clean_rate": 0.0785,
+          "diff_pp": 1.597,
+          "se_pp": 0.345,
+          "t": 4.63,
+          "ci95_pp": [
+            0.92,
+            2.27
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 21696
+        },
+        "onset_recent5y": {
+          "exposed_rate": 0.0712,
+          "clean_rate": 0.0539,
+          "diff_pp": 1.73,
+          "se_pp": 0.294,
+          "t": 5.88,
+          "ci95_pp": [
+            1.15,
+            2.31
+          ],
+          "n_rows": 57878,
+          "n_exposed_rows": 21696
+        }
+      }
+    },
+    "appointment_weighted": {
+      "n_appointments": 30954,
+      "mean_pairs_per_appointment": 1.87,
+      "pre_file": {
+        "diff_pp": 4.589,
+        "se_pp": 0.586,
+        "t": 7.83
+      },
+      "post_file": {
+        "diff_pp": -0.778,
+        "se_pp": 0.612,
+        "t": -1.27
+      },
+      "did_file": {
+        "diff_in_gaps_pp": -5.367,
+        "se_pp": 0.774,
+        "t": -6.94
+      },
+      "pre_onset": {
+        "diff_pp": 1.593,
+        "se_pp": 0.591,
+        "t": 2.7
+      },
+      "post_onset": {
+        "diff_pp": 1.54,
+        "se_pp": 0.513,
+        "t": 3.0
+      },
+      "did_onset": {
+        "diff_in_gaps_pp": -0.053,
+        "se_pp": 0.684,
+        "t": -0.08
+      },
+      "clean_post_onset": {
+        "diff_pp": 0.42,
+        "se_pp": 0.739,
+        "t": 0.57
+      },
+      "clean_post_onset_recent5y": {
+        "diff_pp": 2.153,
+        "se_pp": 0.737,
+        "t": 2.92
+      }
+    },
+    "reverse_direction": {
+      "n_rows": 57878,
+      "life_plus1y_file": {
+        "exposed_rate": 0.214,
+        "clean_rate": 0.1895,
+        "diff_pp": 2.444,
+        "se_pp": 0.492,
+        "t": 4.96,
+        "ci95_pp": [
+          1.48,
+          3.41
+        ],
+        "n_rows": 61655,
+        "n_exposed_rows": 34311
+      },
+      "life_plus1y_onset": {
+        "exposed_rate": 0.1598,
+        "clean_rate": 0.131,
+        "diff_pp": 2.874,
+        "se_pp": 0.415,
+        "t": 6.92,
+        "ci95_pp": [
+          2.06,
+          3.69
+        ],
+        "n_rows": 61655,
+        "n_exposed_rows": 34311
+      },
+      "pre_file": {
+        "exposed_rate": 0.2636,
+        "clean_rate": 0.2204,
+        "diff_pp": 4.317,
+        "se_pp": 0.531,
+        "t": 8.13,
+        "ci95_pp": [
+          3.28,
+          5.36
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 32228
+      },
+      "post_file": {
+        "exposed_rate": 0.1762,
+        "clean_rate": 0.1662,
+        "diff_pp": 1.005,
+        "se_pp": 0.464,
+        "t": 2.17,
+        "ci95_pp": [
+          0.1,
+          1.91
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 32228
+      },
+      "did_file": {
+        "pre_gap_pp": 4.317,
+        "post_change_clean_pp": -5.423,
+        "diff_in_gaps_pp": -3.312,
+        "se_pp": 0.538,
+        "t": -6.16,
+        "ci95_pp": [
+          -4.37,
+          -2.26
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "pre_onset": {
+        "exposed_rate": 0.1984,
+        "clean_rate": 0.1851,
+        "diff_pp": 1.33,
+        "se_pp": 0.488,
+        "t": 2.73,
+        "ci95_pp": [
+          0.37,
+          2.29
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 32228
+      },
+      "post_onset": {
+        "exposed_rate": 0.1326,
+        "clean_rate": 0.1108,
+        "diff_pp": 2.183,
+        "se_pp": 0.37,
+        "t": 5.9,
+        "ci95_pp": [
+          1.46,
+          2.91
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 32228
+      },
+      "did_onset": {
+        "pre_gap_pp": 1.33,
+        "post_change_clean_pp": -7.431,
+        "diff_in_gaps_pp": 0.853,
+        "se_pp": 0.479,
+        "t": 1.78,
+        "ci95_pp": [
+          -0.09,
+          1.79
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "never_restated_post_onset": {
+        "exposed_rate": 0.0895,
+        "clean_rate": 0.0838,
+        "diff_pp": 0.562,
+        "se_pp": 0.548,
+        "t": 1.03,
+        "ci95_pp": [
+          -0.51,
+          1.64
+        ],
+        "n_rows": 19228,
+        "n_exposed_rows": 9054
+      },
+      "never_restated_post_file": {
+        "exposed_rate": 0.1388,
+        "clean_rate": 0.1502,
+        "diff_pp": -1.135,
+        "se_pp": 0.783,
+        "t": -1.45,
+        "ci95_pp": [
+          -2.67,
+          0.4
+        ],
+        "n_rows": 19228,
+        "n_exposed_rows": 9054
+      },
+      "clean_post_onset": {
+        "exposed_rate": 0.0763,
+        "clean_rate": 0.0683,
+        "diff_pp": 0.803,
+        "se_pp": 0.486,
+        "t": 1.65,
+        "ci95_pp": [
+          -0.15,
+          1.76
+        ],
+        "n_rows": 17829,
+        "n_exposed_rows": 8454
+      },
+      "clean_post_onset_recent5y": {
+        "exposed_rate": 0.0815,
+        "clean_rate": 0.0673,
+        "diff_pp": 1.413,
+        "se_pp": 0.498,
+        "t": 2.83,
+        "ci95_pp": [
+          0.44,
+          2.39
+        ],
+        "n_rows": 17829,
+        "n_exposed_rows": 5965
+      }
+    },
+    "cap_definition": {
+      "cap_is_cumulative_firms_interlocked_2004_2025": true,
+      "share_pairs_director_concurrent_seats_le6": 0.8295,
+      "mean_seats_at_birth": 5.91
+    },
+    "concurrent_seats_le6_at_formation": {
+      "n_rows": 48008,
+      "pre_file": {
+        "exposed_rate": 0.3028,
+        "clean_rate": 0.26,
+        "diff_pp": 4.277,
+        "se_pp": 0.559,
+        "t": 7.65,
+        "ci95_pp": [
+          3.18,
+          5.37
+        ],
+        "n_rows": 48008,
+        "n_exposed_rows": 32974
+      },
+      "post_file": {
+        "exposed_rate": 0.2695,
+        "clean_rate": 0.2781,
+        "diff_pp": -0.862,
+        "se_pp": 0.586,
+        "t": -1.47,
+        "ci95_pp": [
+          -2.01,
+          0.29
+        ],
+        "n_rows": 48008,
+        "n_exposed_rows": 32974
+      },
+      "did_file": {
+        "pre_gap_pp": 4.277,
+        "post_change_clean_pp": 1.809,
+        "diff_in_gaps_pp": -5.139,
+        "se_pp": 0.749,
+        "t": -6.86,
+        "ci95_pp": [
+          -6.61,
+          -3.67
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "pre_onset": {
+        "exposed_rate": 0.2833,
+        "clean_rate": 0.2675,
+        "diff_pp": 1.573,
+        "se_pp": 0.568,
+        "t": 2.77,
+        "ci95_pp": [
+          0.46,
+          2.68
+        ],
+        "n_rows": 48008,
+        "n_exposed_rows": 32974
+      },
+      "post_onset": {
+        "exposed_rate": 0.1883,
+        "clean_rate": 0.1766,
+        "diff_pp": 1.173,
+        "se_pp": 0.498,
+        "t": 2.35,
+        "ci95_pp": [
+          0.2,
+          2.15
+        ],
+        "n_rows": 48008,
+        "n_exposed_rows": 32974
+      },
+      "did_onset": {
+        "pre_gap_pp": 1.573,
+        "post_change_clean_pp": -9.093,
+        "diff_in_gaps_pp": -0.4,
+        "se_pp": 0.67,
+        "t": -0.6,
+        "ci95_pp": [
+          -1.71,
+          0.91
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "never_restated_post_onset": {
+        "exposed_rate": 0.1672,
+        "clean_rate": 0.1607,
+        "diff_pp": 0.652,
+        "se_pp": 0.72,
+        "t": 0.91,
+        "ci95_pp": [
+          -0.76,
+          2.06
+        ],
+        "n_rows": 20344,
+        "n_exposed_rows": 12782
+      },
+      "clean_post_onset": {
+        "exposed_rate": 0.143,
+        "clean_rate": 0.1445,
+        "diff_pp": -0.157,
+        "se_pp": 0.728,
+        "t": -0.22,
+        "ci95_pp": [
+          -1.58,
+          1.27
+        ],
+        "n_rows": 17129,
+        "n_exposed_rows": 10778
+      },
+      "clean_post_onset_recent5y": {
+        "exposed_rate": 0.1585,
+        "clean_rate": 0.1354,
+        "diff_pp": 2.312,
+        "se_pp": 0.721,
+        "t": 3.21,
+        "ci95_pp": [
+          0.9,
+          3.73
+        ],
+        "n_rows": 17129,
+        "n_exposed_rows": 6050
+      }
+    },
+    "common_shock_controls": {
+      "share_same_sic2": 0.2306,
+      "exposed_share_same_sic2": 0.5841,
+      "exposed_share_diff_sic2": 0.6929,
+      "did_file_cohortFE_sameSIC": {
+        "pre_gap_pp": 5.585,
+        "se_pre_pp": 0.602,
+        "diff_in_gaps_pp": -4.218,
+        "se_pp": 0.687,
+        "t": -6.14,
+        "controls": [
+          "formation-year FE + formation-year x post FE",
+          "same_sic2 (+ x post)"
+        ]
+      },
+      "did_onset_cohortFE_sameSIC": {
+        "pre_gap_pp": 2.28,
+        "se_pre_pp": 0.583,
+        "diff_in_gaps_pp": -0.374,
+        "se_pp": 0.634,
+        "t": -0.59,
+        "controls": [
+          "formation-year FE + formation-year x post FE",
+          "same_sic2 (+ x post)"
+        ]
+      },
+      "did_file_cohortFE_dstIndustryXpost": {
+        "pre_gap_pp": 4.726,
+        "se_pre_pp": 0.532,
+        "diff_in_gaps_pp": -3.899,
+        "se_pp": 0.669,
+        "t": -5.83,
+        "n_industries": 73
+      },
+      "did_onset_cohortFE_dstIndustryXpost": {
+        "pre_gap_pp": 1.795,
+        "se_pre_pp": 0.526,
+        "diff_in_gaps_pp": -0.387,
+        "se_pp": 0.611,
+        "t": -0.63,
+        "n_industries": 73
+      },
+      "clean_post_onset_recent5y_same_sic2": {
+        "exposed_rate": 0.1393,
+        "clean_rate": 0.1005,
+        "diff_pp": 3.878,
+        "se_pp": 1.459,
+        "t": 2.66,
+        "ci95_pp": [
+          1.02,
+          6.74
+        ],
+        "n_rows": 6286,
+        "n_exposed_rows": 1730
+      },
+      "clean_post_onset_recent5y_diff_sic2": {
+        "exposed_rate": 0.1579,
+        "clean_rate": 0.1314,
+        "diff_pp": 2.652,
+        "se_pp": 0.763,
+        "t": 3.47,
+        "ci95_pp": [
+          1.16,
+          4.15
+        ],
+        "n_rows": 15486,
+        "n_exposed_rows": 5460
+      },
+      "share_same_state": 0.1814,
+      "exposed_share_same_state": 0.5898,
+      "exposed_share_diff_state": 0.6851,
+      "did_file_cohortFE_sameSIC_sameState": {
+        "pre_gap_pp": 5.416,
+        "se_pre_pp": 0.586,
+        "diff_in_gaps_pp": -4.132,
+        "se_pp": 0.682,
+        "t": -6.06,
+        "controls": [
+          "formation-year FE + formation-year x post FE",
+          "same_sic2 (+ x post)",
+          "same_state (+ x post)"
+        ]
+      },
+      "did_onset_cohortFE_sameSIC_sameState": {
+        "pre_gap_pp": 2.143,
+        "se_pre_pp": 0.572,
+        "diff_in_gaps_pp": -0.313,
+        "se_pp": 0.63,
+        "t": -0.5,
+        "controls": [
+          "formation-year FE + formation-year x post FE",
+          "same_sic2 (+ x post)",
+          "same_state (+ x post)"
+        ]
+      },
+      "did_file_cohortFE_dstIndustryXpost_sameState": {
+        "pre_gap_pp": 4.596,
+        "se_pre_pp": 0.528,
+        "diff_in_gaps_pp": -3.823,
+        "se_pp": 0.665,
+        "t": -5.75,
+        "n_industries": 73
+      },
+      "did_onset_cohortFE_dstIndustryXpost_sameState": {
+        "pre_gap_pp": 1.679,
+        "se_pre_pp": 0.523,
+        "diff_in_gaps_pp": -0.318,
+        "se_pp": 0.609,
+        "t": -0.52,
+        "n_industries": 73
+      },
+      "clean_post_onset_recent5y_same_state": {
+        "exposed_rate": 0.1581,
+        "clean_rate": 0.103,
+        "diff_pp": 5.507,
+        "se_pp": 1.753,
+        "t": 3.14,
+        "ci95_pp": [
+          2.07,
+          8.94
+        ],
+        "n_rows": 4812,
+        "n_exposed_rows": 1297
+      },
+      "clean_post_onset_recent5y_diff_state": {
+        "exposed_rate": 0.1524,
+        "clean_rate": 0.1277,
+        "diff_pp": 2.471,
+        "se_pp": 0.757,
+        "t": 3.26,
+        "ci95_pp": [
+          0.99,
+          3.95
+        ],
+        "n_rows": 16960,
+        "n_exposed_rows": 5893
+      }
+    },
+    "receptivity_heterogeneity": {
+      "n_history_free": 21772,
+      "n_with_size": 13954,
+      "size_bottom_tercile": {
+        "n_rows": 4651,
+        "post_onset_recent5y": {
+          "exposed_rate": 0.1595,
+          "clean_rate": 0.1592,
+          "diff_pp": 0.03,
+          "se_pp": 1.324,
+          "t": 0.02,
+          "ci95_pp": [
+            -2.56,
+            2.62
+          ],
+          "n_rows": 4651,
+          "n_exposed_rows": 1586
+        },
+        "post_onset_any": {
+          "exposed_rate": 0.158,
+          "clean_rate": 0.1613,
+          "diff_pp": -0.325,
+          "se_pp": 1.268,
+          "t": -0.26,
+          "ci95_pp": [
+            -2.81,
+            2.16
+          ],
+          "n_rows": 4651,
+          "n_exposed_rows": 2797
+        },
+        "post_file_recent5y": {
+          "exposed_rate": 0.1267,
+          "clean_rate": 0.1237,
+          "diff_pp": 0.308,
+          "se_pp": 1.198,
+          "t": 0.26,
+          "ci95_pp": [
+            -2.04,
+            2.66
+          ],
+          "n_rows": 4651,
+          "n_exposed_rows": 1586
+        }
+      },
+      "size_middle_tercile": {
+        "n_rows": 4653,
+        "post_onset_recent5y": {
+          "exposed_rate": 0.1531,
+          "clean_rate": 0.1493,
+          "diff_pp": 0.386,
+          "se_pp": 1.323,
+          "t": 0.29,
+          "ci95_pp": [
+            -2.21,
+            2.98
+          ],
+          "n_rows": 4653,
+          "n_exposed_rows": 1652
+        },
+        "post_onset_any": {
+          "exposed_rate": 0.1457,
+          "clean_rate": 0.1605,
+          "diff_pp": -1.474,
+          "se_pp": 1.427,
+          "t": -1.03,
+          "ci95_pp": [
+            -4.27,
+            1.32
+          ],
+          "n_rows": 4653,
+          "n_exposed_rows": 3095
+        },
+        "post_file_recent5y": {
+          "exposed_rate": 0.1707,
+          "clean_rate": 0.1633,
+          "diff_pp": 0.742,
+          "se_pp": 1.39,
+          "t": 0.53,
+          "ci95_pp": [
+            -1.98,
+            3.47
+          ],
+          "n_rows": 4653,
+          "n_exposed_rows": 1652
+        }
+      },
+      "size_top_tercile": {
+        "n_rows": 4650,
+        "post_onset_recent5y": {
+          "exposed_rate": 0.1501,
+          "clean_rate": 0.1063,
+          "diff_pp": 4.374,
+          "se_pp": 1.431,
+          "t": 3.06,
+          "ci95_pp": [
+            1.57,
+            7.18
+          ],
+          "n_rows": 4650,
+          "n_exposed_rows": 1706
+        },
+        "post_onset_any": {
+          "exposed_rate": 0.1241,
+          "clean_rate": 0.1176,
+          "diff_pp": 0.65,
+          "se_pp": 1.488,
+          "t": 0.44,
+          "ci95_pp": [
+            -2.27,
+            3.57
+          ],
+          "n_rows": 4650,
+          "n_exposed_rows": 3375
+        },
+        "post_file_recent5y": {
+          "exposed_rate": 0.1559,
+          "clean_rate": 0.1172,
+          "diff_pp": 3.873,
+          "se_pp": 1.423,
+          "t": 2.72,
+          "ci95_pp": [
+            1.08,
+            6.66
+          ],
+          "n_rows": 4650,
+          "n_exposed_rows": 1706
+        }
+      },
+      "dst_in_feed_lt3y": {
+        "n_rows": 13253,
+        "post_onset_recent5y": {
+          "exposed_rate": 0.1669,
+          "clean_rate": 0.1377,
+          "diff_pp": 2.92,
+          "se_pp": 0.927,
+          "t": 3.15,
+          "ci95_pp": [
+            1.1,
+            4.74
+          ],
+          "n_rows": 13253,
+          "n_exposed_rows": 4494
+        },
+        "post_onset_any": {
+          "exposed_rate": 0.1531,
+          "clean_rate": 0.1399,
+          "diff_pp": 1.327,
+          "se_pp": 0.93,
+          "t": 1.43,
+          "ci95_pp": [
+            -0.5,
+            3.15
+          ],
+          "n_rows": 13253,
+          "n_exposed_rows": 7719
+        },
+        "post_file_recent5y": {
+          "exposed_rate": 0.184,
+          "clean_rate": 0.1467,
+          "diff_pp": 3.732,
+          "se_pp": 0.956,
+          "t": 3.9,
+          "ci95_pp": [
+            1.86,
+            5.61
+          ],
+          "n_rows": 13253,
+          "n_exposed_rows": 4494
+        }
+      },
+      "dst_in_feed_ge3y": {
+        "n_rows": 8519,
+        "post_onset_recent5y": {
+          "exposed_rate": 0.1309,
+          "clean_rate": 0.0977,
+          "diff_pp": 3.322,
+          "se_pp": 1.116,
+          "t": 2.98,
+          "ci95_pp": [
+            1.13,
+            5.51
+          ],
+          "n_rows": 8519,
+          "n_exposed_rows": 2696
+        },
+        "post_onset_any": {
+          "exposed_rate": 0.1129,
+          "clean_rate": 0.1005,
+          "diff_pp": 1.239,
+          "se_pp": 1.448,
+          "t": 0.86,
+          "ci95_pp": [
+            -1.6,
+            4.08
+          ],
+          "n_rows": 8519,
+          "n_exposed_rows": 5296
+        },
+        "post_file_recent5y": {
+          "exposed_rate": 0.0868,
+          "clean_rate": 0.0702,
+          "diff_pp": 1.656,
+          "se_pp": 0.968,
+          "t": 1.71,
+          "ci95_pp": [
+            -0.24,
+            3.55
+          ],
+          "n_rows": 8519,
+          "n_exposed_rows": 2696
+        }
+      },
+      "size_tercile_cutpoints_log_assets": [
+        5.57,
+        7.86
+      ]
+    },
+    "prior_exposure_stock": {
+      "share_pairs_with_prior_exposed_tie": 0.738,
+      "mean_prior_exposed_ties": 3.826,
+      "did_file_cohortFE_priorstock": {
+        "pre_gap_pp": 4.563,
+        "se_pre_pp": 0.493,
+        "diff_in_gaps_pp": -3.156,
+        "se_pp": 0.584,
+        "t": -5.41,
+        "controls": [
+          "formation-year FE + formation-year x post FE",
+          "log1_prior_exposed (+ x post)",
+          "log1_prior_inbound (+ x post)"
+        ]
+      },
+      "did_onset_cohortFE_priorstock": {
+        "pre_gap_pp": 2.072,
+        "se_pre_pp": 0.466,
+        "diff_in_gaps_pp": -0.375,
+        "se_pp": 0.532,
+        "t": -0.71,
+        "controls": [
+          "formation-year FE + formation-year x post FE",
+          "log1_prior_exposed (+ x post)",
+          "log1_prior_inbound (+ x post)"
+        ]
+      },
+      "first_exposed_tie": {
+        "n_rows": 15165,
+        "pre_file": {
+          "exposed_rate": 0.2907,
+          "clean_rate": 0.2221,
+          "diff_pp": 6.862,
+          "se_pp": 0.848,
+          "t": 8.09,
+          "ci95_pp": [
+            5.2,
+            8.52
+          ],
+          "n_rows": 15165,
+          "n_exposed_rows": 8793
+        },
+        "post_file": {
+          "exposed_rate": 0.2932,
+          "clean_rate": 0.2969,
+          "diff_pp": -0.374,
+          "se_pp": 0.939,
+          "t": -0.4,
+          "ci95_pp": [
+            -2.21,
+            1.47
+          ],
+          "n_rows": 15165,
+          "n_exposed_rows": 8793
+        },
+        "did_file": {
+          "pre_gap_pp": 6.862,
+          "post_change_clean_pp": 7.486,
+          "diff_in_gaps_pp": -7.236,
+          "se_pp": 1.124,
+          "t": -6.44,
+          "ci95_pp": [
+            -9.44,
+            -5.03
+          ],
+          "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+        },
+        "pre_onset": {
+          "exposed_rate": 0.2785,
+          "clean_rate": 0.2451,
+          "diff_pp": 3.338,
+          "se_pp": 0.877,
+          "t": 3.81,
+          "ci95_pp": [
+            1.62,
+            5.06
+          ],
+          "n_rows": 15165,
+          "n_exposed_rows": 8793
+        },
+        "post_onset": {
+          "exposed_rate": 0.1934,
+          "clean_rate": 0.1748,
+          "diff_pp": 1.862,
+          "se_pp": 0.743,
+          "t": 2.51,
+          "ci95_pp": [
+            0.41,
+            3.32
+          ],
+          "n_rows": 15165,
+          "n_exposed_rows": 8793
+        },
+        "did_onset": {
+          "pre_gap_pp": 3.338,
+          "post_change_clean_pp": -7.031,
+          "diff_in_gaps_pp": -1.476,
+          "se_pp": 1.009,
+          "t": -1.46,
+          "ci95_pp": [
+            -3.45,
+            0.5
+          ],
+          "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+        },
+        "clean_post_onset": {
+          "exposed_rate": 0.1534,
+          "clean_rate": 0.1485,
+          "diff_pp": 0.487,
+          "se_pp": 0.962,
+          "t": 0.51,
+          "ci95_pp": [
+            -1.4,
+            2.37
+          ],
+          "n_rows": 7481,
+          "n_exposed_rows": 3912
+        },
+        "clean_post_onset_recent5y": {
+          "exposed_rate": 0.168,
+          "clean_rate": 0.1425,
+          "diff_pp": 2.548,
+          "se_pp": 0.993,
+          "t": 2.57,
+          "ci95_pp": [
+            0.6,
+            4.5
+          ],
+          "n_rows": 7481,
+          "n_exposed_rows": 2506
+        }
+      }
+    },
+    "warrant_wave_2021": {
+      "filings_2021": 1595,
+      "filings_2021_blank_check": 485,
+      "share_blank_check": 0.3041,
+      "blank_check_filings_2021_04_12_to_06_30": 207,
+      "example_registrant": "dMY Technology Group, Inc. II",
+      "example_filing_date": "2021-04-27"
+    },
+    "worked_example": {
+      "origin": "MUFG Americas Holdings Corp",
+      "destination": "Stride, Inc.",
+      "tie_formed": "2017-04-13",
+      "origin_last_filing_before_tie": "2016-05-09",
+      "origin_filings_before_tie": 6,
+      "destination_first_onset_after_tie": "2017-07-01",
+      "destination_first_filing_after_tie": "2017-10-27",
+      "years_from_origin_filing_to_tie": 0.93,
+      "months_from_tie_to_onset": 2.6
+    },
+    "strict_clean_origins": {
+      "share_clean_origins_filing_within_3y_after": 0.1448,
+      "n_rows": 55093,
+      "pre_file": {
+        "exposed_rate": 0.2945,
+        "clean_rate": 0.2436,
+        "diff_pp": 5.083,
+        "se_pp": 0.683,
+        "t": 7.44,
+        "ci95_pp": [
+          3.75,
+          6.42
+        ],
+        "n_rows": 55093,
+        "n_exposed_rows": 38650
+      },
+      "post_file": {
+        "exposed_rate": 0.2632,
+        "clean_rate": 0.2311,
+        "diff_pp": 3.206,
+        "se_pp": 0.681,
+        "t": 4.71,
+        "ci95_pp": [
+          1.87,
+          4.54
+        ],
+        "n_rows": 55093,
+        "n_exposed_rows": 38650
+      },
+      "did_file": {
+        "pre_gap_pp": 5.083,
+        "post_change_clean_pp": -1.253,
+        "diff_in_gaps_pp": -1.878,
+        "se_pp": 0.767,
+        "t": -2.45,
+        "ci95_pp": [
+          -3.38,
+          -0.37
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "pre_onset": {
+        "exposed_rate": 0.281,
+        "clean_rate": 0.2388,
+        "diff_pp": 4.224,
+        "se_pp": 0.681,
+        "t": 6.2,
+        "ci95_pp": [
+          2.89,
+          5.56
+        ],
+        "n_rows": 55093,
+        "n_exposed_rows": 38650
+      },
+      "post_onset": {
+        "exposed_rate": 0.1823,
+        "clean_rate": 0.1551,
+        "diff_pp": 2.722,
+        "se_pp": 0.555,
+        "t": 4.9,
+        "ci95_pp": [
+          1.63,
+          3.81
+        ],
+        "n_rows": 55093,
+        "n_exposed_rows": 38650
+      },
+      "did_onset": {
+        "pre_gap_pp": 4.224,
+        "post_change_clean_pp": -8.368,
+        "diff_in_gaps_pp": -1.502,
+        "se_pp": 0.704,
+        "t": -2.13,
+        "ci95_pp": [
+          -2.88,
+          -0.12
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "recent_pre_onset": {
+        "exposed_rate": 0.2891,
+        "clean_rate": 0.2549,
+        "diff_pp": 3.42,
+        "se_pp": 0.574,
+        "t": 5.96,
+        "ci95_pp": [
+          2.3,
+          4.54
+        ],
+        "n_rows": 55093,
+        "n_exposed_rows": 21696
+      },
+      "recent_post_onset": {
+        "exposed_rate": 0.2007,
+        "clean_rate": 0.157,
+        "diff_pp": 4.372,
+        "se_pp": 0.504,
+        "t": 8.68,
+        "ci95_pp": [
+          3.38,
+          5.36
+        ],
+        "n_rows": 55093,
+        "n_exposed_rows": 21696
+      },
+      "recent_did_onset": {
+        "pre_gap_pp": 3.42,
+        "post_change_clean_pp": -9.797,
+        "diff_in_gaps_pp": 0.952,
+        "se_pp": 0.641,
+        "t": 1.48,
+        "ci95_pp": [
+          -0.3,
+          2.21
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "clean_post_onset_recent5y": {
+        "exposed_rate": 0.1534,
+        "clean_rate": 0.1163,
+        "diff_pp": 3.711,
+        "se_pp": 0.727,
+        "t": 5.1,
+        "ci95_pp": [
+          2.29,
+          5.14
+        ],
+        "n_rows": 20613,
+        "n_exposed_rows": 7190
+      }
+    },
+    "both_directions_pooled": {
+      "n_rows": 146600,
+      "life_plus1y_file": {
+        "exposed_rate": 0.2531,
+        "clean_rate": 0.1716,
+        "diff_pp": 8.151,
+        "se_pp": 0.969,
+        "t": 8.41,
+        "ci95_pp": [
+          6.25,
+          10.05
+        ],
+        "n_rows": 154396,
+        "n_exposed_rows": 83608
+      },
+      "life_plus1y_onset": {
+        "exposed_rate": 0.1803,
+        "clean_rate": 0.1175,
+        "diff_pp": 6.282,
+        "se_pp": 0.742,
+        "t": 8.47,
+        "ci95_pp": [
+          4.83,
+          7.74
+        ],
+        "n_rows": 154396,
+        "n_exposed_rows": 83608
+      },
+      "pre_file": {
+        "exposed_rate": 0.2826,
+        "clean_rate": 0.1714,
+        "diff_pp": 11.122,
+        "se_pp": 1.0,
+        "t": 11.12,
+        "ci95_pp": [
+          9.16,
+          13.08
+        ],
+        "n_rows": 146600,
+        "n_exposed_rows": 78843
+      },
+      "post_file": {
+        "exposed_rate": 0.211,
+        "clean_rate": 0.1488,
+        "diff_pp": 6.216,
+        "se_pp": 0.904,
+        "t": 6.88,
+        "ci95_pp": [
+          4.44,
+          7.99
+        ],
+        "n_rows": 146600,
+        "n_exposed_rows": 78843
+      },
+      "did_file": {
+        "pre_gap_pp": 11.122,
+        "post_change_clean_pp": -2.255,
+        "diff_in_gaps_pp": -4.906,
+        "se_pp": 0.632,
+        "t": -7.77,
+        "ci95_pp": [
+          -6.14,
+          -3.67
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "pre_onset": {
+        "exposed_rate": 0.2453,
+        "clean_rate": 0.1553,
+        "diff_pp": 8.994,
+        "se_pp": 0.931,
+        "t": 9.66,
+        "ci95_pp": [
+          7.17,
+          10.82
+        ],
+        "n_rows": 146600,
+        "n_exposed_rows": 78843
+      },
+      "post_onset": {
+        "exposed_rate": 0.1491,
+        "clean_rate": 0.0962,
+        "diff_pp": 5.292,
+        "se_pp": 0.628,
+        "t": 8.43,
+        "ci95_pp": [
+          4.06,
+          6.52
+        ],
+        "n_rows": 146600,
+        "n_exposed_rows": 78843
+      },
+      "did_onset": {
+        "pre_gap_pp": 8.994,
+        "post_change_clean_pp": -5.915,
+        "diff_in_gaps_pp": -3.701,
+        "se_pp": 0.616,
+        "t": -6.01,
+        "ci95_pp": [
+          -4.91,
+          -2.49
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "never_restated_post_file": {
+        "exposed_rate": 0.2,
+        "clean_rate": 0.1152,
+        "diff_pp": 8.484,
+        "se_pp": 1.202,
+        "t": 7.06,
+        "ci95_pp": [
+          6.13,
+          10.84
+        ],
+        "n_rows": 67757,
+        "n_exposed_rows": 27703
+      },
+      "never_restated_post_onset": {
+        "exposed_rate": 0.1253,
+        "clean_rate": 0.0682,
+        "diff_pp": 5.715,
+        "se_pp": 0.862,
+        "t": 6.63,
+        "ci95_pp": [
+          4.03,
+          7.4
+        ],
+        "n_rows": 67757,
+        "n_exposed_rows": 27703
+      },
+      "reverse_direction_post_file": {
+        "exposed_rate": 0.1762,
+        "clean_rate": 0.1662,
+        "diff_pp": 1.005,
+        "se_pp": 0.464,
+        "t": 2.17,
+        "ci95_pp": [
+          0.1,
+          1.91
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 32228
+      },
+      "reverse_direction_pre_file": {
+        "exposed_rate": 0.2636,
+        "clean_rate": 0.2204,
+        "diff_pp": 4.317,
+        "se_pp": 0.531,
+        "t": 8.13,
+        "ci95_pp": [
+          3.28,
+          5.36
+        ],
+        "n_rows": 57878,
+        "n_exposed_rows": 32228
+      }
+    },
+    "onset_formed_by_2019": {
+      "n_rows": 45087,
+      "pre_onset": {
+        "exposed_rate": 0.2759,
+        "clean_rate": 0.241,
+        "diff_pp": 3.481,
+        "se_pp": 0.744,
+        "t": 4.68,
+        "ci95_pp": [
+          2.02,
+          4.94
+        ],
+        "n_rows": 45087,
+        "n_exposed_rows": 29849
+      },
+      "post_onset": {
+        "exposed_rate": 0.207,
+        "clean_rate": 0.176,
+        "diff_pp": 3.097,
+        "se_pp": 0.655,
+        "t": 4.73,
+        "ci95_pp": [
+          1.81,
+          4.38
+        ],
+        "n_rows": 45087,
+        "n_exposed_rows": 29849
+      },
+      "did_onset": {
+        "pre_gap_pp": 3.481,
+        "post_change_clean_pp": -6.503,
+        "diff_in_gaps_pp": -0.385,
+        "se_pp": 0.774,
+        "t": -0.5,
+        "ci95_pp": [
+          -1.9,
+          1.13
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      }
+    },
+    "destination_prior_restatement_share": {
+      "exposed": 0.5996,
+      "clean": 0.4709
+    },
+    "never_restated_destinations": {
+      "n_rows": 25650,
+      "share_of_rows": 0.4432,
+      "post_file_3y": {
+        "exposed_rate": 0.2609,
+        "clean_rate": 0.2447,
+        "diff_pp": 1.611,
+        "se_pp": 1.018,
+        "t": 1.58,
+        "ci95_pp": [
+          -0.38,
+          3.61
+        ],
+        "n_rows": 25650,
+        "n_exposed_rows": 15476
+      },
+      "post_onset_3y": {
+        "exposed_rate": 0.1628,
+        "clean_rate": 0.1425,
+        "diff_pp": 2.031,
+        "se_pp": 0.773,
+        "t": 2.63,
+        "ci95_pp": [
+          0.52,
+          3.55
+        ],
+        "n_rows": 25650,
+        "n_exposed_rows": 15476
+      },
+      "pre_onset_3y": {
+        "exposed_rate": 0.175,
+        "clean_rate": 0.1529,
+        "diff_pp": 2.204,
+        "se_pp": 0.846,
+        "t": 2.6,
+        "ci95_pp": [
+          0.55,
+          3.86
+        ],
+        "n_rows": 25650,
+        "n_exposed_rows": 15476
+      },
+      "did_onset": {
+        "pre_gap_pp": 2.204,
+        "post_change_clean_pp": -1.042,
+        "diff_in_gaps_pp": -0.173,
+        "se_pp": 0.984,
+        "t": -0.18,
+        "ci95_pp": [
+          -2.1,
+          1.76
+        ],
+        "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+      },
+      "did_onset_cohortFE": {
+        "pre_gap_pp": 2.033,
+        "se_pre_pp": 0.76,
+        "diff_in_gaps_pp": 0.656,
+        "se_pp": 0.888,
+        "t": 0.74,
+        "controls": [
+          "formation-year FE + formation-year x post FE"
+        ]
+      }
+    },
+    "equal_window_by_cohort": {
+      "2004-2007": {
+        "pre_file_pp": 11.527,
+        "post_file_pp": 2.457,
+        "did": {
+          "pre_gap_pp": 11.527,
+          "post_change_clean_pp": 8.468,
+          "diff_in_gaps_pp": -9.071,
+          "se_pp": 3.101,
+          "t": -2.93,
+          "ci95_pp": [
+            -15.15,
+            -2.99
+          ],
+          "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+        },
+        "exposed_share": 0.4414,
+        "n_rows": 4884
+      },
+      "2008-2012": {
+        "pre_file_pp": 7.601,
+        "post_file_pp": 5.119,
+        "did": {
+          "pre_gap_pp": 7.601,
+          "post_change_clean_pp": -3.652,
+          "diff_in_gaps_pp": -2.482,
+          "se_pp": 1.495,
+          "t": -1.66,
+          "ci95_pp": [
+            -5.41,
+            0.45
+          ],
+          "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+        },
+        "exposed_share": 0.6465,
+        "n_rows": 16267
+      },
+      "2013-2017": {
+        "pre_file_pp": 4.124,
+        "post_file_pp": 2.099,
+        "did": {
+          "pre_gap_pp": 4.124,
+          "post_change_clean_pp": -0.235,
+          "diff_in_gaps_pp": -2.025,
+          "se_pp": 1.206,
+          "t": -1.68,
+          "ci95_pp": [
+            -4.39,
+            0.34
+          ],
+          "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+        },
+        "exposed_share": 0.718,
+        "n_rows": 16580
+      },
+      "2018-2022": {
+        "pre_file_pp": 3.677,
+        "post_file_pp": -0.458,
+        "did": {
+          "pre_gap_pp": 3.677,
+          "post_change_clean_pp": 2.124,
+          "diff_in_gaps_pp": -4.135,
+          "se_pp": 1.178,
+          "t": -3.51,
+          "ci95_pp": [
+            -6.44,
+            -1.83
+          ],
+          "method": "stacked pre/post (3y each) rows per directional pair; exposed x post; two-way clustered (src, dst)"
+        },
+        "exposed_share": 0.6986,
+        "n_rows": 20147
+      }
+    },
+    "left_censoring_robustness_formed_2008plus": {
+      "file": {
+        "exposed_rate": 0.3016,
+        "clean_rate": 0.2659,
+        "diff_pp": 3.569,
+        "se_pp": 0.684,
+        "t": 5.22,
+        "ci95_pp": [
+          2.23,
+          4.91
+        ],
+        "n_rows": 56771,
+        "n_exposed_rows": 39056
+      },
+      "onset": {
+        "exposed_rate": 0.2131,
+        "clean_rate": 0.1813,
+        "diff_pp": 3.187,
+        "se_pp": 0.581,
+        "t": 5.48,
+        "ci95_pp": [
+          2.05,
+          4.33
+        ],
+        "n_rows": 56771,
+        "n_exposed_rows": 39056
+      }
+    },
+    "destination_firm_adjusted": {
+      "file": {
+        "raw_gap_pp": 16.15,
+        "raw_se_pp": 1.23,
+        "adjusted_gap_pp": 7.8,
+        "se_pp": 1.35,
+        "n_firms": 10697
+      },
+      "onset": {
+        "raw_gap_pp": 14.57,
+        "raw_se_pp": 1.03,
+        "adjusted_gap_pp": 4.54,
+        "se_pp": 1.14,
+        "n_firms": 10697
+      }
+    }
+  },
+  "K4_network_by_year": {
+    "2004": {
+      "nodes": 290,
+      "edges": 1795,
+      "n_communities": 106,
+      "modularity": 0.1519,
+      "cross_edge_ratio": 0.0,
+      "lcc_share": 0.2
+    },
+    "2005": {
+      "nodes": 1173,
+      "edges": 2615,
+      "n_communities": 407,
+      "modularity": 0.5985,
+      "cross_edge_ratio": 0.0,
+      "lcc_share": 0.0494
+    },
+    "2006": {
+      "nodes": 2276,
+      "edges": 4093,
+      "n_communities": 648,
+      "modularity": 0.8309,
+      "cross_edge_ratio": 0.0005,
+      "lcc_share": 0.054
+    },
+    "2007": {
+      "nodes": 3412,
+      "edges": 5875,
+      "n_communities": 716,
+      "modularity": 0.9014,
+      "cross_edge_ratio": 0.0111,
+      "lcc_share": 0.3209
+    },
+    "2008": {
+      "nodes": 4308,
+      "edges": 7399,
+      "n_communities": 761,
+      "modularity": 0.917,
+      "cross_edge_ratio": 0.023,
+      "lcc_share": 0.4763
+    },
+    "2009": {
+      "nodes": 4895,
+      "edges": 9020,
+      "n_communities": 758,
+      "modularity": 0.9089,
+      "cross_edge_ratio": 0.0367,
+      "lcc_share": 0.5647
+    },
+    "2010": {
+      "nodes": 5634,
+      "edges": 11382,
+      "n_communities": 647,
+      "modularity": 0.8882,
+      "cross_edge_ratio": 0.0764,
+      "lcc_share": 0.7016
+    },
+    "2011": {
+      "nodes": 6327,
+      "edges": 14013,
+      "n_communities": 578,
+      "modularity": 0.8388,
+      "cross_edge_ratio": 0.1311,
+      "lcc_share": 0.7741
+    },
+    "2012": {
+      "nodes": 6948,
+      "edges": 16400,
+      "n_communities": 567,
+      "modularity": 0.7998,
+      "cross_edge_ratio": 0.1727,
+      "lcc_share": 0.7935
+    },
+    "2013": {
+      "nodes": 7451,
+      "edges": 18764,
+      "n_communities": 574,
+      "modularity": 0.7756,
+      "cross_edge_ratio": 0.1967,
+      "lcc_share": 0.8051
+    },
+    "2014": {
+      "nodes": 7884,
+      "edges": 20683,
+      "n_communities": 573,
+      "modularity": 0.7666,
+      "cross_edge_ratio": 0.2078,
+      "lcc_share": 0.8189
+    },
+    "2015": {
+      "nodes": 8209,
+      "edges": 22337,
+      "n_communities": 562,
+      "modularity": 0.752,
+      "cross_edge_ratio": 0.2208,
+      "lcc_share": 0.8302
+    },
+    "2016": {
+      "nodes": 8512,
+      "edges": 24026,
+      "n_communities": 572,
+      "modularity": 0.7442,
+      "cross_edge_ratio": 0.228,
+      "lcc_share": 0.8284
+    },
+    "2017": {
+      "nodes": 8826,
+      "edges": 25273,
+      "n_communities": 568,
+      "modularity": 0.7388,
+      "cross_edge_ratio": 0.2325,
+      "lcc_share": 0.8355
+    },
+    "2018": {
+      "nodes": 9251,
+      "edges": 26811,
+      "n_communities": 589,
+      "modularity": 0.7315,
+      "cross_edge_ratio": 0.2406,
+      "lcc_share": 0.8412
+    },
+    "2019": {
+      "nodes": 9633,
+      "edges": 28446,
+      "n_communities": 612,
+      "modularity": 0.7237,
+      "cross_edge_ratio": 0.2498,
+      "lcc_share": 0.8412
+    },
+    "2020": {
+      "nodes": 10135,
+      "edges": 30273,
+      "n_communities": 629,
+      "modularity": 0.7188,
+      "cross_edge_ratio": 0.2547,
+      "lcc_share": 0.8437
+    },
+    "2021": {
+      "nodes": 10871,
+      "edges": 32766,
+      "n_communities": 645,
+      "modularity": 0.7095,
+      "cross_edge_ratio": 0.2648,
+      "lcc_share": 0.8515
+    },
+    "2022": {
+      "nodes": 11291,
+      "edges": 34636,
+      "n_communities": 633,
+      "modularity": 0.7037,
+      "cross_edge_ratio": 0.2699,
+      "lcc_share": 0.8655
+    },
+    "2023": {
+      "nodes": 11586,
+      "edges": 36058,
+      "n_communities": 624,
+      "modularity": 0.7026,
+      "cross_edge_ratio": 0.2713,
+      "lcc_share": 0.8712
+    }
+  },
+  "K4_h5": {
+    "n_rows_with_community": 61655,
+    "n_exposed_rows": 41212,
+    "n_exposed_unique_pairs": 38212,
+    "within_exposed_rate": 0.3123,
+    "cross_exposed_rate": 0.3009,
+    "n_within_exposed": 30984,
+    "n_cross_exposed": 10228,
+    "cross_minus_within_exposed_file": {
+      "diff_pp": -1.135,
+      "se_pp": 0.815,
+      "t": -1.39
+    },
+    "interaction_exposed_x_cross_file": {
+      "exposed_pp": 2.706,
+      "cross_pp": 0.075,
+      "exposed_x_cross_pp": -1.21,
+      "se_interaction_pp": 1.269,
+      "t_interaction": -0.95
+    },
+    "cross_minus_within_exposed_onset": {
+      "diff_pp": -0.934,
+      "se_pp": 0.725,
+      "t": -1.29
+    },
+    "interaction_exposed_x_cross_onset": {
+      "exposed_pp": 2.649,
+      "cross_pp": 0.494,
+      "exposed_x_cross_pp": -1.427,
+      "se_interaction_pp": 1.103,
+      "t_interaction": -1.29
+    },
+    "cross_minus_within_exposed_file_3y": {
+      "diff_pp": -1.403,
+      "se_pp": 0.802,
+      "t": -1.75,
+      "n_exposed": 38650,
+      "share_cross_exposed": 0.2428
+    },
+    "interaction_exposed_x_cross_file_3y": {
+      "exposed_pp": 1.177,
+      "cross_pp": 0.202,
+      "exposed_x_cross_pp": -1.606,
+      "se_interaction_pp": 1.279,
+      "t_interaction": -1.26,
+      "n_rows": 57878
+    },
+    "cross_minus_within_exposed_onset_3y": {
+      "diff_pp": 0.001,
+      "se_pp": 0.724,
+      "t": 0.0,
+      "n_exposed": 38650,
+      "share_cross_exposed": 0.2428
+    },
+    "interaction_exposed_x_cross_onset_3y": {
+      "exposed_pp": 2.277,
+      "cross_pp": 1.843,
+      "exposed_x_cross_pp": -1.841,
+      "se_interaction_pp": 1.088,
+      "t_interaction": -1.69,
+      "n_rows": 57878
+    },
+    "cross_minus_within_exposed_file_3y_2012plus": {
+      "diff_pp": -0.282,
+      "se_pp": 0.858,
+      "t": -0.33,
+      "n_exposed": 28683,
+      "share_cross_exposed": 0.2907
+    },
+    "interaction_exposed_x_cross_file_3y_2012plus": {
+      "exposed_pp": 1.302,
+      "cross_pp": 1.537,
+      "exposed_x_cross_pp": -1.819,
+      "se_interaction_pp": 1.322,
+      "t_interaction": -1.38,
+      "n_rows": 40483
+    },
+    "cross_minus_within_exposed_onset_3y_2012plus": {
+      "diff_pp": 0.862,
+      "se_pp": 0.765,
+      "t": 1.13,
+      "n_exposed": 28683,
+      "share_cross_exposed": 0.2907
+    },
+    "interaction_exposed_x_cross_onset_3y_2012plus": {
+      "exposed_pp": 1.56,
+      "cross_pp": 2.74,
+      "exposed_x_cross_pp": -1.878,
+      "se_interaction_pp": 1.106,
+      "t_interaction": -1.7,
+      "n_rows": 40483
+    }
+  },
+  "K3_cohorts_fixed_window": {
+    "2004-2007": {
+      "file_3y": {
+        "exposed_rate": 0.4021,
+        "clean_rate": 0.3776,
+        "diff_pp": 2.457,
+        "se_pp": 2.611,
+        "t": 0.94,
+        "ci95_pp": [
+          -2.66,
+          7.58
+        ],
+        "n_rows": 4884,
+        "n_exposed_rows": 2156
+      },
+      "onset_3y": {
+        "exposed_rate": 0.1851,
+        "clean_rate": 0.1745,
+        "diff_pp": 1.058,
+        "se_pp": 1.548,
+        "t": 0.68,
+        "ci95_pp": [
+          -1.98,
+          4.09
+        ],
+        "n_rows": 4884,
+        "n_exposed_rows": 2156
+      },
+      "pre_onset_3y": {
+        "exposed_rate": 0.2806,
+        "clean_rate": 0.2606,
+        "diff_pp": 1.998,
+        "se_pp": 1.542,
+        "t": 1.3,
+        "ci95_pp": [
+          -1.02,
+          5.02
+        ],
+        "n_rows": 4884,
+        "n_exposed_rows": 2156
+      },
+      "exposed_share": 0.4414,
+      "n_rows": 4884
+    },
+    "2008-2012": {
+      "file_3y": {
+        "exposed_rate": 0.2868,
+        "clean_rate": 0.2356,
+        "diff_pp": 5.119,
+        "se_pp": 1.426,
+        "t": 3.59,
+        "ci95_pp": [
+          2.32,
+          7.91
+        ],
+        "n_rows": 16267,
+        "n_exposed_rows": 10516
+      },
+      "onset_3y": {
+        "exposed_rate": 0.2434,
+        "clean_rate": 0.1862,
+        "diff_pp": 5.721,
+        "se_pp": 1.256,
+        "t": 4.56,
+        "ci95_pp": [
+          3.26,
+          8.18
+        ],
+        "n_rows": 16267,
+        "n_exposed_rows": 10516
+      },
+      "pre_onset_3y": {
+        "exposed_rate": 0.2843,
+        "clean_rate": 0.2351,
+        "diff_pp": 4.924,
+        "se_pp": 1.367,
+        "t": 3.6,
+        "ci95_pp": [
+          2.24,
+          7.6
+        ],
+        "n_rows": 16267,
+        "n_exposed_rows": 10516
+      },
+      "exposed_share": 0.6465,
+      "n_rows": 16267
+    },
+    "2013-2017": {
+      "file_3y": {
+        "exposed_rate": 0.2691,
+        "clean_rate": 0.2481,
+        "diff_pp": 2.099,
+        "se_pp": 1.039,
+        "t": 2.02,
+        "ci95_pp": [
+          0.06,
+          4.14
+        ],
+        "n_rows": 16580,
+        "n_exposed_rows": 11904
+      },
+      "onset_3y": {
+        "exposed_rate": 0.2044,
+        "clean_rate": 0.1773,
+        "diff_pp": 2.71,
+        "se_pp": 0.921,
+        "t": 2.94,
+        "ci95_pp": [
+          0.91,
+          4.51
+        ],
+        "n_rows": 16580,
+        "n_exposed_rows": 11904
+      },
+      "pre_onset_3y": {
+        "exposed_rate": 0.2817,
+        "clean_rate": 0.2515,
+        "diff_pp": 3.017,
+        "se_pp": 1.033,
+        "t": 2.92,
+        "ci95_pp": [
+          0.99,
+          5.04
+        ],
+        "n_rows": 16580,
+        "n_exposed_rows": 11904
+      },
+      "exposed_share": 0.718,
+      "n_rows": 16580
+    },
+    "2018-2022": {
+      "file_3y": {
+        "exposed_rate": 0.2192,
+        "clean_rate": 0.2238,
+        "diff_pp": -0.458,
+        "se_pp": 0.908,
+        "t": -0.5,
+        "ci95_pp": [
+          -2.24,
+          1.32
+        ],
+        "n_rows": 20147,
+        "n_exposed_rows": 14074
+      },
+      "onset_3y": {
+        "exposed_rate": 0.1175,
+        "clean_rate": 0.1212,
+        "diff_pp": -0.367,
+        "se_pp": 0.606,
+        "t": -0.61,
+        "ci95_pp": [
+          -1.56,
+          0.82
+        ],
+        "n_rows": 20147,
+        "n_exposed_rows": 14074
+      },
+      "pre_onset_3y": {
+        "exposed_rate": 0.278,
+        "clean_rate": 0.2635,
+        "diff_pp": 1.457,
+        "se_pp": 0.945,
+        "t": 1.54,
+        "ci95_pp": [
+          -0.4,
+          3.31
+        ],
+        "n_rows": 20147,
+        "n_exposed_rows": 14074
+      },
+      "exposed_share": 0.6986,
+      "n_rows": 20147
+    },
+    "linear_trend_in_gap_per_year_file_3y": {
+      "pp_per_year": -0.257,
+      "se_pp": 0.14,
+      "t": -1.84
+    }
+  },
+  "K2_panel": {
+    "estimation_sample": {
+      "firm_years": 141168,
+      "firms": 14941,
+      "years": [
+        2005,
+        2023
+      ],
+      "rate_file": 0.0936,
+      "rate_onset": 0.0724,
+      "mean_nexp_lag1": 0.3343,
+      "mean_nexp_boy": 1.4068,
+      "share_nexp_lag1_pos": 0.1599,
+      "firm_years_excl_blank_check": 139207,
+      "blank_check_firms_in_panel": 396
+    },
+    "models": {
+      "lag1_file_excl_blank_check": {
+        "dep": "restate_file",
+        "exposure": "nexp_lag1",
+        "controls": [
+          "nnew_lag1",
+          "degree_lag",
+          "betweenness_lag",
+          "size",
+          "leverage",
+          "roa"
+        ],
+        "exposure_coef": {
+          "coef": -0.001065,
+          "se": 0.002095,
+          "t": -0.51,
+          "p": 0.61129
+        },
+        "turnover_coef": {
+          "coef": 0.005948,
+          "se": 0.001561,
+          "t": 3.81,
+          "p": 0.00014
+        },
+        "r2_within": 0.00213,
+        "n": 139207,
+        "oster": {
+          "beta_uncontrolled": 0.003207
+        }
+      },
+      "lag1_onset_excl_blank_check": {
+        "dep": "restate_onset",
+        "exposure": "nexp_lag1",
+        "controls": [
+          "nnew_lag1",
+          "degree_lag",
+          "betweenness_lag",
+          "size",
+          "leverage",
+          "roa"
+        ],
+        "exposure_coef": {
+          "coef": 0.001626,
+          "se": 0.001895,
+          "t": 0.86,
+          "p": 0.39077
+        },
+        "turnover_coef": {
+          "coef": 0.000167,
+          "se": 0.0014,
+          "t": 0.12,
+          "p": 0.90533
+        },
+        "r2_within": 0.00171,
+        "n": 139207,
+        "oster": {
+          "beta_uncontrolled": 0.001056
+        }
+      },
+      "contemporaneous_file_no_turnover (old timing, old controls)": {
+        "dep": "restate_file",
+        "exposure": "nexp_t",
+        "controls": [
+          "degree_lag",
+          "betweenness_lag",
+          "size",
+          "leverage",
+          "roa"
+        ],
+        "exposure_coef": {
+          "coef": 0.004056,
+          "se": 0.000882,
+          "t": 4.6,
+          "p": 0.0
+        },
+        "turnover_coef": {
+          "coef": -0.002435,
+          "se": 0.000435,
+          "t": -5.6,
+          "p": 0.0
+        },
+        "r2_within": 0.00188,
+        "n": 141168,
+        "oster": {
+          "beta_uncontrolled": 0.004694,
+          "R2_uncontrolled": 0.00039,
+          "beta_controlled": 0.004056,
+          "R2_controlled": 0.00188,
+          "Rmax_1.3x": {
+            "beta_star_delta1": 0.003814,
+            "delta_for_beta0": 16.812
+          },
+          "Rmax_2.0x": {
+            "beta_star_delta1": 0.003252,
+            "delta_for_beta0": 5.043
+          }
+        }
+      },
+      "contemporaneous_file (old timing)": {
+        "dep": "restate_file",
+        "exposure": "nexp_t",
+        "controls": [
+          "nnew_t",
+          "degree_lag",
+          "betweenness_lag",
+          "size",
+          "leverage",
+          "roa"
+        ],
+        "exposure_coef": {
+          "coef": 0.001976,
+          "se": 0.002136,
+          "t": 0.93,
+          "p": 0.35487
+        },
+        "turnover_coef": {
+          "coef": 0.001658,
+          "se": 0.001546,
+          "t": 1.07,
+          "p": 0.28344
+        },
+        "r2_within": 0.00189,
+        "n": 141168,
+        "oster": {
+          "beta_uncontrolled": 0.004694,
+          "R2_uncontrolled": 0.00039,
+          "beta_controlled": 0.001976,
+          "R2_controlled": 0.00189,
+          "Rmax_1.3x": {
+            "beta_star_delta1": 0.000951,
+            "delta_for_beta0": 1.928
+          },
+          "Rmax_2.0x": {
+            "beta_star_delta1": -0.00144,
+            "delta_for_beta0": 0.578
+          }
+        }
+      },
+      "lag1_file": {
+        "dep": "restate_file",
+        "exposure": "nexp_lag1",
+        "controls": [
+          "nnew_lag1",
+          "degree_lag",
+          "betweenness_lag",
+          "size",
+          "leverage",
+          "roa"
+        ],
+        "exposure_coef": {
+          "coef": -0.000736,
+          "se": 0.002091,
+          "t": -0.35,
+          "p": 0.72467
+        },
+        "turnover_coef": {
+          "coef": 0.005628,
+          "se": 0.001555,
+          "t": 3.62,
+          "p": 0.00029
+        },
+        "r2_within": 0.00221,
+        "n": 141168,
+        "oster": {
+          "beta_uncontrolled": 0.003098,
+          "R2_uncontrolled": 0.00015,
+          "beta_controlled": -0.000736,
+          "R2_controlled": 0.00221,
+          "Rmax_1.3x": {
+            "beta_star_delta1": -0.001971,
+            "delta_for_beta0": -0.596
+          },
+          "Rmax_2.0x": {
+            "beta_star_delta1": -0.004853,
+            "delta_for_beta0": -0.179
+          }
+        }
+      },
+      "lag1_file_plus_prior": {
+        "dep": "restate_file",
+        "exposure": "nexp_lag1",
+        "controls": [
+          "nnew_lag1",
+          "degree_lag",
+          "betweenness_lag",
+          "size",
+          "leverage",
+          "roa",
+          "had_prior_restate"
+        ],
+        "exposure_coef": {
+          "coef": 0.000523,
+          "se": 0.002084,
+          "t": 0.25,
+          "p": 0.80202
+        },
+        "turnover_coef": {
+          "coef": 0.005081,
+          "se": 0.001538,
+          "t": 3.3,
+          "p": 0.00096
+        },
+        "r2_within": 0.03464,
+        "n": 141168,
+        "oster": {
+          "beta_uncontrolled": 0.003098,
+          "R2_uncontrolled": 0.00015,
+          "beta_controlled": 0.000523,
+          "R2_controlled": 0.03464,
+          "Rmax_1.3x": {
+            "beta_star_delta1": -0.000254,
+            "delta_for_beta0": 0.673
+          },
+          "Rmax_2.0x": {
+            "beta_star_delta1": -0.002065,
+            "delta_for_beta0": 0.202
+          }
+        }
+      },
+      "lag1_onset": {
+        "dep": "restate_onset",
+        "exposure": "nexp_lag1",
+        "controls": [
+          "nnew_lag1",
+          "degree_lag",
+          "betweenness_lag",
+          "size",
+          "leverage",
+          "roa"
+        ],
+        "exposure_coef": {
+          "coef": 0.001942,
+          "se": 0.00188,
+          "t": 1.03,
+          "p": 0.3015
+        },
+        "turnover_coef": {
+          "coef": -0.000429,
+          "se": 0.001392,
+          "t": -0.31,
+          "p": 0.75789
+        },
+        "r2_within": 0.00173,
+        "n": 141168,
+        "oster": {
+          "beta_uncontrolled": 0.000552,
+          "R2_uncontrolled": 1e-05,
+          "beta_controlled": 0.001942,
+          "R2_controlled": 0.00173,
+          "Rmax_1.3x": {
+            "beta_star_delta1": 0.002361,
+            "delta_for_beta0": -4.642
+          },
+          "Rmax_2.0x": {
+            "beta_star_delta1": 0.003337,
+            "delta_for_beta0": -1.393
+          }
+        }
+      },
+      "boy_stock_file": {
+        "dep": "restate_file",
+        "exposure": "nexp_boy",
+        "controls": [
+          "nalive_boy",
+          "degree_lag",
+          "betweenness_lag",
+          "size",
+          "leverage",
+          "roa"
+        ],
+        "exposure_coef": {
+          "coef": -0.001686,
+          "se": 0.001385,
+          "t": -1.22,
+          "p": 0.22328
+        },
+        "turnover_coef": {
+          "coef": 0.0013,
+          "se": 0.001268,
+          "t": 1.02,
+          "p": 0.30545
+        },
+        "r2_within": 0.00161,
+        "n": 141168,
+        "oster": {
+          "beta_uncontrolled": -0.002804,
+          "R2_uncontrolled": 0.00044,
+          "beta_controlled": -0.001686,
+          "R2_controlled": 0.00161,
+          "Rmax_1.3x": {
+            "beta_star_delta1": -0.001227,
+            "delta_for_beta0": 3.67
+          },
+          "Rmax_2.0x": {
+            "beta_star_delta1": -0.000155,
+            "delta_for_beta0": 1.101
+          }
+        }
+      },
+      "boy_stock_onset": {
+        "dep": "restate_onset",
+        "exposure": "nexp_boy",
+        "controls": [
+          "nalive_boy",
+          "degree_lag",
+          "betweenness_lag",
+          "size",
+          "leverage",
+          "roa"
+        ],
+        "exposure_coef": {
+          "coef": 0.002225,
+          "se": 0.00125,
+          "t": 1.78,
+          "p": 0.07509
+        },
+        "turnover_coef": {
+          "coef": -0.000921,
+          "se": 0.001208,
+          "t": -0.76,
+          "p": 0.44593
+        },
+        "r2_within": 0.00174,
+        "n": 141168,
+        "oster": {
+          "beta_uncontrolled": -0.001164,
+          "R2_uncontrolled": 9e-05,
+          "beta_controlled": 0.002225,
+          "R2_controlled": 0.00174,
+          "Rmax_1.3x": {
+            "beta_star_delta1": 0.003299,
+            "delta_for_beta0": -2.073
+          },
+          "Rmax_2.0x": {
+            "beta_star_delta1": 0.005803,
+            "delta_for_beta0": -0.622
+          }
+        }
+      },
+      "lag1_file_exposed5y": {
+        "dep": "restate_file",
+        "exposure": "nexp5_lag1",
+        "controls": [
+          "nnew_lag1",
+          "degree_lag",
+          "betweenness_lag",
+          "size",
+          "leverage",
+          "roa"
+        ],
+        "exposure_coef": {
+          "coef": -0.001212,
+          "se": 0.002133,
+          "t": -0.57,
+          "p": 0.56972
+        },
+        "turnover_coef": {
+          "coef": 0.005592,
+          "se": 0.001042,
+          "t": 5.37,
+          "p": 0.0
+        },
+        "r2_within": 0.00221,
+        "n": 141168,
+        "oster": {
+          "beta_uncontrolled": 0.00433,
+          "R2_uncontrolled": 0.00013,
+          "beta_controlled": -0.001212,
+          "R2_controlled": 0.00221,
+          "Rmax_1.3x": {
+            "beta_star_delta1": -0.002976,
+            "delta_for_beta0": -0.687
+          },
+          "Rmax_2.0x": {
+            "beta_star_delta1": -0.007092,
+            "delta_for_beta0": -0.206
+          }
+        }
+      },
+      "lag1_file_exposed5y_plus_prior": {
+        "dep": "restate_file",
+        "exposure": "nexp5_lag1",
+        "controls": [
+          "nnew_lag1",
+          "degree_lag",
+          "betweenness_lag",
+          "size",
+          "leverage",
+          "roa",
+          "had_prior_restate"
+        ],
+        "exposure_coef": {
+          "coef": 0.001305,
+          "se": 0.00214,
+          "t": 0.61,
+          "p": 0.54201
+        },
+        "turnover_coef": {
+          "coef": 0.004937,
+          "se": 0.001046,
+          "t": 4.72,
+          "p": 0.0
+        },
+        "r2_within": 0.03464,
+        "n": 141168,
+        "oster": {
+          "beta_uncontrolled": 0.00433,
+          "R2_uncontrolled": 0.00013,
+          "beta_controlled": 0.001305,
+          "R2_controlled": 0.03464,
+          "Rmax_1.3x": {
+            "beta_star_delta1": 0.000394,
+            "delta_for_beta0": 1.432
+          },
+          "Rmax_2.0x": {
+            "beta_star_delta1": -0.001732,
+            "delta_for_beta0": 0.43
+          }
+        }
+      },
+      "lag1_onset_exposed5y_plus_prior": {
+        "dep": "restate_onset",
+        "exposure": "nexp5_lag1",
+        "controls": [
+          "nnew_lag1",
+          "degree_lag",
+          "betweenness_lag",
+          "size",
+          "leverage",
+          "roa",
+          "had_prior_restate"
+        ],
+        "exposure_coef": {
+          "coef": 0.004252,
+          "se": 0.001937,
+          "t": 2.2,
+          "p": 0.02816
+        },
+        "turnover_coef": {
+          "coef": -0.000568,
+          "se": 0.000884,
+          "t": -0.64,
+          "p": 0.52031
+        },
+        "r2_within": 0.01373,
+        "n": 141168,
+        "oster": {
+          "beta_uncontrolled": 0.002219,
+          "R2_uncontrolled": 4e-05,
+          "beta_controlled": 0.004252,
+          "R2_controlled": 0.01373,
+          "Rmax_1.3x": {
+            "beta_star_delta1": 0.004863,
+            "delta_for_beta0": -6.952
+          },
+          "Rmax_2.0x": {
+            "beta_star_delta1": 0.00629,
+            "delta_for_beta0": -2.086
+          }
+        }
+      },
+      "boy_stock_onset_exposed5y": {
+        "dep": "restate_onset",
+        "exposure": "nexp5_boy",
+        "controls": [
+          "nalive_boy",
+          "degree_lag",
+          "betweenness_lag",
+          "size",
+          "leverage",
+          "roa"
+        ],
+        "exposure_coef": {
+          "coef": 0.002603,
+          "se": 0.00121,
+          "t": 2.15,
+          "p": 0.03142
+        },
+        "turnover_coef": {
+          "coef": -0.000521,
+          "se": 0.000977,
+          "t": -0.53,
+          "p": 0.59405
+        },
+        "r2_within": 0.00176,
+        "n": 141168,
+        "oster": {
+          "beta_uncontrolled": -0.000854,
+          "R2_uncontrolled": 2e-05,
+          "beta_controlled": 0.002603,
+          "R2_controlled": 0.00176,
+          "Rmax_1.3x": {
+            "beta_star_delta1": 0.003652,
+            "delta_for_beta0": -2.48
+          },
+          "Rmax_2.0x": {
+            "beta_star_delta1": 0.006101,
+            "delta_for_beta0": -0.744
+          }
+        }
+      },
+      "lag1_onset_inbound_recent5y_plus_prior": {
+        "dep": "restate_onset",
+        "exposure": "nexp5_in_lag1",
+        "controls": [
+          "nnew_in_lag1",
+          "nnew_out_lag1",
+          "nexp5_out_lag1",
+          "degree_lag",
+          "betweenness_lag",
+          "size",
+          "leverage",
+          "roa",
+          "had_prior_restate"
+        ],
+        "exposure_coef": {
+          "coef": 0.005325,
+          "se": 0.002724,
+          "t": 1.95,
+          "p": 0.05062
+        },
+        "turnover_coef": {
+          "coef": -0.001606,
+          "se": 0.001154,
+          "t": -1.39,
+          "p": 0.16402
+        },
+        "r2_within": 0.01376,
+        "n": 141168,
+        "oster": {
+          "beta_uncontrolled": 0.002144,
+          "R2_uncontrolled": 2e-05,
+          "beta_controlled": 0.005325,
+          "R2_controlled": 0.01376,
+          "Rmax_1.3x": {
+            "beta_star_delta1": 0.006281,
+            "delta_for_beta0": -5.571
+          },
+          "Rmax_2.0x": {
+            "beta_star_delta1": 0.008511,
+            "delta_for_beta0": -1.671
+          }
+        }
+      },
+      "lag1_onset_exposed5y_no_prior_control": {
+        "dep": "restate_onset",
+        "exposure": "nexp5_lag1",
+        "controls": [
+          "nnew_lag1",
+          "degree_lag",
+          "betweenness_lag",
+          "size",
+          "leverage",
+          "roa"
+        ],
+        "exposure_coef": {
+          "coef": 0.002869,
+          "se": 0.00194,
+          "t": 1.48,
+          "p": 0.13922
+        },
+        "turnover_coef": {
+          "coef": -0.000208,
+          "se": 0.000888,
+          "t": -0.23,
+          "p": 0.8147
+        },
+        "r2_within": 0.00175,
+        "n": 141168,
+        "oster": {
+          "beta_uncontrolled": 0.002219,
+          "R2_uncontrolled": 4e-05,
+          "beta_controlled": 0.002869,
+          "R2_controlled": 0.00175,
+          "Rmax_1.3x": {
+            "beta_star_delta1": 0.003068,
+            "delta_for_beta0": -14.38
+          },
+          "Rmax_2.0x": {
+            "beta_star_delta1": 0.003534,
+            "delta_for_beta0": -4.314
+          }
+        }
+      },
+      "lag1_file_inbound_recent5y_plus_prior": {
+        "dep": "restate_file",
+        "exposure": "nexp5_in_lag1",
+        "controls": [
+          "nnew_in_lag1",
+          "nnew_out_lag1",
+          "nexp5_out_lag1",
+          "degree_lag",
+          "betweenness_lag",
+          "size",
+          "leverage",
+          "roa",
+          "had_prior_restate"
+        ],
+        "exposure_coef": {
+          "coef": 0.004924,
+          "se": 0.002986,
+          "t": 1.65,
+          "p": 0.09909
+        },
+        "turnover_coef": {
+          "coef": 0.003864,
+          "se": 0.001359,
+          "t": 2.84,
+          "p": 0.00448
+        },
+        "r2_within": 0.03468,
+        "n": 141168,
+        "oster": {
+          "beta_uncontrolled": 0.008024,
+          "R2_uncontrolled": 0.00026,
+          "beta_controlled": 0.004924,
+          "R2_controlled": 0.03468,
+          "Rmax_1.3x": {
+            "beta_star_delta1": 0.003988,
+            "delta_for_beta0": 5.256
+          },
+          "Rmax_2.0x": {
+            "beta_star_delta1": 0.001801,
+            "delta_for_beta0": 1.577
+          }
+        }
+      },
+      "lag1_onset_exposed5y": {
+        "dep": "restate_onset",
+        "exposure": "nexp5_lag1",
+        "controls": [
+          "nnew_lag1",
+          "degree_lag",
+          "betweenness_lag",
+          "size",
+          "leverage",
+          "roa"
+        ],
+        "exposure_coef": {
+          "coef": 0.002869,
+          "se": 0.00194,
+          "t": 1.48,
+          "p": 0.13922
+        },
+        "turnover_coef": {
+          "coef": -0.000208,
+          "se": 0.000888,
+          "t": -0.23,
+          "p": 0.8147
+        },
+        "r2_within": 0.00175,
+        "n": 141168,
+        "oster": {
+          "beta_uncontrolled": 0.002219,
+          "R2_uncontrolled": 4e-05,
+          "beta_controlled": 0.002869,
+          "R2_controlled": 0.00175,
+          "Rmax_1.3x": {
+            "beta_star_delta1": 0.003068,
+            "delta_for_beta0": -14.38
+          },
+          "Rmax_2.0x": {
+            "beta_star_delta1": 0.003534,
+            "delta_for_beta0": -4.314
+          }
+        }
+      },
+      "lag1_file_no_turnover_control": {
+        "dep": "restate_file",
+        "exposure": "nexp_lag1",
+        "controls": [
+          "degree_lag",
+          "betweenness_lag",
+          "size",
+          "leverage",
+          "roa"
+        ],
+        "exposure_coef": {
+          "coef": 0.006054,
+          "se": 0.000992,
+          "t": 6.1,
+          "p": 0.0
+        },
+        "turnover_coef": {
+          "coef": -0.003369,
+          "se": 0.000444,
+          "t": -7.59,
+          "p": 0.0
+        },
+        "r2_within": 0.00207,
+        "n": 141168,
+        "oster": {
+          "beta_uncontrolled": 0.003098,
+          "R2_uncontrolled": 0.00015,
+          "beta_controlled": 0.006054,
+          "R2_controlled": 0.00207,
+          "Rmax_1.3x": {
+            "beta_star_delta1": 0.00701,
+            "delta_for_beta0": -6.331
+          },
+          "Rmax_2.0x": {
+            "beta_star_delta1": 0.009241,
+            "delta_for_beta0": -1.899
+          }
+        }
+      },
+      "lag1_file_inbound_only": {
+        "dep": "restate_file",
+        "exposure": "nexp_in_lag1",
+        "controls": [
+          "nnew_in_lag1",
+          "nnew_out_lag1",
+          "nexp_out_lag1",
+          "degree_lag",
+          "betweenness_lag",
+          "size",
+          "leverage",
+          "roa"
+        ],
+        "exposure_coef": {
+          "coef": -0.000505,
+          "se": 0.003264,
+          "t": -0.15,
+          "p": 0.877
+        },
+        "turnover_coef": {
+          "coef": 0.006035,
+          "se": 0.002463,
+          "t": 2.45,
+          "p": 0.01429
+        },
+        "r2_within": 0.00223,
+        "n": 141168,
+        "oster": {
+          "beta_uncontrolled": 0.004523,
+          "R2_uncontrolled": 0.00023,
+          "beta_controlled": -0.000505,
+          "R2_controlled": 0.00223,
+          "Rmax_1.3x": {
+            "beta_star_delta1": -0.002185,
+            "delta_for_beta0": -0.301
+          },
+          "Rmax_2.0x": {
+            "beta_star_delta1": -0.006103,
+            "delta_for_beta0": -0.09
+          }
+        }
+      },
+      "lag1_onset_inbound_only": {
+        "dep": "restate_onset",
+        "exposure": "nexp_in_lag1",
+        "controls": [
+          "nnew_in_lag1",
+          "nnew_out_lag1",
+          "nexp_out_lag1",
+          "degree_lag",
+          "betweenness_lag",
+          "size",
+          "leverage",
+          "roa"
+        ],
+        "exposure_coef": {
+          "coef": 0.000813,
+          "se": 0.002936,
+          "t": 0.28,
+          "p": 0.78185
+        },
+        "turnover_coef": {
+          "coef": -0.000203,
+          "se": 0.002265,
+          "t": -0.09,
+          "p": 0.92855
+        },
+        "r2_within": 0.00177,
+        "n": 141168,
+        "oster": {
+          "beta_uncontrolled": -7e-06,
+          "R2_uncontrolled": 0.0,
+          "beta_controlled": 0.000813,
+          "R2_controlled": 0.00177,
+          "Rmax_1.3x": {
+            "beta_star_delta1": 0.001059,
+            "delta_for_beta0": -3.306
+          },
+          "Rmax_2.0x": {
+            "beta_star_delta1": 0.001633,
+            "delta_for_beta0": -0.992
+          }
+        }
+      }
+    },
+    "between_firm_screening": {
+      "restate_file": {
+        "baseline_auc": 0.6854,
+        "baseline_coef_had_prior_restate": 0.7698,
+        "nexp_lag1": {
+          "coef": -0.0063,
+          "se": 0.018,
+          "z": -0.35,
+          "auc": 0.6854,
+          "auc_gain": 0.0,
+          "lr_stat": 0.12
+        },
+        "nexp_boy": {
+          "coef": -0.0267,
+          "se": 0.007,
+          "z": -3.81,
+          "auc": 0.6857,
+          "auc_gain": 0.0003,
+          "lr_stat": 14.96
+        },
+        "nexp5_lag1": {
+          "coef": 0.0173,
+          "se": 0.0168,
+          "z": 1.03,
+          "auc": 0.6854,
+          "auc_gain": 0.0,
+          "lr_stat": 1.06
+        },
+        "nexp5_boy": {
+          "coef": -0.0075,
+          "se": 0.0075,
+          "z": -1.0,
+          "auc": 0.6854,
+          "auc_gain": 0.0,
+          "lr_stat": 1.0
+        }
+      },
+      "restate_onset": {
+        "baseline_auc": 0.6147,
+        "baseline_coef_had_prior_restate": 0.5981,
+        "nexp_lag1": {
+          "coef": 0.0128,
+          "se": 0.0203,
+          "z": 0.63,
+          "auc": 0.6147,
+          "auc_gain": -0.0,
+          "lr_stat": 0.4
+        },
+        "nexp_boy": {
+          "coef": -0.0095,
+          "se": 0.0074,
+          "z": -1.29,
+          "auc": 0.6149,
+          "auc_gain": 0.0002,
+          "lr_stat": 1.67
+        },
+        "nexp5_lag1": {
+          "coef": 0.0503,
+          "se": 0.0186,
+          "z": 2.7,
+          "auc": 0.615,
+          "auc_gain": 0.0002,
+          "lr_stat": 7.29
+        },
+        "nexp5_boy": {
+          "coef": 0.0126,
+          "se": 0.0079,
+          "z": 1.6,
+          "auc": 0.6147,
+          "auc_gain": 0.0,
+          "lr_stat": 2.53
+        }
+      }
+    },
+    "between_firm_screening_out_of_sample": {
+      "train_years": [
+        2005,
+        2016
+      ],
+      "test_years": [
+        2017,
+        2023
+      ],
+      "n_train": 90786,
+      "n_test": 50382,
+      "restate_file": {
+        "baseline_auc_test": 0.6025,
+        "test_event_rate": 0.0602,
+        "nexp_lag1": {
+          "coef_train": -0.0497,
+          "auc_test": 0.6025,
+          "auc_gain_test": -0.0
+        },
+        "nexp_boy": {
+          "coef_train": -0.0396,
+          "auc_test": 0.6055,
+          "auc_gain_test": 0.0029
+        },
+        "nexp5_lag1": {
+          "coef_train": -0.0277,
+          "auc_test": 0.6032,
+          "auc_gain_test": 0.0007
+        },
+        "nexp5_boy": {
+          "coef_train": -0.0356,
+          "auc_test": 0.6049,
+          "auc_gain_test": 0.0023
+        }
+      },
+      "restate_onset": {
+        "baseline_auc_test": 0.5642,
+        "test_event_rate": 0.0549,
+        "nexp_lag1": {
+          "coef_train": 0.0284,
+          "auc_test": 0.5639,
+          "auc_gain_test": -0.0002
+        },
+        "nexp_boy": {
+          "coef_train": -0.0064,
+          "auc_test": 0.5643,
+          "auc_gain_test": 0.0002
+        },
+        "nexp5_lag1": {
+          "coef_train": 0.0476,
+          "auc_test": 0.5637,
+          "auc_gain_test": -0.0005
+        },
+        "nexp5_boy": {
+          "coef_train": 0.004,
+          "auc_test": 0.5641,
+          "auc_gain_test": -0.0001
+        }
+      }
+    },
+    "nickell_check": {
+      "lag1_onset_exposed5y_plus_prior_yearFE_only": {
+        "dep": "restate_onset",
+        "exposure": "nexp5_lag1",
+        "exposure_coef": {
+          "coef": 0.00523,
+          "se": 0.001852,
+          "t": 2.82,
+          "p": 0.00474
+        },
+        "history_coef": {
+          "coef": 0.040098,
+          "se": 0.001879,
+          "t": 21.34,
+          "p": 0.0
+        },
+        "n": 141168
+      },
+      "lag1_onset_exposed5y_plus_pre2005_history_yearFE_only": {
+        "dep": "restate_onset",
+        "exposure": "nexp5_lag1",
+        "exposure_coef": {
+          "coef": 0.006615,
+          "se": 0.001863,
+          "t": 3.55,
+          "p": 0.00039
+        },
+        "history_coef": {
+          "coef": 0.02626,
+          "se": 0.003492,
+          "t": 7.52,
+          "p": 0.0
+        },
+        "n": 141168
+      },
+      "lag1_onset_inbound_recent5y_plus_prior_yearFE_only": {
+        "dep": "restate_onset",
+        "exposure": "nexp5_in_lag1",
+        "exposure_coef": {
+          "coef": 0.005367,
+          "se": 0.002626,
+          "t": 2.04,
+          "p": 0.04096
+        },
+        "history_coef": {
+          "coef": 0.040097,
+          "se": 0.001879,
+          "t": 21.34,
+          "p": 0.0
+        },
+        "n": 141168
+      },
+      "lag1_file_exposed5y_plus_prior_yearFE_only": {
+        "dep": "restate_file",
+        "exposure": "nexp5_lag1",
+        "exposure_coef": {
+          "coef": 0.003707,
+          "se": 0.00207,
+          "t": 1.79,
+          "p": 0.07332
+        },
+        "history_coef": {
+          "coef": 0.061603,
+          "se": 0.002039,
+          "t": 30.21,
+          "p": 0.0
+        },
+        "n": 141168
+      }
+    },
+    "onset_rows_2005_2020": {
+      "lag1_onset_exposed5y": {
+        "exposure_coef": {
+          "coef": 0.003412,
+          "se": 0.002243,
+          "t": 1.52,
+          "p": 0.12821
+        },
+        "n": 119340
+      },
+      "lag1_onset_exposed5y_plus_prior": {
+        "exposure_coef": {
+          "coef": 0.004807,
+          "se": 0.002241,
+          "t": 2.14,
+          "p": 0.03199
+        },
+        "n": 119340
+      },
+      "lag1_onset_inbound_recent5y_plus_prior": {
+        "exposure_coef": {
+          "coef": 0.006361,
+          "se": 0.003164,
+          "t": 2.01,
+          "p": 0.04441
+        },
+        "n": 119340
+      },
+      "lag1_onset": {
+        "exposure_coef": {
+          "coef": 0.002073,
+          "se": 0.002268,
+          "t": 0.91,
+          "p": 0.36072
+        },
+        "n": 119340
+      }
+    }
+  },
+  "K5_survival": {
+    "n_edges": 61655,
+    "share_ongoing": 0.4778,
+    "share_prior_any": 0.6684,
+    "share_prior_5y": 0.3655,
+    "terminated_by": {
+      "ongoing": 29458,
+      "destination": 18936,
+      "origin": 12466,
+      "both": 795
+    },
+    "prior_any": {
+      "km_prior": {
+        "n": 41212,
+        "events": 21349,
+        "S5": 0.584,
+        "S10": 0.438,
+        "median": 7.16
+      },
+      "km_clean": {
+        "n": 20443,
+        "events": 10848,
+        "S5": 0.567,
+        "S10": 0.438,
+        "median": 6.34
+      },
+      "logrank_p": 0.013822568024438604,
+      "share_origin_seat_ends_with_firm_continuing": 0.5825,
+      "cox_any_dissolution": {
+        "hr": 0.996,
+        "ci95": [
+          0.955,
+          1.038
+        ],
+        "p": 0.8380448803298952,
+        "events": 32197,
+        "ph_test_p": 0.29752513808898434
+      },
+      "cox_destination_seat_ended": {
+        "hr": 0.976,
+        "ci95": [
+          0.934,
+          1.019
+        ],
+        "p": 0.2729926805547245,
+        "events": 18936,
+        "ph_test_p": 0.3374401479473533
+      },
+      "cox_destination_seat_ended_covariates": {
+        "hr": 0.968,
+        "ci95": [
+          0.928,
+          1.011
+        ],
+        "p": 0.13947404406559555,
+        "events": 18936,
+        "covariate_hr": {
+          "seats_at_birth": 0.984,
+          "dest_prior_any": 1.088,
+          "origin_feed_age": 0.993,
+          "dest_feed_age": 0.97,
+          "origin_tenure_years": 1.013
+        }
+      },
+      "cox_destination_seat_ended_piecewise": {
+        "0_2y": {
+          "hr": 0.908,
+          "ci95": [
+            0.85,
+            0.97
+          ],
+          "p": 0.004361072363199855,
+          "events": 8292,
+          "at_risk": 61655
+        },
+        "2_5y": {
+          "hr": 0.942,
+          "ci95": [
+            0.887,
+            1.001
+          ],
+          "p": 0.05218794742460426,
+          "events": 6692,
+          "at_risk": 47102
+        },
+        "5y_plus": {
+          "hr": 1.167,
+          "ci95": [
+            1.058,
+            1.286
+          ],
+          "p": 0.0019682268515083113,
+          "events": 3952,
+          "at_risk": 28274
+        }
+      },
+      "cox_origin_seat_ended": {
+        "hr": 1.064,
+        "ci95": [
+          0.986,
+          1.148
+        ],
+        "p": 0.10983921567837258,
+        "events": 12466,
+        "ph_test_p": 0.002020212868591625
+      },
+      "cox_origin_seat_ended_covariates": {
+        "hr": 1.151,
+        "ci95": [
+          1.068,
+          1.24
+        ],
+        "p": 0.00023421232502090117,
+        "events": 12466,
+        "covariate_hr": {
+          "seats_at_birth": 0.967,
+          "dest_prior_any": 1.015,
+          "origin_feed_age": 0.979,
+          "dest_feed_age": 1.001,
+          "origin_tenure_years": 0.89
+        }
+      },
+      "cox_origin_seat_ended_piecewise": {
+        "0_2y": {
+          "hr": 1.091,
+          "ci95": [
+            1.003,
+            1.186
+          ],
+          "p": 0.041684635429494736,
+          "events": 5989,
+          "at_risk": 61655
+        },
+        "2_5y": {
+          "hr": 1.092,
+          "ci95": [
+            0.98,
+            1.218
+          ],
+          "p": 0.11084914194655178,
+          "events": 3737,
+          "at_risk": 47102
+        },
+        "5y_plus": {
+          "hr": 1.367,
+          "ci95": [
+            1.17,
+            1.598
+          ],
+          "p": 8.568006237043602e-05,
+          "events": 2740,
+          "at_risk": 28274
+        }
+      },
+      "cox_origin_seat_ended_firm_continues": {
+        "hr": 1.146,
+        "ci95": [
+          1.041,
+          1.261
+        ],
+        "p": 0.0051964006270617934,
+        "events": 7261,
+        "ph_test_p": 0.14593763898002823
+      },
+      "cox_origin_seat_ended_firm_exit": {
+        "hr": 0.963,
+        "ci95": [
+          0.858,
+          1.08
+        ],
+        "p": 0.5162639456354707,
+        "events": 5205,
+        "ph_test_p": 0.0066005682860389185
+      }
+    },
+    "prior_5y": {
+      "km_prior": {
+        "n": 22535,
+        "events": 13180,
+        "S5": 0.559,
+        "S10": 0.404,
+        "median": 6.15
+      },
+      "km_clean": {
+        "n": 39120,
+        "events": 19017,
+        "S5": 0.589,
+        "S10": 0.462,
+        "median": 7.76
+      },
+      "logrank_p": 1.0686607031268455e-35,
+      "share_origin_seat_ends_with_firm_continuing": 0.5825,
+      "cox_any_dissolution": {
+        "hr": 1.148,
+        "ci95": [
+          1.107,
+          1.191
+        ],
+        "p": 1.9375002204759163e-13,
+        "events": 32197,
+        "ph_test_p": 0.003635404891903401
+      },
+      "cox_destination_seat_ended": {
+        "hr": 1.02,
+        "ci95": [
+          0.98,
+          1.061
+        ],
+        "p": 0.3326853943264127,
+        "events": 18936,
+        "ph_test_p": 0.7137630218798536
+      },
+      "cox_destination_seat_ended_covariates": {
+        "hr": 0.998,
+        "ci95": [
+          0.96,
+          1.037
+        ],
+        "p": 0.908038102302473,
+        "events": 18936,
+        "covariate_hr": {
+          "seats_at_birth": 0.984,
+          "dest_prior_any": 1.086,
+          "origin_feed_age": 0.991,
+          "dest_feed_age": 0.97,
+          "origin_tenure_years": 1.013
+        }
+      },
+      "cox_destination_seat_ended_piecewise": {
+        "0_2y": {
+          "hr": 0.954,
+          "ci95": [
+            0.896,
+            1.016
+          ],
+          "p": 0.14129776208899367,
+          "events": 8292,
+          "at_risk": 61655
+        },
+        "2_5y": {
+          "hr": 0.944,
+          "ci95": [
+            0.891,
+            1.0
+          ],
+          "p": 0.050120932932436274,
+          "events": 6692,
+          "at_risk": 47102
+        },
+        "5y_plus": {
+          "hr": 1.191,
+          "ci95": [
+            1.095,
+            1.294
+          ],
+          "p": 4.23138802929824e-05,
+          "events": 3952,
+          "at_risk": 28274
+        }
+      },
+      "cox_origin_seat_ended": {
+        "hr": 1.414,
+        "ci95": [
+          1.328,
+          1.505
+        ],
+        "p": 2.8225698593255986e-27,
+        "events": 12466,
+        "ph_test_p": 0.0015587679988006613
+      },
+      "cox_origin_seat_ended_covariates": {
+        "hr": 1.245,
+        "ci95": [
+          1.172,
+          1.323
+        ],
+        "p": 1.1861305227799739e-12,
+        "events": 12466,
+        "covariate_hr": {
+          "seats_at_birth": 0.967,
+          "dest_prior_any": 1.011,
+          "origin_feed_age": 0.984,
+          "dest_feed_age": 1.001,
+          "origin_tenure_years": 0.892
+        }
+      },
+      "cox_origin_seat_ended_piecewise": {
+        "0_2y": {
+          "hr": 1.17,
+          "ci95": [
+            1.082,
+            1.264
+          ],
+          "p": 7.679277529274369e-05,
+          "events": 5989,
+          "at_risk": 61655
+        },
+        "2_5y": {
+          "hr": 1.231,
+          "ci95": [
+            1.123,
+            1.349
+          ],
+          "p": 9.418043247780405e-06,
+          "events": 3737,
+          "at_risk": 47102
+        },
+        "5y_plus": {
+          "hr": 1.431,
+          "ci95": [
+            1.258,
+            1.627
+          ],
+          "p": 4.668914965187542e-08,
+          "events": 2740,
+          "at_risk": 28274
+        }
+      },
+      "cox_origin_seat_ended_firm_continues": {
+        "hr": 1.444,
+        "ci95": [
+          1.337,
+          1.558
+        ],
+        "p": 4.8778230340261855e-21,
+        "events": 7261,
+        "ph_test_p": 0.043056581713993576
+      },
+      "cox_origin_seat_ended_firm_exit": {
+        "hr": 1.373,
+        "ci95": [
+          1.242,
+          1.516
+        ],
+        "p": 4.872467986684548e-10,
+        "events": 5205,
+        "ph_test_p": 0.005987035941776088
+      }
+    }
+  },
+  "K7_firm_counts": {
+    "D&O universe firms (any board-member event)": 20015,
+    "firms with >=1 tenure spell": 18412,
+    "firms in >=1 edge formed 2004-2023 (pair base firms)": 13072,
+    "firms in yearly networks (any year)": 13283,
+    "panel firms (gvkey, Compustat-linked, 2005-2023)": 14941,
+    "panel firm-years": 141168
+  }
+}

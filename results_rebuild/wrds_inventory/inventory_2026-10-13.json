@@ -1,0 +1,75 @@
+{
+ "pulled": "2026-10-13",
+ "feed": "audit.feed17_director_and_officer_chan",
+ "rows_total": 579845,
+ "rows_board_member": 294674,
+ "file_date_max": "2026-09-24",
+ "rows_eff_date_le_2025_12_31_filed_after_2026_06_09_extract": 5,
+ "person_key": {
+  "column": "do_off_pers_key",
+  "distinct_keys_board_rows": 294674,
+  "verdict": "unique per event row; not a person identifier"
+ },
+ "name_collisions": {
+  "distinct_first_last_names": 132778,
+  "names_at_more_than_one_firm": 34679,
+  "board_rows_of_such_names": 160901,
+  "multi_firm_names_with_conflicting_middle_names": 4610,
+  "share_conflicting": 0.1329,
+  "multi_firm_names_with_any_middle_name": 25003,
+  "middle_name_nonnull_share_board_rows": 0.5076,
+  "suffix_nonnull_share": 0.0847
+ },
+ "committee": {
+  "comm_standard_nonnull_share": 0.0,
+  "title_standard_nonnull_share": 0.0,
+  "comm_report_nonnull_share_board_rows": 0.1961,
+  "comm_report_nonnull_share_appointments": 0.2749,
+  "appointments_with_audit_committee_mention_share": 0.1681,
+  "n_appointments_with_audit_committee_mention": 26387
+ },
+ "effective_date_estimate": {
+  "share_board_rows": 0.0629,
+  "n": 18529,
+  "share_by_action": {
+   "Administrative Leave": 0.067,
+   "Appointed": 0.04,
+   "Appointment Revoked/Not Accepted": 0.139,
+   "Change Misreported": 0.0,
+   "Deceased": 0.176,
+   "Declined Re-election": 0.506,
+   "Dismissed": 0.057,
+   "Employment Ceased": 0.068,
+   "Nominated": 0.219,
+   "Not Re-elected": 0.106,
+   "Personal Leave": 0.091,
+   "Re-elected": 0.014,
+   "Resigned": 0.045,
+   "Retired": 0.146,
+   "Retracted Resignation": 0.128,
+   "Returned to Position": 0.054
+  }
+ },
+ "compustat_sich": {
+  "funda_rows_linked_gvkeys_2004_2024": 174842,
+  "gvkeys": 17868,
+  "sich_nonnull_share": 0.837,
+  "share_firm_years_2digit_differs_from_current": 0.085,
+  "share_firms_with_2digit_change": 0.121,
+  "file": "data/comp_funda_sich_2004_2024.csv"
+ },
+ "sox404": {
+  "rows": 244948,
+  "firms": 20231,
+  "fiscal_years": "2000-2026",
+  "ic_is_effective": {
+   "Y": 203862,
+   "N": 40343,
+   "ND": 743
+  },
+  "paper_firms": 12631,
+  "paper_firms_with_opinion": 11684,
+  "share": 0.925,
+  "file": "data/sox404_icfr_wrds_2026-10-13.csv.gz"
+ }
+}

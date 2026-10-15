@@ -1,0 +1,12 @@
+{
+  "title": "Director Interlocks and Restatement Risk: Appointment, Disclosure, and Departure",
+  "upload_type": "software",
+  "description": "Replication code for the manuscript \"Director Interlocks and Restatement Risk: Appointment, Disclosure, and Departure\" (Kim and Woo, 2026). The repository builds the dated, directed board-interlock network from Audit Analytics board-member events, estimates every number reported in the manuscript, generates every table and figure from the results JSON files, and audits the manuscript's numbers against those files. Aggregate results are included; the licensed WRDS microdata are not redistributed. The earlier release v1.0 (March 2026) belongs to a superseded version of the paper submitted under a different title.",
+  "creators": [
+    {"name": "Kim, Nari", "affiliation": "Korea Institute of Procurement, Seoul, Republic of Korea", "orcid": "0009-0008-9667-622X"},
+    {"name": "Woo, Jihwan", "affiliation": "Amazon Web Services, Seoul, Republic of Korea", "orcid": "0000-0002-0424-0242"}
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": ["financial restatements", "board interlocks", "director networks", "homophily", "corporate governance", "Audit Analytics", "replication code"]
+}
