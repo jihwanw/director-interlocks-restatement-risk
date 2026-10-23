@@ -35,7 +35,7 @@ python code/reproduce_headlines.py                                       # indep
 ## Releases and archive
 - `v1.0` (2026-03-05): code of a superseded version of the paper, submitted to another journal under a different title; archived at Zenodo 10.5281/zenodo.18872817.
 - `v2.0-results` (2026-10-15): the code state that produced every result in the present manuscript.
-- `v2.0` (2026-10-23): the archived submission release — the code of `v2.0-results` plus the final manuscript generators (`make_tables_*.py`, `make_definitions.py`, `split_table_notes.py`, `make_figures_design_network.py`), the numeric audit and documentation; Zenodo version DOI: see the badge/record under the concept DOI below (filled in after Zenodo mints it). Concept DOI (always resolves to the latest version): 10.5281/zenodo.18872816.
+- `v2.0` (2026-10-23): the archived submission release — the code of `v2.0-results` plus the final manuscript generators (`make_tables_*.py`, `make_definitions.py`, `split_table_notes.py`, `make_figures_design_network.py`), the numeric audit and documentation; Zenodo version DOI: 10.5281/zenodo.23584371 (https://doi.org/10.5281/zenodo.23584371). Concept DOI (always resolves to the latest version): 10.5281/zenodo.18872816.
 
 ## Licence
 MIT (see `LICENSE`). The data are licensed by their providers and are not included.
