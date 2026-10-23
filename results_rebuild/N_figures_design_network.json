@@ -1,0 +1,60 @@
+{
+ "K6_dates": {
+  "toro_seat_start": "2010-07-01",
+  "ecolab_appointment": "2017-05-04",
+  "toro_misstated": [
+   "2015-11-01",
+   "2016-10-31"
+  ],
+  "toro_filed": "2017-12-22",
+  "ecolab_prior_filings": [
+   "2003-08-08",
+   "2007-05-04",
+   "2012-08-02",
+   "2015-02-27"
+  ],
+  "ecolab_prior_periods_begin": [
+   "2003-01-01",
+   "NaT",
+   "2011-01-01",
+   "2012-01-01"
+  ],
+  "ecolab_post_misstated": [
+   "2018-01-01",
+   "2018-12-31"
+  ],
+  "ecolab_post_filed": "2019-03-01",
+  "seats_end": [
+   "2023-05-23",
+   "2023-05-23"
+  ]
+ },
+ "K7_snapshot": {
+  "date": "2017-01-01",
+  "edges_alive": 14042,
+  "firms_alive": 6427,
+  "largest_component_firms": 4820,
+  "drawn_firms": 400,
+  "drawn_edges": 1155,
+  "drawn_recent_restaters": 158,
+  "component_recent_restaters_share": 0.3056
+ },
+ "K7_ego_ecolab": {
+  "date": "2017-05-04",
+  "one_step": 21,
+  "two_step": 157,
+  "one_step_recent": 4,
+  "one_step_latent": 3,
+  "two_step_recent": 55,
+  "two_step_latent": 9
+ },
+ "K7_ego_k12": {
+  "date": "2017-04-13",
+  "one_step": 6,
+  "two_step": 60,
+  "one_step_recent": 2,
+  "one_step_latent": 0,
+  "two_step_recent": 23,
+  "two_step_latent": 4
+ }
+}

@@ -211,7 +211,7 @@ def esr(lbl, y):
 def esw(lbl, y, key):
     d = C[y][key]; return f"{lbl} & ${d['did_pp']:+.2f}$ ({d['se_pp']:.2f}){st(d['t'])} & {C['n_treated_units']:,} / {C['n_control_units']:,} \\\\\n"
 w("tab_residual.tex", rf"""\begin{{table}}[htbp]\centering\footnotesize
-\caption{{Is the remaining association specific to the director's seat? Within-firm exposure, network distance, and the timing of linked destinations' outcomes around an origin's disclosure.}}
+\caption{{The remaining association and the director's seat: within-firm exposure, network distance, and the timing of linked destinations' outcomes around an origin's disclosure.}}
 \label{{tab:residual}}
 \begin{{tabular}}{{@{{}}p{{10.2cm}}cc@{{}}}}\toprule
  & Coefficient (SE) & $N$ \\\midrule

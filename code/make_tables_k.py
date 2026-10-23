@@ -513,7 +513,7 @@ Sample & $N$ & before & after & after $-$ before & after $-$ before & onset afte
 # ── T11 board-refresh test ─────────────────────────────────────────────────────────────
 RF = K1["board_refresh_test"]
 w("tab_refresh.tex", rf"""\begin{{table}}[htbp]\centering\footnotesize
-\caption{{Board refresh after a restatement: do boards that have just restated recruit from restating firms more often?}}
+\caption{{Board refresh after a restatement: recruitment from restating firms by boards that have just restated.}}
 \label{{tab:refresh}}
 \adjustbox{{max width=\textwidth}}{{\begin{{tabular}}{{p{{5.0cm}}cccc}}\toprule
  & \multicolumn{{2}}{{c}}{{Share of appointments from an exposed origin}} & & Difference with \\

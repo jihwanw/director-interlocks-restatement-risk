@@ -1,6 +1,6 @@
 # Director Interlocks and Restatement Risk: Appointment, Disclosure, and Departure
 
-Replication code for the manuscript of that title (Kim and Woo, 2026; submitted to the *Journal of Accounting and Public Policy*).
+Replication code for the manuscript of that title (Kim and Woo, 2026; submitted to *The British Accounting Review*).
 
 This repository contains the code that builds the dated, directed board-interlock network from Audit Analytics board-member events,
 estimates every number in the manuscript, generates every table and figure from the results JSON files, and audits the manuscript's
@@ -29,10 +29,13 @@ python code/reproduce_headlines.py                                       # indep
 ```
 `PRIMARY_SUFFIX` (default `_art`) selects the primary sample for the generators and audits.
 
+- `code/make_figures_design_network.py` draws the design schematic (Figure 3) and the network snapshot and ego networks (Figure 2) from the primary-sample edge lifecycles, tenure spells and restatement records, and writes the counts it prints to `results_rebuild/N_figures_design_network.json`.
+- `code/split_table_notes.py` runs after the table generators: it replaces each long table note with a short one and writes the explanatory text to `tables_auto/lead_<table>.tex`, which the manuscript inputs before the table (appendix tables); table bodies are left unchanged.
+
 ## Releases and archive
 - `v1.0` (2026-03-05): code of a superseded version of the paper, submitted to another journal under a different title; archived at Zenodo 10.5281/zenodo.18872817.
 - `v2.0-results` (2026-10-15): the code state that produced every result in the present manuscript.
-- `v2.0`: the archived submission release (code of `v2.0-results` plus documentation); Zenodo version DOI: [ZENODO-VERSION-DOI-PENDING]. Concept DOI (always resolves to the latest version): 10.5281/zenodo.18872816.
+- `v2.0` (2026-10-23): the archived submission release — the code of `v2.0-results` plus the final manuscript generators (`make_tables_*.py`, `make_definitions.py`, `split_table_notes.py`, `make_figures_design_network.py`), the numeric audit and documentation; Zenodo version DOI: see the badge/record under the concept DOI below (filled in after Zenodo mints it). Concept DOI (always resolves to the latest version): 10.5281/zenodo.18872816.
 
 ## Licence
 MIT (see `LICENSE`). The data are licensed by their providers and are not included.

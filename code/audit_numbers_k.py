@@ -12,6 +12,7 @@ import os
 PRIMARY = os.environ.get("PRIMARY_SUFFIX", "_art")
 SRC_FILES = [("primary_K", f"K_rebuild{PRIMARY}.json"), ("primary_L", f"L_identification{PRIMARY}.json"), ("primary_M", f"M_icfr{PRIMARY}.json"),
              ("full", "K_rebuild_full.json"), ("le6", "K_rebuild_le6.json"), ("artns", "K_rebuild_artns.json"), ("art_name", "K_rebuild_art_name.json"), ("art_noest", "K_rebuild_art_noest.json"),
+             ("primary_N", "N_figures_design_network.json"),   # 2026-10-23: counts behind Figures 2-3 (design schematic, network snapshot, ego networks)
              ("inventory", "wrds_inventory/inventory_2026-10-13.json")]
 JS = {name: json.load(open(HERE.parent / "results_rebuild" / f)) for name, f in SRC_FILES if (HERE.parent / "results_rebuild" / f).exists()}
 J = list(JS.values())
@@ -84,7 +85,8 @@ def sources_of(v):
     a = round(abs(v), 3); return [n for n, R in KEYED.items() if a in R or any(abs(x - a) < 0.0015 for x in R if abs(x - a) < 0.0015)]
 ALLOW = {2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2025, 1500,
          1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 25, 31, 95, 100, 401, 404, 42, 1.96, 2.58, 1.645, 0.01, 0.05, 0.001, 155663, 568332, 279354, 14672,
-         0.0, 2.0, 3.0, 5.0, 6.0, 1.0, 6770, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003}
+         0.0, 2.0, 3.0, 5.0, 6.0, 1.0, 6770, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
+         9995, 6798, 6221, 6722, 6726, 4.02, 400}   # 2026-10-23: EDGAR SIC classification codes (registrant-type rule, Section 3.2), Form 8-K Item 4.02, the 400 drawn nodes of Figure 3(a)
 # structural: section numbers, years, Regulation S-K items, hypothesis labels (P1..P5), thresholds
 
 text = ""
